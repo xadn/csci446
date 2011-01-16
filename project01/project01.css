@@ -1,16 +1,20 @@
 body {
-	top: 0em;
+	margin: 0em 2em 0 2em;
 	font-family: helvetica, arial, sans-serif;
-	margin: 0em 2em 0em 2em;
 	background-color: #aaaaaa;
 }
 
 div#heading {
+	display: block;
+	margin: 0 0 0 0;
+	padding: .1em 0 1em 0;
 	letter-spacing: -.08em;
 	background-color: #cccccc;
 }
 
 div#navigation {
+	display: block;
+	padding: 1em 0 1em 0;
 	background-color: #000000;
 }
 
@@ -25,9 +29,19 @@ div#navigation > a:hover {
 }
 
 div#content {
+	padding: 1em 0 1em 0;
 	background-color: #fcfcfc;
 }
 
+div#progress {
+	float: right;
+	width: 150px;
+	padding-top: 2em;
+}
+
 p#footer {
+	clear: both;
+	display: block;
+	padding: 1em 0 1em 0;
 	background-color: #f0f0f0;
 }
