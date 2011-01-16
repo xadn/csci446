@@ -1,15 +1,19 @@
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
 	"http://www.w3.org/TR/html4/loose.dtd">
 <html lang="en-us"> 
+
 <head>
 	<title>Life Figure-Outer Application</title>
 	<link rel="stylesheet" type="text/css" href="project01.css" >
 </head>
+
 <body>
+	
 	<div id="heading">
 		<h1>The Magic Life Figure-Outer!</h1>
 		<p>Figuring out life for you, so you don't have to...</p>
 	</div><!-- end div heading -->
+	
 	<div id="navigation">
 		<a href="">Home</a>
 		<a href="">Interests</a>
@@ -19,25 +23,32 @@
 		<a href="">Fun</a>
 		<a href="">Evil</a>
 	</div><!-- end div navigation -->
+	
 	<div id="content">
-		<h2>Lore Ipsum Dolor Sit Amet.</h2>
+
+		<div id="progress">
+			<h2>Current Progress in Life</h2>
+			<p>Mediocre. You really should enjoy life more.</p>
+		</div><!-- end div progress -->
+		
+		<h2 id="htest">Lore Ipsum Dolor Sit Amet.</h2>
 		<form>
-			How do you feel today? 
+			<label>How do you feel today?</label>
 			<input type="text" name="feeltoday" /><br />
-			How would you like to feel? (choose all that apply) 
+			<label>How would you like to feel? (choose all that apply)</label>
 			<select name="liketofeel" multiple>
 				<option value="numb">Comfortably numb</option>
 				<option value="grumpy">Grumpy as poop, you jerk</option>
 				<option value="happy">Happy like I'm on controlled substances</option>
 				<option value="normal">Normal. Absolutely Normal.</option>
-			</select>
-			<input type="submit" name="feelme" value="feel me!" />
+			</select><br />
+			<div id="spacer">&nbsp</div>
+			<input type="submit" name="feelme" value="Feel me!" />
 		</form>
+
+		<div id="clear"></div>
 		
 	</div><!-- end div content -->
-	<div id="progress">
-		<h2>Current Progress in Life</h2>
-		<p>Mediocre. You really should enjoy life more.</p>
-	</div><!-- end div progress -->
+	
 	<p id="footer">&copy; 2011 Borg-Like Monstrosity of Mind Control, Inc. All rights reserved.</p>
 </body>

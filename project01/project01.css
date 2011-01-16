@@ -13,6 +13,7 @@ div#heading {
 }
 
 div#navigation {
+	margin: 0 0 0 0;
 	display: block;
 	padding: 1em 0 1em 0;
 	background-color: #000000;
@@ -21,27 +22,44 @@ div#navigation {
 div#navigation > a {
 	color: #ffffff;
 	text-decoration: none;
+	margin: 0 1em 0 1em;
 }
 
 div#navigation > a:hover {
-	color: #F27405;
+	color: #f27405;
 	text-decoration: none;
 }
 
 div#content {
+	margin: 0 0 0 0;
 	padding: 1em 0 1em 0;
 	background-color: #fcfcfc;
 }
 
+label, div#spacer {
+	float: left;
+	width: 13em;
+}
+
 div#progress {
 	float: right;
-	width: 150px;
-	padding-top: 2em;
+	margin: 0em 1em 1em 0em;
+	padding: 0em 1em 1em 1em;
+	background-color: #f0f0ff;
+}
+
+div#clear {
+	clear: both;
 }
 
 p#footer {
 	clear: both;
 	display: block;
+	margin: 0 0 0 0;
 	padding: 1em 0 1em 0;
 	background-color: #f0f0f0;
 }
+
+
+
+
