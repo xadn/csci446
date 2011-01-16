@@ -6,32 +6,33 @@
 	<link rel="stylesheet" type="text/css" href="project01.css" >
 </head>
 <body>
-	
-	<h1>The Magic Life Figure-Outer!</h1>
-	<p>Figuring out life for you, so you don't have to...</p>
-	
-	<a href="">Home</a>
-	<a href="">Interests</a>
-	<a href="">Health</a>
-	<a href="">Academic</a>
-	<a href="">Professional</a>
-	<a href="">Fun</a>
-	<a href="">Evil</a>
-	
-	<h2>Lore Ipsum Dolor Sit Amet.</h2>
-	<form>
-		How do you feel today? 
-		<input type="text" name="feeltoday" /><br />
-		How would you like to feel? (choose all that apply) 
-		<select name="liketofeel" multiple>
-			<option value="numb">Comfortably numb</option>
-			<option value="grumpy">Grumpy as poop, you jerk</option>
-			<option value="happy">Happy like I'm on controlled substances</option>
-			<option value="normal">Normal. Absolutely Normal.</option>
-		</select>
-		<input type="submit" name="feelme" value="feel me!" />
-	</form>
-	
-	<p>&copy; 2011 Borg-Like Monstrosity of Mind Control, Inc. All rights reserved.</p>
-	
+	<div id="heading">
+		<h1>The Magic Life Figure-Outer!</h1>
+		<p>Figuring out life for you, so you don't have to...</p>
+	</div><!-- end div heading -->
+	<div id="navigation">
+		<a href="">Home</a>
+		<a href="">Interests</a>
+		<a href="">Health</a>
+		<a href="">Academic</a>
+		<a href="">Professional</a>
+		<a href="">Fun</a>
+		<a href="">Evil</a>
+	</div><!-- end div navigation -->
+	<div id="content">
+		<h2>Lore Ipsum Dolor Sit Amet.</h2>
+		<form>
+			How do you feel today? 
+			<input type="text" name="feeltoday" /><br />
+			How would you like to feel? (choose all that apply) 
+			<select name="liketofeel" multiple>
+				<option value="numb">Comfortably numb</option>
+				<option value="grumpy">Grumpy as poop, you jerk</option>
+				<option value="happy">Happy like I'm on controlled substances</option>
+				<option value="normal">Normal. Absolutely Normal.</option>
+			</select>
+			<input type="submit" name="feelme" value="feel me!" />
+		</form>
+	</div><!-- end div content -->
+	<p id="footer">&copy; 2011 Borg-Like Monstrosity of Mind Control, Inc. All rights reserved.</p>
 </body>

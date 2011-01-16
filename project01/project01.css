@@ -1,0 +1,33 @@
+body {
+	top: 0em;
+	font-family: helvetica, arial, sans-serif;
+	margin: 0em 2em 0em 2em;
+	background-color: #aaaaaa;
+}
+
+div#heading {
+	letter-spacing: -.08em;
+	background-color: #cccccc;
+}
+
+div#navigation {
+	background-color: #000000;
+}
+
+div#navigation > a {
+	color: #ffffff;
+	text-decoration: none;
+}
+
+div#navigation > a:hover {
+	color: #F27405;
+	text-decoration: none;
+}
+
+div#content {
+	background-color: #fcfcfc;
+}
+
+p#footer {
+	background-color: #f0f0f0;
+}
