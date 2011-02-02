@@ -30,10 +30,18 @@
 		
 		<% end %>
 	
-      <a href="http://www....">Home</a><br />
-      <a href="http://www..../faq">Questions</a><br />
-      <a href="http://www..../news">News</a><br />
-      <a href="http://www..../contact">Contact</a><br />
+		<!-- START_HIGHLIGHT -->
+		      <a href="http://www...."><%= I18n.t 'layout.side.home' %></a><br />
+		<!-- END_HIGHLIGHT -->
+		<!-- START_HIGHLIGHT -->
+		      <a href="http://www..../faq"><%= I18n.t 'layout.side.questions' %></a><br />
+		<!-- END_HIGHLIGHT -->
+		<!-- START_HIGHLIGHT -->
+		      <a href="http://www..../news"><%= I18n.t 'layout.side.news' %></a><br />
+		<!-- END_HIGHLIGHT -->
+		<!-- START_HIGHLIGHT -->
+		      <a href="http://www..../contact"><%= I18n.t 'layout.side.contact' %></a><br />
+		<!-- END_HIGHLIGHT -->
 
 		<% if session[:user_id] %>
         <br />
