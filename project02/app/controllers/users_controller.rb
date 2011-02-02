@@ -84,4 +84,20 @@ class UsersController < ApplicationController
       format.xml  { head :ok }
     end
   end
+  
+  def destroy
+    @user = User.find(params[:id])
+    begin
+      @user.destroy
+      flash[:notice] = "User #{@user.name} deleted"
+    rescue Exception => e
+      flash[:notice] = e.message
+    end
+
+    respond_to do |format|
+      format.html { redirect_to(users_url) }
+      format.xml  { head :ok }
+    end
+  end
+  
 end
