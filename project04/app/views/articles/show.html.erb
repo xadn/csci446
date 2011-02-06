@@ -3,7 +3,7 @@
 </h2>
 
 <p>
-  By <%=h @article.author_name -%>, <%=h @article.number_of_edits %> edits since <%=h @article.created_at.strftime("%b %d, %Y") %>.
+  By <%=h @article.author_name -%>, <%=h @article.number_of_edits %> edits since <%=h @article.created_at.strftime("%b. %e, %Y") %>.
 </p>
 
 <p>
@@ -11,7 +11,5 @@
 </p>
 
 
-
-
-<%= link_to 'Edit', edit_article_path(@article) %> |
+<%= link_to image_tag("/icons/page_white_edit.png")+"Edit", edit_article_path(@article) %> |
 <%= link_to 'Back', articles_path %>

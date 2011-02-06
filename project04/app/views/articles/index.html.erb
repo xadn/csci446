@@ -3,10 +3,9 @@
 <table>
   <tr>
     <th>Title</th>
-    <th>Author name</th>
+    <th>Author Name</th>
     <th>Body</th>
     <th>Creation date</th>
-    <th>Number of edits</th>
   </tr>
 
 <% @articles.each do |article| %>
@@ -14,11 +13,10 @@
     <td><%=h article.title %></td>
     <td><%=h article.author_name %></td>
     <td><%=h article.body %></td>
-    <td><%=h article.created_at %></td>
-    <td><%=h article.number_of_edits %></td>
-    <td><%= link_to 'Show', article %></td>
-    <td><%= link_to 'Edit', edit_article_path(article) %></td>
-    <td><%= link_to 'Destroy', article, :confirm => 'Are you sure?', :method => :delete %></td>
+    <td><%=h article.created_at.strftime("%A, %b. %e %Y") %></td>
+    <td><%= link_to image_tag("/icons/magnifier.png"), article %></td>
+    <td><%= link_to image_tag("/icons/page_white_edit.png"), edit_article_path(article) %></td>
+    <td><%= link_to image_tag("/icons/cancel.png"), article, :confirm => 'Are you sure?', :method => :delete %></td>
   </tr>
 <% end %>
 </table>
