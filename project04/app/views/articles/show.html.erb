@@ -1,27 +1,16 @@
-<p>
-  <b>Title:</b>
+<h2>
   <%=h @article.title %>
+</h2>
+
+<p>
+  By <%=h @article.author_name -%>, <%=h @article.number_of_edits %> edits since <%=h @article.created_at.strftime("%b %d, %Y") %>.
 </p>
 
 <p>
-  <b>Author name:</b>
-  <%=h @article.author_name %>
-</p>
-
-<p>
-  <b>Body:</b>
   <%=h @article.body %>
 </p>
 
-<p>
-  <b>Creation date:</b>
-  <%=h @article.created_at %>
-</p>
 
-<p>
-  <b>Number of edits:</b>
-  <%=h @article.number_of_edits %>
-</p>
 
 
 <%= link_to 'Edit', edit_article_path(@article) %> |

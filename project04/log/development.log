@@ -737,3 +737,951 @@ Processing ArticlesController#new (for 127.0.0.1 at 2011-02-06 15:12:58) [GET]
 Rendering template within layouts/articles
 Rendering articles/new
 Completed in 83ms (View: 8, DB: 0) | 200 OK [http://localhost/articles/new]
+
+
+Processing ArticlesController#new (for 127.0.0.1 at 2011-02-06 15:20:12) [GET]
+Rendering template within layouts/articles
+Rendering articles/new
+Completed in 12ms (View: 7, DB: 0) | 200 OK [http://localhost/articles/new]
+
+
+Processing ArticlesController#index (for 127.0.0.1 at 2011-02-06 15:20:16) [GET]
+  [4;35;1mArticle Load (0.5ms)[0m   [0mSELECT * FROM "articles" [0m
+Rendering template within layouts/articles
+Rendering articles/index
+Completed in 14ms (View: 10, DB: 1) | 200 OK [http://localhost/articles]
+
+
+Processing ArticlesController#new (for 127.0.0.1 at 2011-02-06 15:20:17) [GET]
+Rendering template within layouts/articles
+Rendering articles/new
+Completed in 11ms (View: 7, DB: 0) | 200 OK [http://localhost/articles/new]
+
+
+Processing ArticlesController#create (for 127.0.0.1 at 2011-02-06 15:20:20) [POST]
+  Parameters: {"article"=>{"body"=>"d", "author_name"=>"d", "title"=>"d"}, "commit"=>"Create", "authenticity_token"=>"DeULmXlOnTqBYz3b5Ao1PBLZwJLIJuVVxTpwONNMqEQ="}
+  [4;36;1mArticle Load (0.1ms)[0m   [0;1mSELECT "articles".id FROM "articles" WHERE ("articles"."title" = 'd') LIMIT 1[0m
+  [4;35;1mArticle Create (0.3ms)[0m   [0mINSERT INTO "articles" ("created_at", "title", "author_name", "body", "number_of_edits", "updated_at") VALUES('2011-02-06 22:20:20', 'd', 'd', 'd', NULL, '2011-02-06 22:20:20')[0m
+Redirected to http://localhost:3000/articles/4
+Completed in 9ms (DB: 0) | 302 Found [http://localhost/articles]
+
+
+Processing ArticlesController#show (for 127.0.0.1 at 2011-02-06 15:20:20) [GET]
+  Parameters: {"id"=>"4"}
+  [4;36;1mArticle Load (0.2ms)[0m   [0;1mSELECT * FROM "articles" WHERE ("articles"."id" = 4) [0m
+Rendering template within layouts/articles
+Rendering articles/show
+Completed in 21ms (View: 9, DB: 0) | 200 OK [http://localhost/articles/4]
+
+
+Processing ArticlesController#index (for 127.0.0.1 at 2011-02-06 15:20:23) [GET]
+  [4;35;1mArticle Load (0.4ms)[0m   [0mSELECT * FROM "articles" [0m
+Rendering template within layouts/articles
+Rendering articles/index
+Completed in 16ms (View: 12, DB: 0) | 200 OK [http://localhost/articles]
+
+
+Processing ArticlesController#index (for 127.0.0.1 at 2011-02-06 15:21:25) [GET]
+  [4;36;1mSQL (0.4ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.2ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+
+NoMethodError (undefined method `default_value_for' for #<Class:0x10325e4d8>):
+  app/models/article.rb:3
+  app/controllers/articles_controller.rb:5:in `index'
+
+Rendered rescues/_trace (101.0ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ArticlesController#index (for 127.0.0.1 at 2011-02-06 15:23:08) [GET]
+
+SyntaxError (/Users/aniccola/Dropbox/Spring 2011/webapps/src/project04/app/models/article.rb:3: syntax error, unexpected tASSOC, expecting kEND
+  :defaults  => {:number_of_edits => 1}
+               ^):
+  app/controllers/articles_controller.rb:5:in `index'
+
+Rendered rescues/_trace (35.2ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ArticlesController#index (for 127.0.0.1 at 2011-02-06 15:23:18) [GET]
+
+SyntaxError (/Users/aniccola/Dropbox/Spring 2011/webapps/src/project04/app/models/article.rb:3: syntax error, unexpected tASSOC, expecting kEND
+  :number_of_edits => 1
+                     ^):
+  app/controllers/articles_controller.rb:5:in `index'
+
+Rendered rescues/_trace (108.4ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ArticlesController#index (for 127.0.0.1 at 2011-02-06 15:23:24) [GET]
+
+SyntaxError (/Users/aniccola/Dropbox/Spring 2011/webapps/src/project04/app/models/article.rb:3: syntax error, unexpected '=', expecting kEND
+  :number_of_edits = 1
+                    ^):
+  app/controllers/articles_controller.rb:5:in `index'
+
+Rendered rescues/_trace (34.9ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2011-02-06 15:24:25) [GET]
+
+ActionController::RoutingError (No route matches "/store" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ArticlesController#index (for 127.0.0.1 at 2011-02-06 15:24:30) [GET]
+  [4;36;1mArticle Load (0.4ms)[0m   [0;1mSELECT * FROM "articles" [0m
+Rendering template within layouts/articles
+Rendering articles/index
+Completed in 16ms (View: 12, DB: 0) | 200 OK [http://localhost/articles]
+
+
+Processing ArticlesController#new (for 127.0.0.1 at 2011-02-06 15:24:32) [GET]
+Rendering template within layouts/articles
+Rendering articles/new
+Completed in 14ms (View: 10, DB: 0) | 200 OK [http://localhost/articles/new]
+
+
+Processing ArticlesController#create (for 127.0.0.1 at 2011-02-06 15:24:34) [POST]
+  Parameters: {"article"=>{"body"=>"e", "author_name"=>"e", "title"=>"e"}, "commit"=>"Create", "authenticity_token"=>"DeULmXlOnTqBYz3b5Ao1PBLZwJLIJuVVxTpwONNMqEQ="}
+  [4;35;1mArticle Load (0.2ms)[0m   [0mSELECT "articles".id FROM "articles" WHERE ("articles"."title" = 'e') LIMIT 1[0m
+  [4;36;1mArticle Create (0.3ms)[0m   [0;1mINSERT INTO "articles" ("created_at", "title", "author_name", "body", "number_of_edits", "updated_at") VALUES('2011-02-06 22:24:34', 'e', 'e', 'e', NULL, '2011-02-06 22:24:34')[0m
+Redirected to http://localhost:3000/articles/5
+Completed in 99ms (DB: 0) | 302 Found [http://localhost/articles]
+
+
+Processing ArticlesController#show (for 127.0.0.1 at 2011-02-06 15:24:35) [GET]
+  Parameters: {"id"=>"5"}
+  [4;35;1mArticle Load (0.2ms)[0m   [0mSELECT * FROM "articles" WHERE ("articles"."id" = 5) [0m
+Rendering template within layouts/articles
+Rendering articles/show
+Completed in 9ms (View: 4, DB: 0) | 200 OK [http://localhost/articles/5]
+
+
+Processing ArticlesController#edit (for 127.0.0.1 at 2011-02-06 15:24:37) [GET]
+  Parameters: {"id"=>"5"}
+  [4;36;1mArticle Load (0.2ms)[0m   [0;1mSELECT * FROM "articles" WHERE ("articles"."id" = 5) [0m
+Rendering template within layouts/articles
+Rendering articles/edit
+Completed in 16ms (View: 12, DB: 0) | 200 OK [http://localhost/articles/5/edit]
+
+
+Processing ArticlesController#update (for 127.0.0.1 at 2011-02-06 15:24:38) [PUT]
+  Parameters: {"article"=>{"body"=>"e", "author_name"=>"e", "title"=>"e"}, "commit"=>"Save Changes", "authenticity_token"=>"DeULmXlOnTqBYz3b5Ao1PBLZwJLIJuVVxTpwONNMqEQ=", "id"=>"5"}
+  [4;35;1mArticle Load (0.1ms)[0m   [0mSELECT * FROM "articles" WHERE ("articles"."id" = 5) [0m
+  [4;36;1mArticle Load (0.1ms)[0m   [0;1mSELECT "articles".id FROM "articles" WHERE ("articles"."title" = 'e' AND "articles".id <> 5) LIMIT 1[0m
+Redirected to http://localhost:3000/articles/5
+Completed in 9ms (DB: 0) | 302 Found [http://localhost/articles/5]
+
+
+Processing ArticlesController#show (for 127.0.0.1 at 2011-02-06 15:24:38) [GET]
+  Parameters: {"id"=>"5"}
+  [4;35;1mArticle Load (0.2ms)[0m   [0mSELECT * FROM "articles" WHERE ("articles"."id" = 5) [0m
+Rendering template within layouts/articles
+Rendering articles/show
+Completed in 7ms (View: 3, DB: 0) | 200 OK [http://localhost/articles/5]
+
+
+Processing ArticlesController#index (for 127.0.0.1 at 2011-02-06 15:24:39) [GET]
+  [4;36;1mArticle Load (0.5ms)[0m   [0;1mSELECT * FROM "articles" [0m
+Rendering template within layouts/articles
+Rendering articles/index
+Completed in 19ms (View: 14, DB: 0) | 200 OK [http://localhost/articles]
+  [4;36;1mSQL (0.2ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mselect sqlite_version(*)[0m
+  [4;36;1mSQL (1.4ms)[0m   [0;1mCREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) [0m
+  [4;35;1mSQL (0.0ms)[0m   [0mPRAGMA index_list("schema_migrations")[0m
+  [4;36;1mSQL (1.1ms)[0m   [0;1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [4;35;1mSQL (0.1ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+Migrating to CreateArticles (20110206211308)
+  [4;35;1mSQL (0.4ms)[0m   [0mCREATE TABLE "articles" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar(255), "author_name" varchar(255), "body" text, "created_at" datetime, "updated_at" datetime) [0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20110206211308')[0m
+  [4;35;1mSQL (0.2ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (0.1ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("articles")[0m
+
+
+Processing ArticlesController#index (for 127.0.0.1 at 2011-02-06 15:28:06) [GET]
+  [4;36;1mArticle Load (0.4ms)[0m   [0;1mSELECT * FROM "articles" [0m
+Rendering template within layouts/articles
+Rendering articles/index
+Completed in 70ms (View: 65, DB: 0) | 200 OK [http://localhost/articles]
+
+
+Processing ArticlesController#new (for 127.0.0.1 at 2011-02-06 15:28:07) [GET]
+Rendering template within layouts/articles
+Rendering articles/new
+Completed in 16ms (View: 12, DB: 0) | 200 OK [http://localhost/articles/new]
+
+
+Processing ArticlesController#create (for 127.0.0.1 at 2011-02-06 15:28:10) [POST]
+  Parameters: {"article"=>{"body"=>"a", "author_name"=>"a", "title"=>"a"}, "commit"=>"Create", "authenticity_token"=>"DeULmXlOnTqBYz3b5Ao1PBLZwJLIJuVVxTpwONNMqEQ="}
+  [4;35;1mArticle Load (0.1ms)[0m   [0mSELECT "articles".id FROM "articles" WHERE ("articles"."title" = 'a') LIMIT 1[0m
+  [4;36;1mArticle Create (0.3ms)[0m   [0;1mINSERT INTO "articles" ("created_at", "title", "author_name", "body", "updated_at") VALUES('2011-02-06 22:28:10', 'a', 'a', 'a', '2011-02-06 22:28:10')[0m
+Redirected to http://localhost:3000/articles/1
+Completed in 9ms (DB: 0) | 302 Found [http://localhost/articles]
+
+
+Processing ArticlesController#show (for 127.0.0.1 at 2011-02-06 15:28:10) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mArticle Load (0.2ms)[0m   [0mSELECT * FROM "articles" WHERE ("articles"."id" = 1) [0m
+Rendering template within layouts/articles
+Rendering articles/show
+
+ActionView::TemplateError (undefined method `number_of_edits' for #<Article:0x1035598b8>) on line #23 of app/views/articles/show.html.erb:
+20: 
+21: <p>
+22:   <b>Number of edits:</b>
+23:   <%=h @article.number_of_edits %>
+24: </p>
+25: 
+26: 
+
+    app/views/articles/show.html.erb:23
+    app/controllers/articles_controller.rb:18:in `show'
+
+Rendered rescues/_trace (186.0ms)
+Rendered rescues/_request_and_response (1.1ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.2ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mselect sqlite_version(*)[0m
+  [4;36;1mSQL (1.4ms)[0m   [0;1mCREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) [0m
+  [4;35;1mSQL (0.0ms)[0m   [0mPRAGMA index_list("schema_migrations")[0m
+  [4;36;1mSQL (1.2ms)[0m   [0;1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [4;35;1mSQL (0.1ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+Migrating to CreateArticles (20110206211308)
+  [4;35;1mSQL (0.4ms)[0m   [0mCREATE TABLE "articles" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar(255), "author_name" varchar(255), "body" text, "number_of_edits" integer, "created_at" datetime, "updated_at" datetime) [0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20110206211308')[0m
+  [4;35;1mSQL (0.2ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (0.1ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("articles")[0m
+
+
+Processing ArticlesController#show (for 127.0.0.1 at 2011-02-06 15:28:48) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mArticle Load (0.2ms)[0m   [0;1mSELECT * FROM "articles" WHERE ("articles"."id" = 1) [0m
+
+ActiveRecord::RecordNotFound (Couldn't find Article with ID=1):
+  app/controllers/articles_controller.rb:16:in `show'
+
+Rendered rescues/_trace (35.6ms)
+Rendered rescues/_request_and_response (1.2ms)
+Rendering rescues/layout (not_found)
+
+
+Processing ArticlesController#index (for 127.0.0.1 at 2011-02-06 15:28:50) [GET]
+  [4;35;1mArticle Load (0.3ms)[0m   [0mSELECT * FROM "articles" [0m
+Rendering template within layouts/articles
+Rendering articles/index
+Completed in 17ms (View: 13, DB: 0) | 200 OK [http://localhost/articles/]
+
+
+Processing ArticlesController#new (for 127.0.0.1 at 2011-02-06 15:28:51) [GET]
+Rendering template within layouts/articles
+Rendering articles/new
+Completed in 16ms (View: 11, DB: 0) | 200 OK [http://localhost/articles/new]
+
+
+Processing ArticlesController#create (for 127.0.0.1 at 2011-02-06 15:28:54) [POST]
+  Parameters: {"article"=>{"body"=>"a", "author_name"=>"a", "title"=>"a"}, "commit"=>"Create", "authenticity_token"=>"DeULmXlOnTqBYz3b5Ao1PBLZwJLIJuVVxTpwONNMqEQ="}
+  [4;36;1mArticle Load (0.1ms)[0m   [0;1mSELECT "articles".id FROM "articles" WHERE ("articles"."title" = 'a') LIMIT 1[0m
+  [4;35;1mArticle Create (0.3ms)[0m   [0mINSERT INTO "articles" ("created_at", "title", "author_name", "body", "number_of_edits", "updated_at") VALUES('2011-02-06 22:28:54', 'a', 'a', 'a', NULL, '2011-02-06 22:28:54')[0m
+Redirected to http://localhost:3000/articles/1
+Completed in 9ms (DB: 0) | 302 Found [http://localhost/articles]
+
+
+Processing ArticlesController#show (for 127.0.0.1 at 2011-02-06 15:28:54) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mArticle Load (0.2ms)[0m   [0;1mSELECT * FROM "articles" WHERE ("articles"."id" = 1) [0m
+Rendering template within layouts/articles
+Rendering articles/show
+Completed in 16ms (View: 11, DB: 0) | 200 OK [http://localhost/articles/1]
+
+
+Processing ArticlesController#index (for 127.0.0.1 at 2011-02-06 15:28:56) [GET]
+  [4;35;1mArticle Load (0.4ms)[0m   [0mSELECT * FROM "articles" [0m
+Rendering template within layouts/articles
+Rendering articles/index
+Completed in 10ms (View: 5, DB: 0) | 200 OK [http://localhost/articles]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2011-02-06 15:36:40) [GET]
+
+ActionController::RoutingError (No route matches "/store" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ArticlesController#index (for 127.0.0.1 at 2011-02-06 15:36:42) [GET]
+  [4;36;1mArticle Load (0.4ms)[0m   [0;1mSELECT * FROM "articles" [0m
+Rendering template within layouts/articles
+Rendering articles/index
+Completed in 10ms (View: 5, DB: 0) | 200 OK [http://localhost/articles]
+
+
+Processing ArticlesController#new (for 127.0.0.1 at 2011-02-06 15:36:44) [GET]
+Rendering template within layouts/articles
+Rendering articles/new
+Completed in 11ms (View: 7, DB: 0) | 200 OK [http://localhost/articles/new]
+
+
+Processing ArticlesController#create (for 127.0.0.1 at 2011-02-06 15:36:49) [POST]
+  Parameters: {"article"=>{"body"=>"b", "author_name"=>"b", "title"=>"b"}, "commit"=>"Create", "authenticity_token"=>"DeULmXlOnTqBYz3b5Ao1PBLZwJLIJuVVxTpwONNMqEQ="}
+  [4;35;1mArticle Load (0.1ms)[0m   [0mSELECT "articles".id FROM "articles" WHERE ("articles"."title" = 'b') LIMIT 1[0m
+  [4;36;1mArticle Create (0.3ms)[0m   [0;1mINSERT INTO "articles" ("created_at", "title", "author_name", "body", "number_of_edits", "updated_at") VALUES('2011-02-06 22:36:49', 'b', 'b', 'b', NULL, '2011-02-06 22:36:49')[0m
+Redirected to http://localhost:3000/articles/2
+Completed in 10ms (DB: 0) | 302 Found [http://localhost/articles]
+
+
+Processing ArticlesController#show (for 127.0.0.1 at 2011-02-06 15:36:49) [GET]
+  Parameters: {"id"=>"2"}
+  [4;35;1mArticle Load (0.2ms)[0m   [0mSELECT * FROM "articles" WHERE ("articles"."id" = 2) [0m
+Rendering template within layouts/articles
+Rendering articles/show
+Completed in 18ms (View: 11, DB: 0) | 200 OK [http://localhost/articles/2]
+
+
+Processing ArticlesController#index (for 127.0.0.1 at 2011-02-06 15:36:54) [GET]
+  [4;36;1mArticle Load (0.4ms)[0m   [0;1mSELECT * FROM "articles" [0m
+Rendering template within layouts/articles
+Rendering articles/index
+Completed in 12ms (View: 7, DB: 0) | 200 OK [http://localhost/articles]
+
+
+Processing ArticlesController#index (for 127.0.0.1 at 2011-02-06 15:36:56) [GET]
+  [4;35;1mArticle Load (0.4ms)[0m   [0mSELECT * FROM "articles" [0m
+Rendering template within layouts/articles
+Rendering articles/index
+Completed in 13ms (View: 8, DB: 0) | 200 OK [http://localhost/articles]
+
+
+Processing ArticlesController#new (for 127.0.0.1 at 2011-02-06 15:37:06) [GET]
+Rendering template within layouts/articles
+Rendering articles/new
+Completed in 75ms (View: 70, DB: 0) | 200 OK [http://localhost/articles/new]
+
+
+Processing ArticlesController#create (for 127.0.0.1 at 2011-02-06 15:37:09) [POST]
+  Parameters: {"article"=>{"body"=>"c", "author_name"=>"c", "title"=>"c"}, "commit"=>"Create", "authenticity_token"=>"DeULmXlOnTqBYz3b5Ao1PBLZwJLIJuVVxTpwONNMqEQ="}
+  [4;36;1mArticle Load (0.2ms)[0m   [0;1mSELECT "articles".id FROM "articles" WHERE ("articles"."title" = 'c') LIMIT 1[0m
+  [4;35;1mArticle Create (0.3ms)[0m   [0mINSERT INTO "articles" ("created_at", "title", "author_name", "body", "number_of_edits", "updated_at") VALUES('2011-02-06 22:37:09', 'c', 'c', 'c', NULL, '2011-02-06 22:37:09')[0m
+Redirected to http://localhost:3000/articles/3
+Completed in 9ms (DB: 0) | 302 Found [http://localhost/articles]
+
+
+Processing ArticlesController#show (for 127.0.0.1 at 2011-02-06 15:37:09) [GET]
+  Parameters: {"id"=>"3"}
+  [4;36;1mArticle Load (0.2ms)[0m   [0;1mSELECT * FROM "articles" WHERE ("articles"."id" = 3) [0m
+Rendering template within layouts/articles
+Rendering articles/show
+Completed in 27ms (View: 20, DB: 0) | 200 OK [http://localhost/articles/3]
+
+
+Processing ArticlesController#index (for 127.0.0.1 at 2011-02-06 15:37:10) [GET]
+  [4;35;1mArticle Load (0.4ms)[0m   [0mSELECT * FROM "articles" [0m
+Rendering template within layouts/articles
+Rendering articles/index
+Completed in 18ms (View: 14, DB: 0) | 200 OK [http://localhost/articles]
+
+
+Processing ArticlesController#index (for 127.0.0.1 at 2011-02-06 15:37:19) [GET]
+  [4;36;1mArticle Load (0.5ms)[0m   [0;1mSELECT * FROM "articles" [0m
+Rendering template within layouts/articles
+Rendering articles/index
+Completed in 15ms (View: 11, DB: 0) | 200 OK [http://localhost/articles]
+
+
+Processing ArticlesController#new (for 127.0.0.1 at 2011-02-06 15:37:20) [GET]
+Rendering template within layouts/articles
+Rendering articles/new
+Completed in 12ms (View: 6, DB: 0) | 200 OK [http://localhost/articles/new]
+
+
+Processing ArticlesController#create (for 127.0.0.1 at 2011-02-06 15:37:24) [POST]
+  Parameters: {"article"=>{"body"=>"d", "author_name"=>"d", "title"=>"d"}, "commit"=>"Create", "authenticity_token"=>"DeULmXlOnTqBYz3b5Ao1PBLZwJLIJuVVxTpwONNMqEQ="}
+  [4;35;1mArticle Load (0.1ms)[0m   [0mSELECT "articles".id FROM "articles" WHERE ("articles"."title" = 'd') LIMIT 1[0m
+  [4;36;1mArticle Create (0.3ms)[0m   [0;1mINSERT INTO "articles" ("created_at", "title", "author_name", "body", "number_of_edits", "updated_at") VALUES('2011-02-06 22:37:24', 'd', 'd', 'd', 1, '2011-02-06 22:37:24')[0m
+Redirected to http://localhost:3000/articles/4
+Completed in 10ms (DB: 0) | 302 Found [http://localhost/articles]
+
+
+Processing ArticlesController#show (for 127.0.0.1 at 2011-02-06 15:37:24) [GET]
+  Parameters: {"id"=>"4"}
+  [4;35;1mArticle Load (0.4ms)[0m   [0mSELECT * FROM "articles" WHERE ("articles"."id" = 4) [0m
+Rendering template within layouts/articles
+Rendering articles/show
+Completed in 115ms (View: 4, DB: 0) | 200 OK [http://localhost/articles/4]
+
+
+Processing ArticlesController#index (for 127.0.0.1 at 2011-02-06 15:37:34) [GET]
+  [4;36;1mArticle Load (0.5ms)[0m   [0;1mSELECT * FROM "articles" [0m
+Rendering template within layouts/articles
+Rendering articles/index
+Completed in 17ms (View: 12, DB: 0) | 200 OK [http://localhost/articles]
+
+
+Processing ArticlesController#index (for 127.0.0.1 at 2011-02-06 15:37:58) [GET]
+  [4;35;1mArticle Load (0.5ms)[0m   [0mSELECT * FROM "articles" [0m
+Rendering template within layouts/articles
+Rendering articles/index
+Completed in 17ms (View: 12, DB: 0) | 200 OK [http://localhost/articles]
+
+
+Processing ArticlesController#new (for 127.0.0.1 at 2011-02-06 15:37:59) [GET]
+Rendering template within layouts/articles
+Rendering articles/new
+Completed in 11ms (View: 6, DB: 0) | 200 OK [http://localhost/articles/new]
+
+
+Processing ArticlesController#create (for 127.0.0.1 at 2011-02-06 15:38:03) [POST]
+  Parameters: {"article"=>{"body"=>"e", "author_name"=>"e", "title"=>"e"}, "commit"=>"Create", "authenticity_token"=>"DeULmXlOnTqBYz3b5Ao1PBLZwJLIJuVVxTpwONNMqEQ="}
+
+ArgumentError (wrong number of arguments (1 for 0)):
+  app/controllers/articles_controller.rb:43:in `initialize'
+  app/controllers/articles_controller.rb:43:in `new'
+  app/controllers/articles_controller.rb:43:in `create'
+
+Rendered rescues/_trace (33.9ms)
+Rendered rescues/_request_and_response (1.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ArticlesController#create (for 127.0.0.1 at 2011-02-06 15:38:14) [POST]
+  Parameters: {"article"=>{"body"=>"e", "author_name"=>"e", "title"=>"e"}, "commit"=>"Create", "authenticity_token"=>"DeULmXlOnTqBYz3b5Ao1PBLZwJLIJuVVxTpwONNMqEQ="}
+  [4;36;1mArticle Load (0.1ms)[0m   [0;1mSELECT "articles".id FROM "articles" WHERE ("articles"."title" IS NULL) LIMIT 1[0m
+Rendering template within layouts/articles
+Rendering articles/new
+Completed in 84ms (View: 77, DB: 0) | 200 OK [http://localhost/articles]
+
+
+Processing ArticlesController#create (for 127.0.0.1 at 2011-02-06 15:38:18) [POST]
+  Parameters: {"article"=>{"body"=>"e", "author_name"=>"e", "title"=>"e"}, "commit"=>"Create", "authenticity_token"=>"DeULmXlOnTqBYz3b5Ao1PBLZwJLIJuVVxTpwONNMqEQ="}
+  [4;35;1mArticle Load (0.1ms)[0m   [0mSELECT "articles".id FROM "articles" WHERE ("articles"."title" IS NULL) LIMIT 1[0m
+Rendering template within layouts/articles
+Rendering articles/new
+Completed in 19ms (View: 12, DB: 0) | 200 OK [http://localhost/articles]
+
+
+Processing ArticlesController#create (for 127.0.0.1 at 2011-02-06 15:38:29) [POST]
+  Parameters: {"article"=>{"body"=>"e", "author_name"=>"e", "title"=>"e"}, "commit"=>"Create", "authenticity_token"=>"DeULmXlOnTqBYz3b5Ao1PBLZwJLIJuVVxTpwONNMqEQ="}
+  [4;36;1mArticle Load (0.1ms)[0m   [0;1mSELECT "articles".id FROM "articles" WHERE ("articles"."title" = 'e') LIMIT 1[0m
+  [4;35;1mArticle Create (0.3ms)[0m   [0mINSERT INTO "articles" ("created_at", "title", "author_name", "body", "number_of_edits", "updated_at") VALUES('2011-02-06 22:38:29', 'e', 'e', 'e', 0, '2011-02-06 22:38:29')[0m
+Redirected to http://localhost:3000/articles/5
+Completed in 9ms (DB: 0) | 302 Found [http://localhost/articles]
+
+
+Processing ArticlesController#show (for 127.0.0.1 at 2011-02-06 15:38:29) [GET]
+  Parameters: {"id"=>"5"}
+  [4;36;1mArticle Load (0.2ms)[0m   [0;1mSELECT * FROM "articles" WHERE ("articles"."id" = 5) [0m
+Rendering template within layouts/articles
+Rendering articles/show
+Completed in 8ms (View: 3, DB: 0) | 200 OK [http://localhost/articles/5]
+
+
+Processing ArticlesController#edit (for 127.0.0.1 at 2011-02-06 15:38:31) [GET]
+  Parameters: {"id"=>"5"}
+  [4;35;1mArticle Load (0.2ms)[0m   [0mSELECT * FROM "articles" WHERE ("articles"."id" = 5) [0m
+Rendering template within layouts/articles
+Rendering articles/edit
+Completed in 16ms (View: 11, DB: 0) | 200 OK [http://localhost/articles/5/edit]
+
+
+Processing ArticlesController#index (for 127.0.0.1 at 2011-02-06 15:38:33) [GET]
+  [4;36;1mArticle Load (0.5ms)[0m   [0;1mSELECT * FROM "articles" [0m
+Rendering template within layouts/articles
+Rendering articles/index
+Completed in 18ms (View: 14, DB: 0) | 200 OK [http://localhost/articles]
+
+
+Processing ArticlesController#index (for 127.0.0.1 at 2011-02-06 15:40:47) [GET]
+  [4;35;1mArticle Load (0.5ms)[0m   [0mSELECT * FROM "articles" [0m
+Rendering template within layouts/articles
+Rendering articles/index
+Completed in 20ms (View: 15, DB: 0) | 200 OK [http://localhost/articles]
+
+
+Processing ArticlesController#edit (for 127.0.0.1 at 2011-02-06 15:40:49) [GET]
+  Parameters: {"id"=>"4"}
+  [4;36;1mArticle Load (0.2ms)[0m   [0;1mSELECT * FROM "articles" WHERE ("articles"."id" = 4) [0m
+Rendering template within layouts/articles
+Rendering articles/edit
+Completed in 75ms (View: 70, DB: 0) | 200 OK [http://localhost/articles/4/edit]
+
+
+Processing ArticlesController#update (for 127.0.0.1 at 2011-02-06 15:40:54) [PUT]
+  Parameters: {"article"=>{"body"=>"d", "author_name"=>"d", "title"=>"d"}, "commit"=>"Save Changes", "authenticity_token"=>"DeULmXlOnTqBYz3b5Ao1PBLZwJLIJuVVxTpwONNMqEQ=", "id"=>"4"}
+  [4;35;1mArticle Load (1.0ms)[0m   [0mSELECT * FROM "articles" WHERE ("articles"."id" = 4) [0m
+  [4;36;1mArticle Load (0.2ms)[0m   [0;1mSELECT "articles".id FROM "articles" WHERE ("articles"."title" = 'd' AND "articles".id <> 4) LIMIT 1[0m
+Redirected to http://localhost:3000/articles/4
+Completed in 9ms (DB: 1) | 302 Found [http://localhost/articles/4]
+
+
+Processing ArticlesController#show (for 127.0.0.1 at 2011-02-06 15:40:54) [GET]
+  Parameters: {"id"=>"4"}
+  [4;35;1mArticle Load (0.2ms)[0m   [0mSELECT * FROM "articles" WHERE ("articles"."id" = 4) [0m
+Rendering template within layouts/articles
+Rendering articles/show
+Completed in 8ms (View: 3, DB: 0) | 200 OK [http://localhost/articles/4]
+
+
+Processing ArticlesController#update (for 127.0.0.1 at 2011-02-06 15:41:57) [PUT]
+  Parameters: {"article"=>{"body"=>"ddasd", "author_name"=>"d", "title"=>"d"}, "commit"=>"Save Changes", "authenticity_token"=>"DeULmXlOnTqBYz3b5Ao1PBLZwJLIJuVVxTpwONNMqEQ=", "id"=>"4"}
+  [4;36;1mArticle Load (0.2ms)[0m   [0;1mSELECT * FROM "articles" WHERE ("articles"."id" = 4) [0m
+
+NoMethodError (You have a nil object when you didn't expect it!
+You might have expected an instance of Array.
+The error occurred while evaluating nil.+):
+  app/models/article.rb:9:in `increment_edits'
+  app/controllers/articles_controller.rb:61:in `update'
+
+Rendered rescues/_trace (30.9ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ArticlesController#edit (for 127.0.0.1 at 2011-02-06 15:42:14) [GET]
+  Parameters: {"id"=>"5"}
+  [4;35;1mArticle Load (0.1ms)[0m   [0mSELECT * FROM "articles" WHERE ("articles"."id" = 5) [0m
+Rendering template within layouts/articles
+Rendering articles/edit
+Completed in 12ms (View: 7, DB: 0) | 200 OK [http://localhost/articles/5/edit]
+
+
+Processing ArticlesController#update (for 127.0.0.1 at 2011-02-06 15:42:17) [PUT]
+  Parameters: {"article"=>{"body"=>"esdf", "author_name"=>"e", "title"=>"e"}, "commit"=>"Save Changes", "authenticity_token"=>"DeULmXlOnTqBYz3b5Ao1PBLZwJLIJuVVxTpwONNMqEQ=", "id"=>"5"}
+  [4;36;1mArticle Load (0.2ms)[0m   [0;1mSELECT * FROM "articles" WHERE ("articles"."id" = 5) [0m
+
+NoMethodError (You have a nil object when you didn't expect it!
+You might have expected an instance of Array.
+The error occurred while evaluating nil.+):
+  app/models/article.rb:9:in `increment_edits'
+  app/controllers/articles_controller.rb:61:in `update'
+
+Rendered rescues/_trace (103.8ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ArticlesController#update (for 127.0.0.1 at 2011-02-06 15:42:43) [PUT]
+  Parameters: {"article"=>{"body"=>"esdfsdf", "author_name"=>"e", "title"=>"e"}, "commit"=>"Save Changes", "authenticity_token"=>"DeULmXlOnTqBYz3b5Ao1PBLZwJLIJuVVxTpwONNMqEQ=", "id"=>"5"}
+  [4;35;1mArticle Load (0.2ms)[0m   [0mSELECT * FROM "articles" WHERE ("articles"."id" = 5) [0m
+  [4;36;1mArticle Load (0.2ms)[0m   [0;1mSELECT "articles".id FROM "articles" WHERE ("articles"."title" = 'e' AND "articles".id <> 5) LIMIT 1[0m
+  [4;35;1mArticle Update (0.2ms)[0m   [0mUPDATE "articles" SET "updated_at" = '2011-02-06 22:42:43', "number_of_edits" = 1, "body" = 'esdfsdf' WHERE "id" = 5[0m
+Redirected to http://localhost:3000/articles/5
+Completed in 11ms (DB: 1) | 302 Found [http://localhost/articles/5]
+
+
+Processing ArticlesController#show (for 127.0.0.1 at 2011-02-06 15:42:43) [GET]
+  Parameters: {"id"=>"5"}
+  [4;36;1mArticle Load (0.2ms)[0m   [0;1mSELECT * FROM "articles" WHERE ("articles"."id" = 5) [0m
+Rendering template within layouts/articles
+Rendering articles/show
+Completed in 8ms (View: 3, DB: 0) | 200 OK [http://localhost/articles/5]
+
+
+Processing ArticlesController#index (for 127.0.0.1 at 2011-02-06 15:42:45) [GET]
+  [4;35;1mArticle Load (0.5ms)[0m   [0mSELECT * FROM "articles" [0m
+Rendering template within layouts/articles
+Rendering articles/index
+Completed in 18ms (View: 14, DB: 0) | 200 OK [http://localhost/articles]
+
+
+Processing ArticlesController#edit (for 127.0.0.1 at 2011-02-06 15:42:48) [GET]
+  Parameters: {"id"=>"5"}
+  [4;36;1mArticle Load (0.2ms)[0m   [0;1mSELECT * FROM "articles" WHERE ("articles"."id" = 5) [0m
+Rendering template within layouts/articles
+Rendering articles/edit
+Completed in 12ms (View: 7, DB: 0) | 200 OK [http://localhost/articles/5/edit]
+
+
+Processing ArticlesController#update (for 127.0.0.1 at 2011-02-06 15:42:51) [PUT]
+  Parameters: {"article"=>{"body"=>"eeee", "author_name"=>"e", "title"=>"e"}, "commit"=>"Save Changes", "authenticity_token"=>"DeULmXlOnTqBYz3b5Ao1PBLZwJLIJuVVxTpwONNMqEQ=", "id"=>"5"}
+  [4;35;1mArticle Load (0.2ms)[0m   [0mSELECT * FROM "articles" WHERE ("articles"."id" = 5) [0m
+  [4;36;1mArticle Load (0.1ms)[0m   [0;1mSELECT "articles".id FROM "articles" WHERE ("articles"."title" = 'e' AND "articles".id <> 5) LIMIT 1[0m
+  [4;35;1mArticle Update (0.3ms)[0m   [0mUPDATE "articles" SET "updated_at" = '2011-02-06 22:42:51', "number_of_edits" = 2, "body" = 'eeee' WHERE "id" = 5[0m
+Redirected to http://localhost:3000/articles/5
+Completed in 10ms (DB: 1) | 302 Found [http://localhost/articles/5]
+
+
+Processing ArticlesController#show (for 127.0.0.1 at 2011-02-06 15:42:51) [GET]
+  Parameters: {"id"=>"5"}
+  [4;36;1mArticle Load (0.2ms)[0m   [0;1mSELECT * FROM "articles" WHERE ("articles"."id" = 5) [0m
+Rendering template within layouts/articles
+Rendering articles/show
+Completed in 8ms (View: 3, DB: 0) | 200 OK [http://localhost/articles/5]
+
+
+Processing ArticlesController#edit (for 127.0.0.1 at 2011-02-06 15:42:52) [GET]
+  Parameters: {"id"=>"5"}
+  [4;35;1mArticle Load (0.2ms)[0m   [0mSELECT * FROM "articles" WHERE ("articles"."id" = 5) [0m
+Rendering template within layouts/articles
+Rendering articles/edit
+Completed in 75ms (View: 71, DB: 0) | 200 OK [http://localhost/articles/5/edit]
+
+
+Processing ArticlesController#update (for 127.0.0.1 at 2011-02-06 15:43:17) [PUT]
+  Parameters: {"article"=>{"body"=>"", "author_name"=>"e", "title"=>"e"}, "commit"=>"Save Changes", "authenticity_token"=>"DeULmXlOnTqBYz3b5Ao1PBLZwJLIJuVVxTpwONNMqEQ=", "id"=>"5"}
+  [4;36;1mArticle Load (0.2ms)[0m   [0;1mSELECT * FROM "articles" WHERE ("articles"."id" = 5) [0m
+  [4;35;1mArticle Load (0.1ms)[0m   [0mSELECT "articles".id FROM "articles" WHERE ("articles"."title" = 'e' AND "articles".id <> 5) LIMIT 1[0m
+Rendering template within layouts/articles
+Rendering articles/edit
+Completed in 17ms (View: 9, DB: 0) | 200 OK [http://localhost/articles/5]
+
+
+Processing ArticlesController#update (for 127.0.0.1 at 2011-02-06 15:43:20) [PUT]
+  Parameters: {"article"=>{"body"=>"hjghj", "author_name"=>"e", "title"=>"e"}, "commit"=>"Save Changes", "authenticity_token"=>"DeULmXlOnTqBYz3b5Ao1PBLZwJLIJuVVxTpwONNMqEQ=", "id"=>"5"}
+  [4;36;1mArticle Load (0.2ms)[0m   [0;1mSELECT * FROM "articles" WHERE ("articles"."id" = 5) [0m
+  [4;35;1mArticle Load (0.1ms)[0m   [0mSELECT "articles".id FROM "articles" WHERE ("articles"."title" = 'e' AND "articles".id <> 5) LIMIT 1[0m
+  [4;36;1mArticle Update (0.3ms)[0m   [0;1mUPDATE "articles" SET "updated_at" = '2011-02-06 22:43:20', "number_of_edits" = 3, "body" = 'hjghj' WHERE "id" = 5[0m
+Redirected to http://localhost:3000/articles/5
+Completed in 10ms (DB: 1) | 302 Found [http://localhost/articles/5]
+
+
+Processing ArticlesController#show (for 127.0.0.1 at 2011-02-06 15:43:20) [GET]
+  Parameters: {"id"=>"5"}
+  [4;35;1mArticle Load (0.2ms)[0m   [0mSELECT * FROM "articles" WHERE ("articles"."id" = 5) [0m
+Rendering template within layouts/articles
+Rendering articles/show
+Completed in 17ms (View: 11, DB: 0) | 200 OK [http://localhost/articles/5]
+
+
+Processing ArticlesController#index (for 127.0.0.1 at 2011-02-06 15:43:22) [GET]
+  [4;36;1mArticle Load (0.5ms)[0m   [0;1mSELECT * FROM "articles" [0m
+Rendering template within layouts/articles
+Rendering articles/index
+Completed in 18ms (View: 14, DB: 0) | 200 OK [http://localhost/articles]
+
+
+Processing ArticlesController#edit (for 127.0.0.1 at 2011-02-06 15:44:23) [GET]
+  Parameters: {"id"=>"4"}
+  [4;35;1mArticle Load (0.2ms)[0m   [0mSELECT * FROM "articles" WHERE ("articles"."id" = 4) [0m
+Rendering template within layouts/articles
+Rendering articles/edit
+Completed in 12ms (View: 7, DB: 0) | 200 OK [http://localhost/articles/4/edit]
+
+
+Processing ArticlesController#update (for 127.0.0.1 at 2011-02-06 15:44:26) [PUT]
+  Parameters: {"article"=>{"body"=>"dddddd", "author_name"=>"d", "title"=>"d"}, "commit"=>"Save Changes", "authenticity_token"=>"DeULmXlOnTqBYz3b5Ao1PBLZwJLIJuVVxTpwONNMqEQ=", "id"=>"4"}
+  [4;36;1mArticle Load (0.2ms)[0m   [0;1mSELECT * FROM "articles" WHERE ("articles"."id" = 4) [0m
+  [4;35;1mArticle Load (0.2ms)[0m   [0mSELECT "articles".id FROM "articles" WHERE ("articles"."title" = 'd' AND "articles".id <> 4) LIMIT 1[0m
+  [4;36;1mArticle Update (0.3ms)[0m   [0;1mUPDATE "articles" SET "updated_at" = '2011-02-06 22:44:26', "body" = 'dddddd' WHERE "id" = 4[0m
+Redirected to http://localhost:3000/articles/4
+Completed in 10ms (DB: 1) | 302 Found [http://localhost/articles/4]
+
+
+Processing ArticlesController#show (for 127.0.0.1 at 2011-02-06 15:44:26) [GET]
+  Parameters: {"id"=>"4"}
+  [4;35;1mArticle Load (0.2ms)[0m   [0mSELECT * FROM "articles" WHERE ("articles"."id" = 4) [0m
+Rendering template within layouts/articles
+Rendering articles/show
+Completed in 8ms (View: 3, DB: 0) | 200 OK [http://localhost/articles/4]
+
+
+Processing ArticlesController#edit (for 127.0.0.1 at 2011-02-06 15:44:27) [GET]
+  Parameters: {"id"=>"4"}
+  [4;36;1mArticle Load (0.2ms)[0m   [0;1mSELECT * FROM "articles" WHERE ("articles"."id" = 4) [0m
+Rendering template within layouts/articles
+Rendering articles/edit
+Completed in 13ms (View: 7, DB: 0) | 200 OK [http://localhost/articles/4/edit]
+
+
+Processing ArticlesController#update (for 127.0.0.1 at 2011-02-06 15:44:29) [PUT]
+  Parameters: {"article"=>{"body"=>"ddddddddd", "author_name"=>"d", "title"=>"d"}, "commit"=>"Save Changes", "authenticity_token"=>"DeULmXlOnTqBYz3b5Ao1PBLZwJLIJuVVxTpwONNMqEQ=", "id"=>"4"}
+  [4;35;1mArticle Load (0.2ms)[0m   [0mSELECT * FROM "articles" WHERE ("articles"."id" = 4) [0m
+  [4;36;1mArticle Load (0.1ms)[0m   [0;1mSELECT "articles".id FROM "articles" WHERE ("articles"."title" = 'd' AND "articles".id <> 4) LIMIT 1[0m
+  [4;35;1mArticle Update (0.2ms)[0m   [0mUPDATE "articles" SET "updated_at" = '2011-02-06 22:44:29', "body" = 'ddddddddd' WHERE "id" = 4[0m
+Redirected to http://localhost:3000/articles/4
+Completed in 10ms (DB: 1) | 302 Found [http://localhost/articles/4]
+
+
+Processing ArticlesController#show (for 127.0.0.1 at 2011-02-06 15:44:29) [GET]
+  Parameters: {"id"=>"4"}
+  [4;36;1mArticle Load (0.2ms)[0m   [0;1mSELECT * FROM "articles" WHERE ("articles"."id" = 4) [0m
+Rendering template within layouts/articles
+Rendering articles/show
+Completed in 13ms (View: 4, DB: 0) | 200 OK [http://localhost/articles/4]
+
+
+Processing ArticlesController#index (for 127.0.0.1 at 2011-02-06 15:44:30) [GET]
+  [4;35;1mArticle Load (0.5ms)[0m   [0mSELECT * FROM "articles" [0m
+Rendering template within layouts/articles
+Rendering articles/index
+Completed in 19ms (View: 15, DB: 0) | 200 OK [http://localhost/articles]
+
+
+Processing ArticlesController#edit (for 127.0.0.1 at 2011-02-06 15:44:32) [GET]
+  Parameters: {"id"=>"4"}
+  [4;36;1mArticle Load (0.2ms)[0m   [0;1mSELECT * FROM "articles" WHERE ("articles"."id" = 4) [0m
+Rendering template within layouts/articles
+Rendering articles/edit
+Completed in 12ms (View: 7, DB: 0) | 200 OK [http://localhost/articles/4/edit]
+
+
+Processing ArticlesController#update (for 127.0.0.1 at 2011-02-06 15:44:35) [PUT]
+  Parameters: {"article"=>{"body"=>"dddddddddddddd", "author_name"=>"d", "title"=>"d"}, "commit"=>"Save Changes", "authenticity_token"=>"DeULmXlOnTqBYz3b5Ao1PBLZwJLIJuVVxTpwONNMqEQ=", "id"=>"4"}
+  [4;35;1mArticle Load (0.2ms)[0m   [0mSELECT * FROM "articles" WHERE ("articles"."id" = 4) [0m
+  [4;36;1mArticle Load (0.2ms)[0m   [0;1mSELECT "articles".id FROM "articles" WHERE ("articles"."title" = 'd' AND "articles".id <> 4) LIMIT 1[0m
+  [4;35;1mArticle Update (0.3ms)[0m   [0mUPDATE "articles" SET "updated_at" = '2011-02-06 22:44:35', "body" = 'dddddddddddddd' WHERE "id" = 4[0m
+Redirected to http://localhost:3000/articles/4
+Completed in 10ms (DB: 1) | 302 Found [http://localhost/articles/4]
+
+
+Processing ArticlesController#show (for 127.0.0.1 at 2011-02-06 15:44:35) [GET]
+  Parameters: {"id"=>"4"}
+  [4;36;1mArticle Load (0.2ms)[0m   [0;1mSELECT * FROM "articles" WHERE ("articles"."id" = 4) [0m
+Rendering template within layouts/articles
+Rendering articles/show
+Completed in 8ms (View: 3, DB: 0) | 200 OK [http://localhost/articles/4]
+
+
+Processing ArticlesController#edit (for 127.0.0.1 at 2011-02-06 15:44:53) [GET]
+  Parameters: {"id"=>"4"}
+  [4;35;1mArticle Load (0.2ms)[0m   [0mSELECT * FROM "articles" WHERE ("articles"."id" = 4) [0m
+Rendering template within layouts/articles
+Rendering articles/edit
+Completed in 12ms (View: 8, DB: 0) | 200 OK [http://localhost/articles/4/edit]
+
+
+Processing ArticlesController#update (for 127.0.0.1 at 2011-02-06 15:44:55) [PUT]
+  Parameters: {"article"=>{"body"=>"dddddddddddddd", "author_name"=>"d", "title"=>"d"}, "commit"=>"Save Changes", "authenticity_token"=>"DeULmXlOnTqBYz3b5Ao1PBLZwJLIJuVVxTpwONNMqEQ=", "id"=>"4"}
+  [4;36;1mArticle Load (0.2ms)[0m   [0;1mSELECT * FROM "articles" WHERE ("articles"."id" = 4) [0m
+  [4;35;1mArticle Load (0.1ms)[0m   [0mSELECT "articles".id FROM "articles" WHERE ("articles"."title" = 'd' AND "articles".id <> 4) LIMIT 1[0m
+  [4;36;1mArticle Update (0.2ms)[0m   [0;1mUPDATE "articles" SET "updated_at" = '2011-02-06 22:44:55', "number_of_edits" = 2 WHERE "id" = 4[0m
+Redirected to http://localhost:3000/articles/4
+Completed in 10ms (DB: 1) | 302 Found [http://localhost/articles/4]
+
+
+Processing ArticlesController#show (for 127.0.0.1 at 2011-02-06 15:44:55) [GET]
+  Parameters: {"id"=>"4"}
+  [4;35;1mArticle Load (0.2ms)[0m   [0mSELECT * FROM "articles" WHERE ("articles"."id" = 4) [0m
+Rendering template within layouts/articles
+Rendering articles/show
+Completed in 109ms (View: 3, DB: 0) | 200 OK [http://localhost/articles/4]
+
+
+Processing ArticlesController#edit (for 127.0.0.1 at 2011-02-06 15:44:57) [GET]
+  Parameters: {"id"=>"4"}
+  [4;36;1mArticle Load (0.2ms)[0m   [0;1mSELECT * FROM "articles" WHERE ("articles"."id" = 4) [0m
+Rendering template within layouts/articles
+Rendering articles/edit
+Completed in 13ms (View: 8, DB: 0) | 200 OK [http://localhost/articles/4/edit]
+
+
+Processing ArticlesController#update (for 127.0.0.1 at 2011-02-06 15:44:58) [PUT]
+  Parameters: {"article"=>{"body"=>"dddddddddddddd", "author_name"=>"d", "title"=>"d"}, "commit"=>"Save Changes", "authenticity_token"=>"DeULmXlOnTqBYz3b5Ao1PBLZwJLIJuVVxTpwONNMqEQ=", "id"=>"4"}
+  [4;35;1mArticle Load (0.2ms)[0m   [0mSELECT * FROM "articles" WHERE ("articles"."id" = 4) [0m
+  [4;36;1mArticle Load (0.1ms)[0m   [0;1mSELECT "articles".id FROM "articles" WHERE ("articles"."title" = 'd' AND "articles".id <> 4) LIMIT 1[0m
+  [4;35;1mArticle Update (0.2ms)[0m   [0mUPDATE "articles" SET "updated_at" = '2011-02-06 22:44:58', "number_of_edits" = 3 WHERE "id" = 4[0m
+Redirected to http://localhost:3000/articles/4
+Completed in 10ms (DB: 1) | 302 Found [http://localhost/articles/4]
+
+
+Processing ArticlesController#show (for 127.0.0.1 at 2011-02-06 15:44:58) [GET]
+  Parameters: {"id"=>"4"}
+  [4;36;1mArticle Load (0.8ms)[0m   [0;1mSELECT * FROM "articles" WHERE ("articles"."id" = 4) [0m
+Rendering template within layouts/articles
+Rendering articles/show
+Completed in 10ms (View: 3, DB: 1) | 200 OK [http://localhost/articles/4]
+
+
+Processing ArticlesController#edit (for 127.0.0.1 at 2011-02-06 15:45:21) [GET]
+  Parameters: {"id"=>"4"}
+  [4;35;1mArticle Load (0.2ms)[0m   [0mSELECT * FROM "articles" WHERE ("articles"."id" = 4) [0m
+Rendering template within layouts/articles
+Rendering articles/edit
+Completed in 12ms (View: 8, DB: 0) | 200 OK [http://localhost/articles/4/edit]
+
+
+Processing ArticlesController#update (for 127.0.0.1 at 2011-02-06 15:45:24) [PUT]
+  Parameters: {"article"=>{"body"=>"", "author_name"=>"d", "title"=>"d"}, "commit"=>"Save Changes", "authenticity_token"=>"DeULmXlOnTqBYz3b5Ao1PBLZwJLIJuVVxTpwONNMqEQ=", "id"=>"4"}
+  [4;36;1mArticle Load (0.2ms)[0m   [0;1mSELECT * FROM "articles" WHERE ("articles"."id" = 4) [0m
+  [4;35;1mArticle Load (0.2ms)[0m   [0mSELECT "articles".id FROM "articles" WHERE ("articles"."title" = 'd' AND "articles".id <> 4) LIMIT 1[0m
+Rendering template within layouts/articles
+Rendering articles/edit
+Completed in 17ms (View: 9, DB: 0) | 200 OK [http://localhost/articles/4]
+
+
+Processing ArticlesController#update (for 127.0.0.1 at 2011-02-06 15:45:27) [PUT]
+  Parameters: {"article"=>{"body"=>"dd", "author_name"=>"d", "title"=>"d"}, "commit"=>"Save Changes", "authenticity_token"=>"DeULmXlOnTqBYz3b5Ao1PBLZwJLIJuVVxTpwONNMqEQ=", "id"=>"4"}
+  [4;36;1mArticle Load (0.2ms)[0m   [0;1mSELECT * FROM "articles" WHERE ("articles"."id" = 4) [0m
+  [4;35;1mArticle Load (0.1ms)[0m   [0mSELECT "articles".id FROM "articles" WHERE ("articles"."title" = 'd' AND "articles".id <> 4) LIMIT 1[0m
+  [4;36;1mArticle Update (0.3ms)[0m   [0;1mUPDATE "articles" SET "updated_at" = '2011-02-06 22:45:27', "number_of_edits" = 4, "body" = 'dd' WHERE "id" = 4[0m
+Redirected to http://localhost:3000/articles/4
+Completed in 10ms (DB: 1) | 302 Found [http://localhost/articles/4]
+
+
+Processing ArticlesController#show (for 127.0.0.1 at 2011-02-06 15:45:27) [GET]
+  Parameters: {"id"=>"4"}
+  [4;35;1mArticle Load (0.2ms)[0m   [0mSELECT * FROM "articles" WHERE ("articles"."id" = 4) [0m
+Rendering template within layouts/articles
+Rendering articles/show
+Completed in 9ms (View: 3, DB: 0) | 200 OK [http://localhost/articles/4]
+
+
+Processing ArticlesController#index (for 127.0.0.1 at 2011-02-06 15:56:42) [GET]
+  [4;36;1mArticle Load (0.5ms)[0m   [0;1mSELECT * FROM "articles" [0m
+Rendering template within layouts/articles
+Rendering articles/index
+Completed in 81ms (View: 77, DB: 0) | 200 OK [http://localhost/articles]
+
+
+Processing ArticlesController#show (for 127.0.0.1 at 2011-02-06 15:56:44) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mArticle Load (0.2ms)[0m   [0mSELECT * FROM "articles" WHERE ("articles"."id" = 1) [0m
+Rendering template within layouts/articles
+Rendering articles/show
+Completed in 8ms (View: 3, DB: 0) | 200 OK [http://localhost/articles/1]
+
+
+Processing ArticlesController#show (for 127.0.0.1 at 2011-02-06 15:57:33) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mArticle Load (0.2ms)[0m   [0;1mSELECT * FROM "articles" WHERE ("articles"."id" = 1) [0m
+Rendering template within layouts/articles
+Rendering articles/show
+Completed in 11ms (View: 6, DB: 0) | 200 OK [http://localhost/articles/1]
+
+
+Processing ArticlesController#show (for 127.0.0.1 at 2011-02-06 15:58:08) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mArticle Load (0.2ms)[0m   [0mSELECT * FROM "articles" WHERE ("articles"."id" = 1) [0m
+Rendering template within layouts/articles
+Rendering articles/show
+Completed in 11ms (View: 6, DB: 0) | 200 OK [http://localhost/articles/1]
+
+
+Processing ArticlesController#show (for 127.0.0.1 at 2011-02-06 15:58:54) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mArticle Load (0.2ms)[0m   [0;1mSELECT * FROM "articles" WHERE ("articles"."id" = 1) [0m
+Rendering template within layouts/articles
+Rendering articles/show
+Completed in 11ms (View: 7, DB: 0) | 200 OK [http://localhost/articles/1]
+
+
+Processing ArticlesController#edit (for 127.0.0.1 at 2011-02-06 16:00:08) [GET]
+  Parameters: {"id"=>"5"}
+  [4;35;1mArticle Load (0.2ms)[0m   [0mSELECT * FROM "articles" WHERE ("articles"."id" = 5) [0m
+Rendering template within layouts/articles
+Rendering articles/edit
+Completed in 12ms (View: 8, DB: 0) | 200 OK [http://localhost/articles/5/edit]
+
+
+Processing ArticlesController#show (for 127.0.0.1 at 2011-02-06 16:00:10) [GET]
+  Parameters: {"id"=>"5"}
+  [4;36;1mArticle Load (0.2ms)[0m   [0;1mSELECT * FROM "articles" WHERE ("articles"."id" = 5) [0m
+Rendering template within layouts/articles
+Rendering articles/show
+Completed in 11ms (View: 6, DB: 0) | 200 OK [http://localhost/articles/5]
+
+
+Processing ArticlesController#show (for 127.0.0.1 at 2011-02-06 16:00:18) [GET]
+  Parameters: {"id"=>"5"}
+  [4;35;1mArticle Load (0.2ms)[0m   [0mSELECT * FROM "articles" WHERE ("articles"."id" = 5) [0m
+Rendering template within layouts/articles
+Rendering articles/show
+Completed in 12ms (View: 7, DB: 0) | 200 OK [http://localhost/articles/5]
+
+
+Processing ArticlesController#show (for 127.0.0.1 at 2011-02-06 16:01:50) [GET]
+  Parameters: {"id"=>"5"}
+  [4;36;1mArticle Load (0.2ms)[0m   [0;1mSELECT * FROM "articles" WHERE ("articles"."id" = 5) [0m
+Rendering template within layouts/articles
+Rendering articles/show
+
+ActionView::TemplateError (undefined method `strftime' for 3:Fixnum) on line #6 of app/views/articles/show.html.erb:
+3: </h2>
+4: 
+5: <p>
+6:   By <%=h @article.author_name -%>, <%=h @article.number_of_edits.strftime("%b") %> edits since <%=h @article.created_at %>
+7: </p>
+8: 
+9: <p>
+
+    app/views/articles/show.html.erb:6
+    app/controllers/articles_controller.rb:18:in `show'
+
+Rendered rescues/_trace (40.9ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ArticlesController#index (for 127.0.0.1 at 2011-02-06 16:03:14) [GET]
+  [4;35;1mArticle Load (0.5ms)[0m   [0mSELECT * FROM "articles" [0m
+Rendering template within layouts/articles
+Rendering articles/index
+Completed in 19ms (View: 14, DB: 1) | 200 OK [http://localhost/articles]
+
+
+Processing ArticlesController#show (for 127.0.0.1 at 2011-02-06 16:03:16) [GET]
+  Parameters: {"id"=>"5"}
+  [4;36;1mArticle Load (0.2ms)[0m   [0;1mSELECT * FROM "articles" WHERE ("articles"."id" = 5) [0m
+Rendering template within layouts/articles
+Rendering articles/show
+Completed in 11ms (View: 6, DB: 0) | 200 OK [http://localhost/articles/5]
+
+
+Processing ArticlesController#show (for 127.0.0.1 at 2011-02-06 16:03:57) [GET]
+  Parameters: {"id"=>"5"}
+  [4;35;1mArticle Load (0.2ms)[0m   [0mSELECT * FROM "articles" WHERE ("articles"."id" = 5) [0m
+Rendering template within layouts/articles
+Rendering articles/show
+Completed in 81ms (View: 76, DB: 0) | 200 OK [http://localhost/articles/5]
+
+
+Processing ArticlesController#show (for 127.0.0.1 at 2011-02-06 16:04:09) [GET]
+  Parameters: {"id"=>"5"}
+  [4;36;1mArticle Load (0.3ms)[0m   [0;1mSELECT * FROM "articles" WHERE ("articles"."id" = 5) [0m
+Rendering template within layouts/articles
+Rendering articles/show
+Completed in 12ms (View: 7, DB: 0) | 200 OK [http://localhost/articles/5]
+
+
+Processing ArticlesController#show (for 127.0.0.1 at 2011-02-06 16:04:33) [GET]
+  Parameters: {"id"=>"5"}
+  [4;35;1mArticle Load (0.2ms)[0m   [0mSELECT * FROM "articles" WHERE ("articles"."id" = 5) [0m
+Rendering template within layouts/articles
+Rendering articles/show
+Completed in 12ms (View: 7, DB: 0) | 200 OK [http://localhost/articles/5]

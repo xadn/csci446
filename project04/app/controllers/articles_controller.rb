@@ -57,6 +57,8 @@ class ArticlesController < ApplicationController
   # PUT /articles/1.xml
   def update
     @article = Article.find(params[:id])
+    
+    @article.increment_edits
 
     respond_to do |format|
       if @article.update_attributes(params[:article])
