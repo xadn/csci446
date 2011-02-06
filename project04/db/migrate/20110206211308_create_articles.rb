@@ -4,9 +4,7 @@ class CreateArticles < ActiveRecord::Migration
       t.string :title
       t.string :author_name
       t.text :body
-      t.date :creation_date
       t.integer :number_of_edits
-
       t.timestamps
     end
   end

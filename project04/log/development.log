@@ -6,3 +6,734 @@ ActionController::RoutingError (No route matches "/store" with {:method=>:get}):
   
 
 Rendering rescues/layout (not_found)
+
+
+Processing ArticlesController#index (for 127.0.0.1 at 2011-02-06 14:15:43) [GET]
+  [4;36;1mArticle Load (0.0ms)[0m   [0;1mSQLite3::SQLException: no such table: articles: SELECT * FROM "articles" [0m
+
+ActiveRecord::StatementInvalid (SQLite3::SQLException: no such table: articles: SELECT * FROM "articles" ):
+  app/controllers/articles_controller.rb:5:in `index'
+
+Rendered rescues/_trace (40.9ms)
+Rendered rescues/_request_and_response (1.2ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2011-02-06 14:15:46) [GET]
+
+ActionController::RoutingError (No route matches "/article" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ArticlesController#index (for 127.0.0.1 at 2011-02-06 14:15:54) [GET]
+  [4;35;1mArticle Load (0.0ms)[0m   [0mSQLite3::SQLException: no such table: articles: SELECT * FROM "articles" [0m
+
+ActiveRecord::StatementInvalid (SQLite3::SQLException: no such table: articles: SELECT * FROM "articles" ):
+  app/controllers/articles_controller.rb:5:in `index'
+
+Rendered rescues/_trace (105.6ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ArticlesController#index (for 127.0.0.1 at 2011-02-06 14:16:08) [GET]
+  [4;36;1mArticle Load (0.0ms)[0m   [0;1mSQLite3::SQLException: no such table: articles: SELECT * FROM "articles" [0m
+
+ActiveRecord::StatementInvalid (SQLite3::SQLException: no such table: articles: SELECT * FROM "articles" ):
+  app/controllers/articles_controller.rb:5:in `index'
+
+Rendered rescues/_trace (37.0ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.2ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mselect sqlite_version(*)[0m
+  [4;36;1mSQL (1.3ms)[0m   [0;1mCREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) [0m
+  [4;35;1mSQL (0.0ms)[0m   [0mPRAGMA index_list("schema_migrations")[0m
+  [4;36;1mSQL (1.2ms)[0m   [0;1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [4;35;1mSQL (0.1ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+Migrating to CreateArticles (20110206211308)
+  [4;35;1mSQL (0.4ms)[0m   [0mCREATE TABLE "articles" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar(255), "author_name" varchar(255), "body" text, "creation_date" date, "number_of_edits" integer, "created_at" datetime, "updated_at" datetime) [0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20110206211308')[0m
+  [4;35;1mSQL (0.2ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (0.1ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("articles")[0m
+
+
+Processing ArticlesController#index (for 127.0.0.1 at 2011-02-06 14:16:35) [GET]
+  [4;35;1mArticle Load (0.3ms)[0m   [0mSELECT * FROM "articles" [0m
+Rendering template within layouts/articles
+Rendering articles/index
+Completed in 15ms (View: 12, DB: 0) | 200 OK [http://localhost/articles]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2011-02-06 14:16:39) [GET]
+
+ActionController::RoutingError (No route matches "/article" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ArticlesController#index (for 127.0.0.1 at 2011-02-06 14:16:40) [GET]
+  [4;36;1mArticle Load (0.3ms)[0m   [0;1mSELECT * FROM "articles" [0m
+Rendering template within layouts/articles
+Rendering articles/index
+Completed in 5ms (View: 1, DB: 0) | 200 OK [http://localhost/articles]
+
+
+Processing ArticlesController#new (for 127.0.0.1 at 2011-02-06 14:16:52) [GET]
+Rendering template within layouts/articles
+Rendering articles/new
+Completed in 93ms (View: 89, DB: 0) | 200 OK [http://localhost/articles/new]
+
+
+Processing ArticlesController#new (for 127.0.0.1 at 2011-02-06 14:18:36) [GET]
+Rendering template within layouts/articles
+Rendering articles/new
+Completed in 16ms (View: 11, DB: 0) | 200 OK [http://localhost/articles/new]
+
+
+Processing ArticlesController#new (for 127.0.0.1 at 2011-02-06 14:18:43) [GET]
+Rendering template within layouts/articles
+Rendering articles/new
+Completed in 15ms (View: 11, DB: 0) | 200 OK [http://localhost/articles/new]
+
+
+Processing ArticlesController#new (for 127.0.0.1 at 2011-02-06 14:19:11) [GET]
+Rendering template within layouts/articles
+Rendering articles/new
+Completed in 15ms (View: 11, DB: 0) | 200 OK [http://localhost/articles/new]
+
+
+Processing ArticlesController#new (for 127.0.0.1 at 2011-02-06 14:23:32) [GET]
+Rendering template within layouts/articles
+Rendering articles/new
+Completed in 12ms (View: 7, DB: 0) | 200 OK [http://localhost/articles/new]
+
+
+Processing ArticlesController#create (for 127.0.0.1 at 2011-02-06 14:23:34) [POST]
+  Parameters: {"article"=>{"body"=>"", "author_name"=>"", "title"=>""}, "commit"=>"Create", "authenticity_token"=>"DeULmXlOnTqBYz3b5Ao1PBLZwJLIJuVVxTpwONNMqEQ="}
+  [4;35;1mArticle Load (0.1ms)[0m   [0mSELECT "articles".id FROM "articles" WHERE ("articles"."title" = '') LIMIT 1[0m
+Rendering template within layouts/articles
+Rendering articles/new
+Completed in 19ms (View: 12, DB: 0) | 200 OK [http://localhost/articles]
+
+
+Processing ArticlesController#create (for 127.0.0.1 at 2011-02-06 14:24:06) [POST]
+  Parameters: {"article"=>{"body"=>"asjafsk asdlkfjkja aaksldfjskdf.", "author_name"=>"Andy", "title"=>"Andy likes rails"}, "commit"=>"Create", "authenticity_token"=>"DeULmXlOnTqBYz3b5Ao1PBLZwJLIJuVVxTpwONNMqEQ="}
+  [4;36;1mArticle Load (0.2ms)[0m   [0;1mSELECT "articles".id FROM "articles" WHERE ("articles"."title" = 'Andy likes rails') LIMIT 1[0m
+  [4;35;1mArticle Create (0.3ms)[0m   [0mINSERT INTO "articles" ("created_at", "title", "author_name", "body", "creation_date", "number_of_edits", "updated_at") VALUES('2011-02-06 21:24:06', 'Andy likes rails', 'Andy', 'asjafsk asdlkfjkja aaksldfjskdf.', NULL, NULL, '2011-02-06 21:24:06')[0m
+Redirected to http://localhost:3000/articles/1
+Completed in 10ms (DB: 0) | 302 Found [http://localhost/articles]
+
+
+Processing ArticlesController#show (for 127.0.0.1 at 2011-02-06 14:24:06) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mArticle Load (0.2ms)[0m   [0;1mSELECT * FROM "articles" WHERE ("articles"."id" = 1) [0m
+Rendering template within layouts/articles
+Rendering articles/show
+Completed in 109ms (View: 7, DB: 0) | 200 OK [http://localhost/articles/1]
+
+
+Processing ArticlesController#index (for 127.0.0.1 at 2011-02-06 14:24:09) [GET]
+  [4;35;1mArticle Load (0.4ms)[0m   [0mSELECT * FROM "articles" [0m
+Rendering template within layouts/articles
+Rendering articles/index
+Completed in 10ms (View: 5, DB: 0) | 200 OK [http://localhost/articles]
+
+
+Processing ArticlesController#edit (for 127.0.0.1 at 2011-02-06 14:25:23) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mArticle Load (0.2ms)[0m   [0;1mSELECT * FROM "articles" WHERE ("articles"."id" = 1) [0m
+Rendering template within layouts/articles
+Rendering articles/edit
+Completed in 16ms (View: 11, DB: 0) | 200 OK [http://localhost/articles/1/edit]
+  [4;36;1mSQL (0.3ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateArticles (20110206211308)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.1ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (0.1ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("articles")[0m
+
+
+Processing ArticlesController#index (for 127.0.0.1 at 2011-02-06 14:33:37) [GET]
+  [4;35;1mArticle Load (0.4ms)[0m   [0mSELECT * FROM "articles" [0m
+Rendering template within layouts/articles
+Rendering articles/index
+Completed in 11ms (View: 6, DB: 0) | 200 OK [http://localhost/articles]
+  [4;36;1mSQL (0.2ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mselect sqlite_version(*)[0m
+  [4;36;1mSQL (1.3ms)[0m   [0;1mCREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) [0m
+  [4;35;1mSQL (0.0ms)[0m   [0mPRAGMA index_list("schema_migrations")[0m
+  [4;36;1mSQL (1.1ms)[0m   [0;1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [4;35;1mSQL (0.1ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+Migrating to CreateArticles (20110206211308)
+  [4;35;1mSQL (0.4ms)[0m   [0mCREATE TABLE "articles" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar(255), "author_name" varchar(255), "body" text, "number_of_edits" integer, "created_at" datetime, "updated_at" datetime) [0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20110206211308')[0m
+  [4;35;1mSQL (0.2ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (0.1ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("articles")[0m
+
+
+Processing ArticlesController#index (for 127.0.0.1 at 2011-02-06 14:36:57) [GET]
+  [4;36;1mArticle Load (0.3ms)[0m   [0;1mSELECT * FROM "articles" [0m
+Rendering template within layouts/articles
+Rendering articles/index
+Completed in 10ms (View: 6, DB: 0) | 200 OK [http://localhost/articles]
+
+
+Processing ArticlesController#new (for 127.0.0.1 at 2011-02-06 14:36:59) [GET]
+Rendering template within layouts/articles
+Rendering articles/new
+Completed in 11ms (View: 7, DB: 0) | 200 OK [http://localhost/articles/new]
+
+
+Processing ArticlesController#create (for 127.0.0.1 at 2011-02-06 14:37:03) [POST]
+  Parameters: {"article"=>{"body"=>"a", "author_name"=>"a", "title"=>"a"}, "commit"=>"Create", "authenticity_token"=>"DeULmXlOnTqBYz3b5Ao1PBLZwJLIJuVVxTpwONNMqEQ="}
+  [4;35;1mArticle Load (0.1ms)[0m   [0mSELECT "articles".id FROM "articles" WHERE ("articles"."title" = 'a') LIMIT 1[0m
+  [4;36;1mArticle Create (0.3ms)[0m   [0;1mINSERT INTO "articles" ("created_at", "title", "author_name", "body", "number_of_edits", "updated_at") VALUES('2011-02-06 21:37:03', 'a', 'a', 'a', NULL, '2011-02-06 21:37:03')[0m
+Redirected to http://localhost:3000/articles/1
+Completed in 10ms (DB: 0) | 302 Found [http://localhost/articles]
+
+
+Processing ArticlesController#show (for 127.0.0.1 at 2011-02-06 14:37:03) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mArticle Load (0.2ms)[0m   [0mSELECT * FROM "articles" WHERE ("articles"."id" = 1) [0m
+Rendering template within layouts/articles
+Rendering articles/show
+Completed in 16ms (View: 11, DB: 0) | 200 OK [http://localhost/articles/1]
+
+
+Processing ArticlesController#index (for 127.0.0.1 at 2011-02-06 14:37:06) [GET]
+  [4;36;1mArticle Load (0.4ms)[0m   [0;1mSELECT * FROM "articles" [0m
+Rendering template within layouts/articles
+Rendering articles/index
+
+ActionView::TemplateError (undefined method `creation_date' for #<Article:0x10369c108>) on line #17 of app/views/articles/index.html.erb:
+14:     <td><%=h article.title %></td>
+15:     <td><%=h article.author_name %></td>
+16:     <td><%=h article.body %></td>
+17:     <td><%=h article.creation_date %></td>
+18:     <td><%=h article.number_of_edits %></td>
+19:     <td><%= link_to 'Show', article %></td>
+20:     <td><%= link_to 'Edit', edit_article_path(article) %></td>
+
+    app/views/articles/index.html.erb:17
+    app/views/articles/index.html.erb:12:in `each'
+    app/views/articles/index.html.erb:12
+    app/controllers/articles_controller.rb:7:in `index'
+
+Rendered rescues/_trace (42.6ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ArticlesController#index (for 127.0.0.1 at 2011-02-06 14:37:08) [GET]
+  [4;35;1mArticle Load (0.4ms)[0m   [0mSELECT * FROM "articles" [0m
+Rendering template within layouts/articles
+Rendering articles/index
+
+ActionView::TemplateError (undefined method `creation_date' for #<Article:0x1033a6db8>) on line #17 of app/views/articles/index.html.erb:
+14:     <td><%=h article.title %></td>
+15:     <td><%=h article.author_name %></td>
+16:     <td><%=h article.body %></td>
+17:     <td><%=h article.creation_date %></td>
+18:     <td><%=h article.number_of_edits %></td>
+19:     <td><%= link_to 'Show', article %></td>
+20:     <td><%= link_to 'Edit', edit_article_path(article) %></td>
+
+    app/views/articles/index.html.erb:17
+    app/views/articles/index.html.erb:12:in `each'
+    app/views/articles/index.html.erb:12
+    app/controllers/articles_controller.rb:7:in `index'
+
+Rendered rescues/_trace (114.6ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ArticlesController#index (for 127.0.0.1 at 2011-02-06 14:38:50) [GET]
+  [4;36;1mArticle Load (0.4ms)[0m   [0;1mSELECT * FROM "articles" [0m
+Rendering template within layouts/articles
+Rendering articles/index
+
+ActionView::TemplateError (undefined method `creation_date' for #<Article:0x10359cf28>) on line #17 of app/views/articles/index.html.erb:
+14:     <td><%=h article.title %></td>
+15:     <td><%=h article.author_name %></td>
+16:     <td><%=h article.body %></td>
+17:     <td><%=h article.creation_date %></td>
+18:     <td><%=h article.number_of_edits %></td>
+19:     <td><%= link_to 'Show', article %></td>
+20:     <td><%= link_to 'Edit', edit_article_path(article) %></td>
+
+    app/views/articles/index.html.erb:17
+    app/views/articles/index.html.erb:12:in `each'
+    app/views/articles/index.html.erb:12
+    app/controllers/articles_controller.rb:7:in `index'
+
+Rendered rescues/_trace (43.0ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ArticlesController#index (for 127.0.0.1 at 2011-02-06 14:38:55) [GET]
+  [4;35;1mArticle Load (0.4ms)[0m   [0mSELECT * FROM "articles" [0m
+Rendering template within layouts/articles
+Rendering articles/index
+
+ActionView::TemplateError (undefined method `creation_date' for #<Article:0x10323c680>) on line #17 of app/views/articles/index.html.erb:
+14:     <td><%=h article.title %></td>
+15:     <td><%=h article.author_name %></td>
+16:     <td><%=h article.body %></td>
+17:     <td><%=h article.creation_date %></td>
+18:     <td><%=h article.number_of_edits %></td>
+19:     <td><%= link_to 'Show', article %></td>
+20:     <td><%= link_to 'Edit', edit_article_path(article) %></td>
+
+    app/views/articles/index.html.erb:17
+    app/views/articles/index.html.erb:12:in `each'
+    app/views/articles/index.html.erb:12
+    app/controllers/articles_controller.rb:7:in `index'
+
+Rendered rescues/_trace (42.5ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ArticlesController#index (for 127.0.0.1 at 2011-02-06 14:39:01) [GET]
+  [4;36;1mArticle Load (0.4ms)[0m   [0;1mSELECT * FROM "articles" [0m
+Rendering template within layouts/articles
+Rendering articles/index
+
+ActionView::TemplateError (undefined method `creation_date' for #<Article:0x103456510>) on line #17 of app/views/articles/index.html.erb:
+14:     <td><%=h article.title %></td>
+15:     <td><%=h article.author_name %></td>
+16:     <td><%=h article.body %></td>
+17:     <td><%=h article.creation_date %></td>
+18:     <td><%=h article.number_of_edits %></td>
+19:     <td><%= link_to 'Show', article %></td>
+20:     <td><%= link_to 'Edit', edit_article_path(article) %></td>
+
+    app/views/articles/index.html.erb:17
+    app/views/articles/index.html.erb:12:in `each'
+    app/views/articles/index.html.erb:12
+    app/controllers/articles_controller.rb:7:in `index'
+
+Rendered rescues/_trace (114.6ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ArticlesController#index (for 127.0.0.1 at 2011-02-06 14:39:13) [GET]
+  [4;36;1mArticle Load (0.4ms)[0m   [0;1mSELECT * FROM "articles" [0m
+Rendering template within layouts/articles
+Rendering articles/index
+
+ActionView::TemplateError (undefined method `creation_date' for #<Article:0x1031469d8>) on line #17 of app/views/articles/index.html.erb:
+14:     <td><%=h article.title %></td>
+15:     <td><%=h article.author_name %></td>
+16:     <td><%=h article.body %></td>
+17:     <td><%=h article.creation_date %></td>
+18:     <td><%=h article.number_of_edits %></td>
+19:     <td><%= link_to 'Show', article %></td>
+20:     <td><%= link_to 'Edit', edit_article_path(article) %></td>
+
+    app/views/articles/index.html.erb:17
+    app/views/articles/index.html.erb:12:in `each'
+    app/views/articles/index.html.erb:12
+    app/controllers/articles_controller.rb:7:in `index'
+
+Rendered rescues/_trace (48.5ms)
+Rendered rescues/_request_and_response (1.2ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ArticlesController#new (for 127.0.0.1 at 2011-02-06 14:39:16) [GET]
+Rendering template within layouts/articles
+Rendering articles/new
+Completed in 17ms (View: 13, DB: 0) | 200 OK [http://localhost/articles/new]
+
+
+Processing ArticlesController#index (for 127.0.0.1 at 2011-02-06 14:39:17) [GET]
+  [4;35;1mArticle Load (0.4ms)[0m   [0mSELECT * FROM "articles" [0m
+Rendering template within layouts/articles
+Rendering articles/index
+
+ActionView::TemplateError (undefined method `creation_date' for #<Article:0x1032ac9a8>) on line #17 of app/views/articles/index.html.erb:
+14:     <td><%=h article.title %></td>
+15:     <td><%=h article.author_name %></td>
+16:     <td><%=h article.body %></td>
+17:     <td><%=h article.creation_date %></td>
+18:     <td><%=h article.number_of_edits %></td>
+19:     <td><%= link_to 'Show', article %></td>
+20:     <td><%= link_to 'Edit', edit_article_path(article) %></td>
+
+    app/views/articles/index.html.erb:17
+    app/views/articles/index.html.erb:12:in `each'
+    app/views/articles/index.html.erb:12
+    app/controllers/articles_controller.rb:7:in `index'
+
+Rendered rescues/_trace (42.9ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ArticlesController#index (for 127.0.0.1 at 2011-02-06 14:39:44) [GET]
+  [4;36;1mArticle Load (0.4ms)[0m   [0;1mSELECT * FROM "articles" [0m
+Rendering template within layouts/articles
+Rendering articles/index
+Completed in 13ms (View: 9, DB: 0) | 200 OK [http://localhost/articles]
+
+
+Processing ArticlesController#index (for 127.0.0.1 at 2011-02-06 14:40:13) [GET]
+  [4;35;1mArticle Load (0.4ms)[0m   [0mSELECT * FROM "articles" [0m
+Rendering template within layouts/articles
+Rendering articles/index
+Completed in 17ms (View: 12, DB: 0) | 200 OK [http://localhost/articles]
+
+
+Processing ArticlesController#edit (for 127.0.0.1 at 2011-02-06 14:40:45) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mArticle Load (0.2ms)[0m   [0;1mSELECT * FROM "articles" WHERE ("articles"."id" = 1) [0m
+Rendering template within layouts/articles
+Rendering articles/edit
+Completed in 16ms (View: 12, DB: 0) | 200 OK [http://localhost/articles/1/edit]
+
+
+Processing ArticlesController#edit (for 127.0.0.1 at 2011-02-06 14:41:05) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mArticle Load (0.2ms)[0m   [0mSELECT * FROM "articles" WHERE ("articles"."id" = 1) [0m
+Rendering template within layouts/articles
+Rendering articles/edit
+Completed in 11ms (View: 7, DB: 0) | 200 OK [http://localhost/articles/1/edit]
+
+
+Processing ArticlesController#show (for 127.0.0.1 at 2011-02-06 14:42:39) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mArticle Load (0.2ms)[0m   [0;1mSELECT * FROM "articles" WHERE ("articles"."id" = 1) [0m
+Rendering template within layouts/articles
+Rendering articles/show
+Completed in 11ms (View: 7, DB: 0) | 200 OK [http://localhost/articles/1]
+
+
+Processing ArticlesController#index (for 127.0.0.1 at 2011-02-06 14:42:41) [GET]
+  [4;35;1mArticle Load (0.4ms)[0m   [0mSELECT * FROM "articles" [0m
+Rendering template within layouts/articles
+Rendering articles/index
+Completed in 13ms (View: 9, DB: 0) | 200 OK [http://localhost/articles]
+
+
+Processing ArticlesController#new (for 127.0.0.1 at 2011-02-06 14:43:11) [GET]
+Rendering template within layouts/articles
+Rendering articles/new
+Completed in 11ms (View: 6, DB: 0) | 200 OK [http://localhost/articles/new]
+
+
+Processing ArticlesController#create (for 127.0.0.1 at 2011-02-06 14:43:15) [POST]
+  Parameters: {"article"=>{"body"=>"b", "author_name"=>"b", "title"=>"b"}, "commit"=>"Create", "authenticity_token"=>"DeULmXlOnTqBYz3b5Ao1PBLZwJLIJuVVxTpwONNMqEQ="}
+  [4;36;1mArticle Load (0.1ms)[0m   [0;1mSELECT "articles".id FROM "articles" WHERE ("articles"."title" = 'b') LIMIT 1[0m
+  [4;35;1mArticle Create (0.4ms)[0m   [0mINSERT INTO "articles" ("created_at", "title", "author_name", "body", "number_of_edits", "updated_at") VALUES('2011-02-06 21:43:15', 'b', 'b', 'b', NULL, '2011-02-06 21:43:15')[0m
+Redirected to http://localhost:3000/articles/2
+Completed in 9ms (DB: 0) | 302 Found [http://localhost/articles]
+
+
+Processing ArticlesController#show (for 127.0.0.1 at 2011-02-06 14:43:15) [GET]
+  Parameters: {"id"=>"2"}
+  [4;36;1mArticle Load (0.2ms)[0m   [0;1mSELECT * FROM "articles" WHERE ("articles"."id" = 2) [0m
+Rendering template within layouts/articles
+Rendering articles/show
+Completed in 9ms (View: 4, DB: 0) | 200 OK [http://localhost/articles/2]
+
+
+Processing ArticlesController#index (for 127.0.0.1 at 2011-02-06 14:43:18) [GET]
+  [4;35;1mArticle Load (0.4ms)[0m   [0mSELECT * FROM "articles" [0m
+Rendering template within layouts/articles
+Rendering articles/index
+Completed in 12ms (View: 8, DB: 0) | 200 OK [http://localhost/articles]
+
+
+Processing ArticlesController#edit (for 127.0.0.1 at 2011-02-06 14:43:37) [GET]
+  Parameters: {"id"=>"2"}
+  [4;36;1mArticle Load (0.2ms)[0m   [0;1mSELECT * FROM "articles" WHERE ("articles"."id" = 2) [0m
+Rendering template within layouts/articles
+Rendering articles/edit
+Completed in 12ms (View: 8, DB: 0) | 200 OK [http://localhost/articles/2/edit]
+
+
+Processing ArticlesController#index (for 127.0.0.1 at 2011-02-06 14:53:46) [GET]
+  [4;36;1mArticle Load (0.4ms)[0m   [0;1mSELECT * FROM "articles" [0m
+Rendering template within layouts/articles
+Rendering articles/index
+Completed in 80ms (View: 75, DB: 0) | 200 OK [http://localhost/articles]
+
+
+Processing ArticlesController#new (for 127.0.0.1 at 2011-02-06 14:53:47) [GET]
+Rendering template within layouts/articles
+Rendering articles/new
+Completed in 15ms (View: 10, DB: 0) | 200 OK [http://localhost/articles/new]
+
+
+Processing ArticlesController#create (for 127.0.0.1 at 2011-02-06 14:53:51) [POST]
+  Parameters: {"article"=>{"body"=>"c", "author_name"=>"c", "title"=>"c"}, "commit"=>"Create", "authenticity_token"=>"DeULmXlOnTqBYz3b5Ao1PBLZwJLIJuVVxTpwONNMqEQ="}
+  [4;35;1mArticle Load (0.1ms)[0m   [0mSELECT "articles".id FROM "articles" WHERE ("articles"."title" = 'c') LIMIT 1[0m
+  [4;36;1mArticle Create (0.3ms)[0m   [0;1mINSERT INTO "articles" ("created_at", "title", "author_name", "body", "number_of_edits", "updated_at") VALUES('2011-02-06 21:53:51', 'c', 'c', 'c', NULL, '2011-02-06 21:53:51')[0m
+Redirected to http://localhost:3000/articles/3
+Completed in 10ms (DB: 0) | 302 Found [http://localhost/articles]
+
+
+Processing ArticlesController#show (for 127.0.0.1 at 2011-02-06 14:53:51) [GET]
+  Parameters: {"id"=>"3"}
+  [4;35;1mArticle Load (0.2ms)[0m   [0mSELECT * FROM "articles" WHERE ("articles"."id" = 3) [0m
+Rendering template within layouts/articles
+Rendering articles/show
+Completed in 35ms (View: 16, DB: 0) | 200 OK [http://localhost/articles/3]
+
+
+Processing ArticlesController#index (for 127.0.0.1 at 2011-02-06 14:53:53) [GET]
+  [4;36;1mArticle Load (0.4ms)[0m   [0;1mSELECT * FROM "articles" [0m
+Rendering template within layouts/articles
+Rendering articles/index
+Completed in 14ms (View: 10, DB: 0) | 200 OK [http://localhost/articles]
+
+
+Processing ArticlesController#new (for 127.0.0.1 at 2011-02-06 15:03:10) [GET]
+
+SyntaxError (/Users/aniccola/Dropbox/Spring 2011/webapps/src/project04/app/models/article.rb:4: syntax error, unexpected '=', expecting kEND
+    :number_of_edits = 1
+                      ^):
+  app/controllers/articles_controller.rb:27:in `new'
+
+Rendered rescues/_trace (101.9ms)
+Rendered rescues/_request_and_response (1.1ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ArticlesController#new (for 127.0.0.1 at 2011-02-06 15:03:23) [GET]
+
+SyntaxError (/Users/aniccola/Dropbox/Spring 2011/webapps/src/project04/app/models/article.rb:4: syntax error, unexpected tASSOC, expecting kEND
+    :number_of_edits => 1
+                       ^):
+  app/controllers/articles_controller.rb:27:in `new'
+
+Rendered rescues/_trace (34.9ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ArticlesController#new (for 127.0.0.1 at 2011-02-06 15:03:43) [GET]
+
+NoMethodError (You have a nil object when you didn't expect it!
+You might have expected an instance of ActiveRecord::Base.
+The error occurred while evaluating nil.delete):
+  app/controllers/articles_controller.rb:29:in `new'
+
+Rendered rescues/_trace (107.7ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ArticlesController#new (for 127.0.0.1 at 2011-02-06 15:03:59) [GET]
+
+SyntaxError (/Users/aniccola/Dropbox/Spring 2011/webapps/src/project04/app/models/article.rb:4: syntax error, unexpected tASSOC, expecting kEND
+    @number_of_edits => 1
+                       ^):
+  app/controllers/articles_controller.rb:27:in `new'
+
+Rendered rescues/_trace (35.4ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ArticlesController#new (for 127.0.0.1 at 2011-02-06 15:04:35) [GET]
+
+SyntaxError (/Users/aniccola/Dropbox/Spring 2011/webapps/src/project04/app/models/article.rb:4: syntax error, unexpected '=', expecting kEND
+    :number_of_edits = 1
+                      ^):
+  app/controllers/articles_controller.rb:27:in `new'
+
+Rendered rescues/_trace (35.5ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ArticlesController#new (for 127.0.0.1 at 2011-02-06 15:04:36) [GET]
+
+SyntaxError (/Users/aniccola/Dropbox/Spring 2011/webapps/src/project04/app/models/article.rb:4: syntax error, unexpected '=', expecting kEND
+    :number_of_edits = 1
+                      ^):
+  app/controllers/articles_controller.rb:27:in `new'
+
+Rendered rescues/_trace (103.5ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ApplicationController#new (for 127.0.0.1 at 2011-02-06 15:08:51) [GET]
+
+SyntaxError (/Users/aniccola/Dropbox/Spring 2011/webapps/src/project04/app/controllers/articles_controller.rb:29: syntax error, unexpected '{', expecting kEND
+    @article { :number_of_edits => 1 }
+              ^):
+  
+
+Rendered rescues/_trace (29.4ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ApplicationController#new (for 127.0.0.1 at 2011-02-06 15:09:15) [GET]
+
+SyntaxError (/Users/aniccola/Dropbox/Spring 2011/webapps/src/project04/app/controllers/articles_controller.rb:29: syntax error, unexpected tASSOC, expecting kEND
+    :number_of_edits => 1 
+                       ^):
+  
+
+Rendered rescues/_trace (28.7ms)
+Rendered rescues/_request_and_response (72.6ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ApplicationController#new (for 127.0.0.1 at 2011-02-06 15:09:22) [GET]
+
+SyntaxError (/Users/aniccola/Dropbox/Spring 2011/webapps/src/project04/app/controllers/articles_controller.rb:29: syntax error, unexpected '=', expecting kEND
+    :number_of_edits = 1
+                      ^):
+  
+
+Rendered rescues/_trace (29.1ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ArticlesController#new (for 127.0.0.1 at 2011-02-06 15:11:27) [GET]
+Rendering template within layouts/articles
+Rendering articles/new
+
+ActionView::TemplateError (You have a nil object when you didn't expect it!
+You might have expected an instance of ActiveRecord::Base.
+The error occurred while evaluating nil.[]) on line #3 of app/views/articles/new.html.erb:
+1: <h1>New article</h1>
+2: 
+3: <% form_for(@article) do |f| %>
+4:   <%= f.error_messages %>
+5: 
+6:   <p>
+
+    app/views/articles/new.html.erb:3
+    app/controllers/articles_controller.rb:29:in `new'
+
+Rendered rescues/_trace (117.3ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ArticlesController#new (for 127.0.0.1 at 2011-02-06 15:12:36) [GET]
+Rendering template within layouts/articles
+Rendering articles/new
+
+ActionView::TemplateError (You have a nil object when you didn't expect it!
+You might have expected an instance of ActiveRecord::Base.
+The error occurred while evaluating nil.[]) on line #3 of app/views/articles/new.html.erb:
+1: <h1>New article</h1>
+2: 
+3: <% form_for(@article) do |f| %>
+4:   <%= f.error_messages %>
+5: 
+6:   <p>
+
+    app/views/articles/new.html.erb:3
+    app/controllers/articles_controller.rb:29:in `new'
+
+Rendered rescues/_trace (47.5ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ArticlesController#new (for 127.0.0.1 at 2011-02-06 15:12:39) [GET]
+Rendering template within layouts/articles
+Rendering articles/new
+
+ActionView::TemplateError (You have a nil object when you didn't expect it!
+You might have expected an instance of ActiveRecord::Base.
+The error occurred while evaluating nil.[]) on line #3 of app/views/articles/new.html.erb:
+1: <h1>New article</h1>
+2: 
+3: <% form_for(@article) do |f| %>
+4:   <%= f.error_messages %>
+5: 
+6:   <p>
+
+    app/views/articles/new.html.erb:3
+    app/controllers/articles_controller.rb:29:in `new'
+
+Rendered rescues/_trace (114.1ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ArticlesController#new (for 127.0.0.1 at 2011-02-06 15:12:43) [GET]
+Rendering template within layouts/articles
+Rendering articles/new
+
+ActionView::TemplateError (You have a nil object when you didn't expect it!
+You might have expected an instance of ActiveRecord::Base.
+The error occurred while evaluating nil.[]) on line #3 of app/views/articles/new.html.erb:
+1: <h1>New article</h1>
+2: 
+3: <% form_for(@article) do |f| %>
+4:   <%= f.error_messages %>
+5: 
+6:   <p>
+
+    app/views/articles/new.html.erb:3
+    app/controllers/articles_controller.rb:29:in `new'
+
+Rendered rescues/_trace (45.5ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ArticlesController#new (for 127.0.0.1 at 2011-02-06 15:12:58) [GET]
+Rendering template within layouts/articles
+Rendering articles/new
+Completed in 83ms (View: 8, DB: 0) | 200 OK [http://localhost/articles/new]
