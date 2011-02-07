@@ -11,7 +11,11 @@
 
 <p style="color: green"><%= notice %></p>
 
-<%= yield %>
+<div id="masthead">
+	<h1>Articl.es</h1>
+	<h2><%= yield :subtitle %></h2>
+	<%= yield %>
+</div>
 
 </body>
 </html>
