@@ -1,6 +1,15 @@
-<%= link_to 'list all articles', articles_path %>
+<ul>
+	<li>
+<%= link_to image_tag('/icons/arrow_left.png')+'list all articles', articles_path %>
+</li>
+<li>
 <%= link_to image_tag("/icons/page_white_edit.png")+"edit", edit_article_path(@article) %> 
+</li>
+<li>
 <%= mail_to '', image_tag("/icons/email.png")+"email", :subject => @article.title, :body => article_url(@article), :title => 'email article' %>
+</li>
+</ul>
+<br />
 
 <h2>
   <%=h @article.title %>

@@ -3041,3 +3041,848 @@ Processing ArticlesController#show (for 127.0.0.1 at 2011-02-06 20:33:32) [GET]
 Rendering template within layouts/articles
 Rendering articles/show
 Completed in 13ms (View: 7, DB: 0) | 200 OK [http://localhost/articles/6]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2011-02-07 08:12:41) [GET]
+
+ActionController::RoutingError (No route matches "/store" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ArticlesController#index (for 127.0.0.1 at 2011-02-07 08:12:43) [GET]
+  [4;36;1mArticle Load (1.0ms)[0m   [0;1mSELECT * FROM "articles" [0m
+Rendering template within layouts/articles
+Rendering articles/index
+Completed in 48ms (View: 42, DB: 1) | 200 OK [http://localhost/articles]
+
+
+Processing ArticlesController#index (for 127.0.0.1 at 2011-02-07 08:14:15) [GET]
+  [4;35;1mArticle Load (0.5ms)[0m   [0mSELECT * FROM "articles" [0m
+Rendering template within layouts/articles
+Rendering articles/index
+Completed in 30ms (View: 25, DB: 1) | 200 OK [http://localhost/articles]
+
+
+Processing ArticlesController#index (for 127.0.0.1 at 2011-02-07 08:15:22) [GET]
+  [4;36;1mArticle Load (0.5ms)[0m   [0;1mSELECT * FROM "articles" [0m
+Rendering template within layouts/articles
+Rendering articles/index
+Completed in 27ms (View: 22, DB: 1) | 200 OK [http://localhost/articles]
+
+
+Processing ArticlesController#index (for 127.0.0.1 at 2011-02-07 08:15:49) [GET]
+  [4;35;1mArticle Load (0.5ms)[0m   [0mSELECT * FROM "articles" [0m
+Rendering template within layouts/articles
+Rendering articles/index
+Completed in 27ms (View: 22, DB: 1) | 200 OK [http://localhost/articles]
+
+
+Processing ArticlesController#index (for 127.0.0.1 at 2011-02-07 08:15:55) [GET]
+  [4;36;1mArticle Load (0.5ms)[0m   [0;1mSELECT * FROM "articles" [0m
+Rendering template within layouts/articles
+Rendering articles/index
+Completed in 24ms (View: 20, DB: 0) | 200 OK [http://localhost/articles]
+
+
+Processing ArticlesController#index (for 127.0.0.1 at 2011-02-07 08:16:36) [GET]
+  [4;35;1mArticle Load (0.5ms)[0m   [0mSELECT * FROM "articles" [0m
+Rendering template within layouts/articles
+Rendering articles/index
+Completed in 30ms (View: 25, DB: 1) | 200 OK [http://localhost/articles]
+
+
+Processing ArticlesController#index (for 127.0.0.1 at 2011-02-07 08:17:52) [GET]
+  [4;36;1mArticle Load (0.5ms)[0m   [0;1mSELECT * FROM "articles" [0m
+Rendering template within layouts/articles
+Rendering articles/index
+Completed in 27ms (View: 21, DB: 0) | 200 OK [http://localhost/articles]
+
+
+Processing ArticlesController#index (for 127.0.0.1 at 2011-02-07 08:18:02) [GET]
+  [4;35;1mArticle Load (0.5ms)[0m   [0mSELECT * FROM "articles" [0m
+Rendering template within layouts/articles
+Rendering articles/index
+Completed in 26ms (View: 21, DB: 1) | 200 OK [http://localhost/articles]
+
+
+Processing ArticlesController#index (for 127.0.0.1 at 2011-02-07 08:18:24) [GET]
+  [4;36;1mArticle Load (0.5ms)[0m   [0;1mSELECT * FROM "articles" [0m
+Rendering template within layouts/articles
+Rendering articles/index
+Completed in 26ms (View: 21, DB: 1) | 200 OK [http://localhost/articles]
+
+
+Processing ArticlesController#index (for 127.0.0.1 at 2011-02-07 08:20:25) [GET]
+  [4;35;1mArticle Load (0.5ms)[0m   [0mSELECT * FROM "articles" [0m
+Rendering template within layouts/articles
+Rendering articles/index
+Completed in 26ms (View: 21, DB: 1) | 200 OK [http://localhost/articles]
+
+
+Processing ArticlesController#index (for 127.0.0.1 at 2011-02-07 08:20:35) [GET]
+  [4;36;1mArticle Load (0.5ms)[0m   [0;1mSELECT * FROM "articles" [0m
+Rendering template within layouts/articles
+Rendering articles/index
+Completed in 26ms (View: 21, DB: 0) | 200 OK [http://localhost/articles]
+
+
+Processing ArticlesController#index (for 127.0.0.1 at 2011-02-07 08:21:48) [GET]
+  [4;35;1mArticle Load (0.5ms)[0m   [0mSELECT * FROM "articles" [0m
+Rendering template within layouts/articles
+Rendering articles/index
+Completed in 30ms (View: 25, DB: 1) | 200 OK [http://localhost/articles]
+
+
+Processing ArticlesController#index (for 127.0.0.1 at 2011-02-07 08:22:43) [GET]
+  [4;36;1mArticle Load (0.5ms)[0m   [0;1mSELECT * FROM "articles" [0m
+Rendering template within layouts/articles
+Rendering articles/index
+Completed in 26ms (View: 21, DB: 1) | 200 OK [http://localhost/articles]
+
+
+Processing ArticlesController#index (for 127.0.0.1 at 2011-02-07 08:23:41) [GET]
+  [4;35;1mArticle Load (0.5ms)[0m   [0mSELECT * FROM "articles" [0m
+Rendering template within layouts/articles
+Rendering articles/index
+Completed in 26ms (View: 21, DB: 1) | 200 OK [http://localhost/articles]
+
+
+Processing ArticlesController#index (for 127.0.0.1 at 2011-02-07 08:24:19) [GET]
+  [4;36;1mArticle Load (0.5ms)[0m   [0;1mSELECT * FROM "articles" [0m
+Rendering template within layouts/articles
+Rendering articles/index
+Completed in 89ms (View: 21, DB: 1) | 200 OK [http://localhost/articles]
+
+
+Processing ArticlesController#index (for 127.0.0.1 at 2011-02-07 08:24:25) [GET]
+  [4;35;1mArticle Load (0.5ms)[0m   [0mSELECT * FROM "articles" [0m
+Rendering template within layouts/articles
+Rendering articles/index
+Completed in 26ms (View: 21, DB: 1) | 200 OK [http://localhost/articles]
+
+
+Processing ArticlesController#index (for 127.0.0.1 at 2011-02-07 08:24:34) [GET]
+  [4;36;1mArticle Load (0.7ms)[0m   [0;1mSELECT * FROM "articles" [0m
+Rendering template within layouts/articles
+Rendering articles/index
+Completed in 28ms (View: 22, DB: 1) | 200 OK [http://localhost/articles]
+
+
+Processing ArticlesController#index (for 127.0.0.1 at 2011-02-07 08:24:44) [GET]
+  [4;35;1mArticle Load (0.5ms)[0m   [0mSELECT * FROM "articles" [0m
+Rendering template within layouts/articles
+Rendering articles/index
+Completed in 26ms (View: 21, DB: 0) | 200 OK [http://localhost/articles]
+
+
+Processing ArticlesController#index (for 127.0.0.1 at 2011-02-07 08:24:50) [GET]
+  [4;36;1mArticle Load (0.5ms)[0m   [0;1mSELECT * FROM "articles" [0m
+Rendering template within layouts/articles
+Rendering articles/index
+Completed in 26ms (View: 21, DB: 1) | 200 OK [http://localhost/articles]
+
+
+Processing ArticlesController#index (for 127.0.0.1 at 2011-02-07 08:26:00) [GET]
+  [4;35;1mArticle Load (0.5ms)[0m   [0mSELECT * FROM "articles" [0m
+Rendering template within layouts/articles
+Rendering articles/index
+Completed in 86ms (View: 82, DB: 1) | 200 OK [http://localhost/articles]
+
+
+Processing ArticlesController#index (for 127.0.0.1 at 2011-02-07 08:26:08) [GET]
+  [4;36;1mArticle Load (0.5ms)[0m   [0;1mSELECT * FROM "articles" [0m
+Rendering template within layouts/articles
+Rendering articles/index
+Completed in 26ms (View: 21, DB: 1) | 200 OK [http://localhost/articles]
+
+
+Processing ArticlesController#index (for 127.0.0.1 at 2011-02-07 08:26:13) [GET]
+  [4;35;1mArticle Load (0.5ms)[0m   [0mSELECT * FROM "articles" [0m
+Rendering template within layouts/articles
+Rendering articles/index
+Completed in 26ms (View: 21, DB: 1) | 200 OK [http://localhost/articles]
+
+
+Processing ArticlesController#index (for 127.0.0.1 at 2011-02-07 08:26:21) [GET]
+  [4;36;1mArticle Load (0.5ms)[0m   [0;1mSELECT * FROM "articles" [0m
+Rendering template within layouts/articles
+Rendering articles/index
+Completed in 25ms (View: 20, DB: 1) | 200 OK [http://localhost/articles]
+
+
+Processing ArticlesController#index (for 127.0.0.1 at 2011-02-07 08:26:28) [GET]
+  [4;35;1mArticle Load (0.6ms)[0m   [0mSELECT * FROM "articles" [0m
+Rendering template within layouts/articles
+Rendering articles/index
+Completed in 26ms (View: 21, DB: 1) | 200 OK [http://localhost/articles]
+
+
+Processing ArticlesController#index (for 127.0.0.1 at 2011-02-07 08:27:32) [GET]
+  [4;36;1mArticle Load (0.5ms)[0m   [0;1mSELECT * FROM "articles" [0m
+Rendering template within layouts/articles
+Rendering articles/index
+Completed in 88ms (View: 83, DB: 1) | 200 OK [http://localhost/articles]
+
+
+Processing ArticlesController#index (for 127.0.0.1 at 2011-02-07 08:27:40) [GET]
+  [4;35;1mArticle Load (0.5ms)[0m   [0mSELECT * FROM "articles" [0m
+Rendering template within layouts/articles
+Rendering articles/index
+Completed in 27ms (View: 22, DB: 1) | 200 OK [http://localhost/articles]
+
+
+Processing ArticlesController#index (for 127.0.0.1 at 2011-02-07 08:28:17) [GET]
+  [4;36;1mArticle Load (0.5ms)[0m   [0;1mSELECT * FROM "articles" [0m
+Rendering template within layouts/articles
+Rendering articles/index
+Completed in 25ms (View: 21, DB: 1) | 200 OK [http://localhost/articles]
+
+
+Processing ArticlesController#index (for 127.0.0.1 at 2011-02-07 08:28:29) [GET]
+  [4;35;1mArticle Load (0.5ms)[0m   [0mSELECT * FROM "articles" [0m
+Rendering template within layouts/articles
+Rendering articles/index
+Completed in 26ms (View: 21, DB: 1) | 200 OK [http://localhost/articles]
+
+
+Processing ArticlesController#index (for 127.0.0.1 at 2011-02-07 08:28:36) [GET]
+  [4;36;1mArticle Load (0.5ms)[0m   [0;1mSELECT * FROM "articles" [0m
+Rendering template within layouts/articles
+Rendering articles/index
+Completed in 26ms (View: 21, DB: 1) | 200 OK [http://localhost/articles]
+
+
+Processing ArticlesController#index (for 127.0.0.1 at 2011-02-07 08:28:54) [GET]
+  [4;35;1mArticle Load (0.5ms)[0m   [0mSELECT * FROM "articles" [0m
+Rendering template within layouts/articles
+Rendering articles/index
+Completed in 30ms (View: 25, DB: 0) | 200 OK [http://localhost/articles]
+
+
+Processing ArticlesController#index (for 127.0.0.1 at 2011-02-07 08:29:03) [GET]
+  [4;36;1mArticle Load (0.6ms)[0m   [0;1mSELECT * FROM "articles" [0m
+Rendering template within layouts/articles
+Rendering articles/index
+Completed in 26ms (View: 21, DB: 1) | 200 OK [http://localhost/articles]
+
+
+Processing ArticlesController#index (for 127.0.0.1 at 2011-02-07 08:29:12) [GET]
+  [4;35;1mArticle Load (0.5ms)[0m   [0mSELECT * FROM "articles" [0m
+Rendering template within layouts/articles
+Rendering articles/index
+Completed in 26ms (View: 21, DB: 0) | 200 OK [http://localhost/articles]
+
+
+Processing ArticlesController#index (for 127.0.0.1 at 2011-02-07 08:29:16) [GET]
+  [4;36;1mArticle Load (0.6ms)[0m   [0;1mSELECT * FROM "articles" [0m
+Rendering template within layouts/articles
+Rendering articles/index
+Completed in 25ms (View: 20, DB: 1) | 200 OK [http://localhost/articles]
+
+
+Processing ArticlesController#index (for 127.0.0.1 at 2011-02-07 08:29:29) [GET]
+  [4;35;1mArticle Load (0.5ms)[0m   [0mSELECT * FROM "articles" [0m
+Rendering template within layouts/articles
+Rendering articles/index
+Completed in 26ms (View: 21, DB: 1) | 200 OK [http://localhost/articles]
+
+
+Processing ArticlesController#index (for 127.0.0.1 at 2011-02-07 08:30:16) [GET]
+  [4;36;1mArticle Load (0.5ms)[0m   [0;1mSELECT * FROM "articles" [0m
+Rendering template within layouts/articles
+Rendering articles/index
+Completed in 29ms (View: 24, DB: 1) | 200 OK [http://localhost/articles]
+
+
+Processing ArticlesController#index (for 127.0.0.1 at 2011-02-07 08:30:32) [GET]
+  [4;35;1mArticle Load (0.5ms)[0m   [0mSELECT * FROM "articles" [0m
+Rendering template within layouts/articles
+Rendering articles/index
+Completed in 27ms (View: 22, DB: 1) | 200 OK [http://localhost/articles]
+
+
+Processing ArticlesController#index (for 127.0.0.1 at 2011-02-07 08:30:49) [GET]
+  [4;36;1mArticle Load (0.5ms)[0m   [0;1mSELECT * FROM "articles" [0m
+Rendering template within layouts/articles
+Rendering articles/index
+Completed in 25ms (View: 20, DB: 1) | 200 OK [http://localhost/articles]
+
+
+Processing ArticlesController#index (for 127.0.0.1 at 2011-02-07 08:31:02) [GET]
+  [4;35;1mArticle Load (0.5ms)[0m   [0mSELECT * FROM "articles" [0m
+Rendering template within layouts/articles
+Rendering articles/index
+Completed in 26ms (View: 21, DB: 1) | 200 OK [http://localhost/articles]
+
+
+Processing ArticlesController#index (for 127.0.0.1 at 2011-02-07 08:31:07) [GET]
+  [4;36;1mArticle Load (0.5ms)[0m   [0;1mSELECT * FROM "articles" [0m
+Rendering template within layouts/articles
+Rendering articles/index
+Completed in 26ms (View: 21, DB: 1) | 200 OK [http://localhost/articles]
+
+
+Processing ArticlesController#index (for 127.0.0.1 at 2011-02-07 08:31:17) [GET]
+  [4;35;1mArticle Load (0.5ms)[0m   [0mSELECT * FROM "articles" [0m
+Rendering template within layouts/articles
+Rendering articles/index
+Completed in 25ms (View: 20, DB: 1) | 200 OK [http://localhost/articles]
+
+
+Processing ArticlesController#index (for 127.0.0.1 at 2011-02-07 08:31:44) [GET]
+  [4;36;1mArticle Load (0.5ms)[0m   [0;1mSELECT * FROM "articles" [0m
+Rendering template within layouts/articles
+Rendering articles/index
+Completed in 25ms (View: 20, DB: 0) | 200 OK [http://localhost/articles]
+
+
+Processing ArticlesController#index (for 127.0.0.1 at 2011-02-07 08:32:01) [GET]
+  [4;35;1mArticle Load (0.6ms)[0m   [0mSELECT * FROM "articles" [0m
+Rendering template within layouts/articles
+Rendering articles/index
+Completed in 30ms (View: 25, DB: 1) | 200 OK [http://localhost/articles]
+
+
+Processing ArticlesController#index (for 127.0.0.1 at 2011-02-07 08:32:09) [GET]
+  [4;36;1mArticle Load (0.5ms)[0m   [0;1mSELECT * FROM "articles" [0m
+Rendering template within layouts/articles
+Rendering articles/index
+Completed in 26ms (View: 21, DB: 1) | 200 OK [http://localhost/articles]
+
+
+Processing ArticlesController#index (for 127.0.0.1 at 2011-02-07 08:32:16) [GET]
+  [4;35;1mArticle Load (0.5ms)[0m   [0mSELECT * FROM "articles" [0m
+Rendering template within layouts/articles
+Rendering articles/index
+Completed in 26ms (View: 21, DB: 1) | 200 OK [http://localhost/articles]
+
+
+Processing ArticlesController#new (for 127.0.0.1 at 2011-02-07 08:32:29) [GET]
+Rendering template within layouts/articles
+Rendering articles/new
+Completed in 15ms (View: 10, DB: 0) | 200 OK [http://localhost/articles/new]
+
+
+Processing ArticlesController#index (for 127.0.0.1 at 2011-02-07 08:33:17) [GET]
+  [4;36;1mArticle Load (0.6ms)[0m   [0;1mSELECT * FROM "articles" [0m
+Rendering template within layouts/articles
+Rendering articles/index
+Completed in 88ms (View: 21, DB: 1) | 200 OK [http://localhost/articles]
+
+
+Processing ArticlesController#new (for 127.0.0.1 at 2011-02-07 08:33:18) [GET]
+Rendering template within layouts/articles
+Rendering articles/new
+Completed in 11ms (View: 6, DB: 0) | 200 OK [http://localhost/articles/new]
+
+
+Processing ArticlesController#create (for 127.0.0.1 at 2011-02-07 08:33:31) [POST]
+  Parameters: {"article"=>{"body"=>"Welcome to the new Lifehacker. Things look a little bit different around here today, but we think it's a big improvement. Here's why.\r\n\r\nFor starters, the new front page is a lot simpler and lighter, which means it will load quickly. And at last we have a way to display big, gorgeous images and videos on the front page of our site. The redesign is a work in progress, and we'll be fixing bugs and improving things in the weeks to come, but here's what you need to know to get started:\r\n\r\nIf you don't like the new look, you can switch to Blog view—a layout that looks very much like our old design—at any time by clicking the Blog view button at the top of the page, to the left of the Home button.\r\nHow to Scan Through Stories\r\nWhen you come to Lifehacker, usually you want to scan through a lot of stories at once. Now you have more ways to do that.\r\n\r\nKeyboard Shortcuts\r\n\r\nEven better (we're all keyboard shortcut lovers after all), you can flip through the pages right from your keyboard: Just use the right and left arrow key to page through the day's stories, or use the Gmail/Vim-style j/k navigation. Try it!\r\n\r\nFlip from One Story to the Next\r\n\r\nIf you like the experience of flipping through stories and glancing over the full text, video, and pictures for each one, you can use our \"next post\" button. It's on the left side of the navigation bar at the bottom of the page. Clicking it takes you through the day's stories one at a time.\r\n\r\nScrolling Through the Headlines\r\n\r\nIf you'd rather just scroll through headlines in the right-hand column, you can use your mouse's scrollwheel or the \"Next headlines\" button at the bottom of the column. (It's not here yet, but a scrollbar is on its way later this week.) The stories are displayed in reverse-chronological order.\r\n\r\nAt the top of the right-hand column, you'll see three icons: A house, a flame, and a magnifying glass. Click the house if you want to see today's stories. Click the flame for today's most popular stories. Click the glass for search.\r\n\r\nWhat's in It for You?\r\nIf you're a regular reader and commenter, you'll notice right away that the site is lighter and faster. Just click on a headline if you'd like to read the story. The headlines will stay with you in the right-hand column no matter what story you're reading. No more clicking back to the front page when you're done reading a story. When you're done reading a post, you can go back to scrolling through the day's headlines, or start flipping through stories one at a time.\r\n\r\nThere's also a big, generous space for your comments now—they're no longer scrunched into a small column. That means your commenter name is bigger, your comments are a lot easier to read, and there's more space for your pictures and videos that you've uploaded.\r\n\r\nYou'll also find that it's easier to change comment settings. The big navigation bar at the top of the comments section makes it a lot easier to choose whether you'd like to see all comments, or just one featured comment thread.\r\n\r\nComment forums will also be much more readable and flexible, but the address you'll use to find them has changed. Here's how you get to Tips Box, where readers submit tips:\r\n", "author_name"=>"ANdy Niccolai", "title"=>"Why I love lifehacker"}, "commit"=>"Create", "authenticity_token"=>"C9mNWR028lgHdg4lLFSgsz4e/U9B7BpXqcu5j0GkBVM="}
+  [4;35;1mArticle Create (0.7ms)[0m   [0mINSERT INTO "articles" ("created_at", "title", "author_name", "body", "number_of_edits", "updated_at") VALUES('2011-02-07 15:33:31', 'Why I love lifehacker', 'ANdy Niccolai', 'Welcome to the new Lifehacker. Things look a little bit different around here today, but we think it''s a big improvement. Here''s why.
+
+For starters, the new front page is a lot simpler and lighter, which means it will load quickly. And at last we have a way to display big, gorgeous images and videos on the front page of our site. The redesign is a work in progress, and we''ll be fixing bugs and improving things in the weeks to come, but here''s what you need to know to get started:
+
+If you don''t like the new look, you can switch to Blog view—a layout that looks very much like our old design—at any time by clicking the Blog view button at the top of the page, to the left of the Home button.
+How to Scan Through Stories
+When you come to Lifehacker, usually you want to scan through a lot of stories at once. Now you have more ways to do that.
+
+Keyboard Shortcuts
+
+Even better (we''re all keyboard shortcut lovers after all), you can flip through the pages right from your keyboard: Just use the right and left arrow key to page through the day''s stories, or use the Gmail/Vim-style j/k navigation. Try it!
+
+Flip from One Story to the Next
+
+If you like the experience of flipping through stories and glancing over the full text, video, and pictures for each one, you can use our "next post" button. It''s on the left side of the navigation bar at the bottom of the page. Clicking it takes you through the day''s stories one at a time.
+
+Scrolling Through the Headlines
+
+If you''d rather just scroll through headlines in the right-hand column, you can use your mouse''s scrollwheel or the "Next headlines" button at the bottom of the column. (It''s not here yet, but a scrollbar is on its way later this week.) The stories are displayed in reverse-chronological order.
+
+At the top of the right-hand column, you''ll see three icons: A house, a flame, and a magnifying glass. Click the house if you want to see today''s stories. Click the flame for today''s most popular stories. Click the glass for search.
+
+What''s in It for You?
+If you''re a regular reader and commenter, you''ll notice right away that the site is lighter and faster. Just click on a headline if you''d like to read the story. The headlines will stay with you in the right-hand column no matter what story you''re reading. No more clicking back to the front page when you''re done reading a story. When you''re done reading a post, you can go back to scrolling through the day''s headlines, or start flipping through stories one at a time.
+
+There''s also a big, generous space for your comments now—they''re no longer scrunched into a small column. That means your commenter name is bigger, your comments are a lot easier to read, and there''s more space for your pictures and videos that you''ve uploaded.
+
+You''ll also find that it''s easier to change comment settings. The big navigation bar at the top of the comments section makes it a lot easier to choose whether you''d like to see all comments, or just one featured comment thread.
+
+Comment forums will also be much more readable and flexible, but the address you''ll use to find them has changed. Here''s how you get to Tips Box, where readers submit tips:
+', 0, '2011-02-07 15:33:31')[0m
+Redirected to http://localhost:3000/articles/7
+Completed in 9ms (DB: 1) | 302 Found [http://localhost/articles]
+
+
+Processing ArticlesController#show (for 127.0.0.1 at 2011-02-07 08:33:31) [GET]
+  Parameters: {"id"=>"7"}
+  [4;36;1mArticle Load (0.2ms)[0m   [0;1mSELECT * FROM "articles" WHERE ("articles"."id" = 7) [0m
+Rendering template within layouts/articles
+Rendering articles/show
+Completed in 33ms (View: 28, DB: 0) | 200 OK [http://localhost/articles/7]
+
+
+Processing ArticlesController#index (for 127.0.0.1 at 2011-02-07 08:33:34) [GET]
+  [4;35;1mArticle Load (0.6ms)[0m   [0mSELECT * FROM "articles" [0m
+Rendering template within layouts/articles
+Rendering articles/index
+Completed in 28ms (View: 23, DB: 1) | 200 OK [http://localhost/articles]
+
+
+Processing ArticlesController#show (for 127.0.0.1 at 2011-02-07 08:33:53) [GET]
+  Parameters: {"id"=>"6"}
+  [4;36;1mArticle Load (0.2ms)[0m   [0;1mSELECT * FROM "articles" WHERE ("articles"."id" = 6) [0m
+Rendering template within layouts/articles
+Rendering articles/show
+Completed in 9ms (View: 4, DB: 0) | 200 OK [http://localhost/articles/6]
+
+
+Processing ArticlesController#index (for 127.0.0.1 at 2011-02-07 08:34:02) [GET]
+  [4;35;1mArticle Load (0.6ms)[0m   [0mSELECT * FROM "articles" [0m
+Rendering template within layouts/articles
+Rendering articles/index
+Completed in 29ms (View: 24, DB: 1) | 200 OK [http://localhost/articles]
+
+
+Processing ArticlesController#index (for 127.0.0.1 at 2011-02-07 08:34:20) [GET]
+  [4;36;1mArticle Load (0.5ms)[0m   [0;1mSELECT * FROM "articles" [0m
+Rendering template within layouts/articles
+Rendering articles/index
+Completed in 29ms (View: 24, DB: 1) | 200 OK [http://localhost/articles]
+
+
+Processing ArticlesController#index (for 127.0.0.1 at 2011-02-07 08:35:25) [GET]
+  [4;35;1mArticle Load (0.6ms)[0m   [0mSELECT * FROM "articles" [0m
+Rendering template within layouts/articles
+Rendering articles/index
+DEPRECATION WARNING: truncate takes an option hash instead of separate length and omission arguments. (called from _run_erb_app47views47articles47index46html46erb at /Users/aniccola/Dropbox/Spring 2011/webapps/src/project04/app/views/articles/index.html.erb:18)
+DEPRECATION WARNING: truncate takes an option hash instead of separate length and omission arguments. (called from _run_erb_app47views47articles47index46html46erb at /Users/aniccola/Dropbox/Spring 2011/webapps/src/project04/app/views/articles/index.html.erb:18)
+DEPRECATION WARNING: truncate takes an option hash instead of separate length and omission arguments. (called from _run_erb_app47views47articles47index46html46erb at /Users/aniccola/Dropbox/Spring 2011/webapps/src/project04/app/views/articles/index.html.erb:18)
+DEPRECATION WARNING: truncate takes an option hash instead of separate length and omission arguments. (called from _run_erb_app47views47articles47index46html46erb at /Users/aniccola/Dropbox/Spring 2011/webapps/src/project04/app/views/articles/index.html.erb:18)
+DEPRECATION WARNING: truncate takes an option hash instead of separate length and omission arguments. (called from _run_erb_app47views47articles47index46html46erb at /Users/aniccola/Dropbox/Spring 2011/webapps/src/project04/app/views/articles/index.html.erb:18)
+DEPRECATION WARNING: truncate takes an option hash instead of separate length and omission arguments. (called from _run_erb_app47views47articles47index46html46erb at /Users/aniccola/Dropbox/Spring 2011/webapps/src/project04/app/views/articles/index.html.erb:18)
+DEPRECATION WARNING: truncate takes an option hash instead of separate length and omission arguments. (called from _run_erb_app47views47articles47index46html46erb at /Users/aniccola/Dropbox/Spring 2011/webapps/src/project04/app/views/articles/index.html.erb:18)
+Completed in 35ms (View: 30, DB: 1) | 200 OK [http://localhost/articles]
+
+
+Processing ArticlesController#index (for 127.0.0.1 at 2011-02-07 08:35:36) [GET]
+  [4;36;1mArticle Load (0.6ms)[0m   [0;1mSELECT * FROM "articles" [0m
+Rendering template within layouts/articles
+Rendering articles/index
+DEPRECATION WARNING: truncate takes an option hash instead of separate length and omission arguments. (called from _run_erb_app47views47articles47index46html46erb at /Users/aniccola/Dropbox/Spring 2011/webapps/src/project04/app/views/articles/index.html.erb:18)
+DEPRECATION WARNING: truncate takes an option hash instead of separate length and omission arguments. (called from _run_erb_app47views47articles47index46html46erb at /Users/aniccola/Dropbox/Spring 2011/webapps/src/project04/app/views/articles/index.html.erb:18)
+DEPRECATION WARNING: truncate takes an option hash instead of separate length and omission arguments. (called from _run_erb_app47views47articles47index46html46erb at /Users/aniccola/Dropbox/Spring 2011/webapps/src/project04/app/views/articles/index.html.erb:18)
+DEPRECATION WARNING: truncate takes an option hash instead of separate length and omission arguments. (called from _run_erb_app47views47articles47index46html46erb at /Users/aniccola/Dropbox/Spring 2011/webapps/src/project04/app/views/articles/index.html.erb:18)
+DEPRECATION WARNING: truncate takes an option hash instead of separate length and omission arguments. (called from _run_erb_app47views47articles47index46html46erb at /Users/aniccola/Dropbox/Spring 2011/webapps/src/project04/app/views/articles/index.html.erb:18)
+DEPRECATION WARNING: truncate takes an option hash instead of separate length and omission arguments. (called from _run_erb_app47views47articles47index46html46erb at /Users/aniccola/Dropbox/Spring 2011/webapps/src/project04/app/views/articles/index.html.erb:18)
+DEPRECATION WARNING: truncate takes an option hash instead of separate length and omission arguments. (called from _run_erb_app47views47articles47index46html46erb at /Users/aniccola/Dropbox/Spring 2011/webapps/src/project04/app/views/articles/index.html.erb:18)
+Completed in 35ms (View: 30, DB: 1) | 200 OK [http://localhost/articles]
+
+
+Processing ArticlesController#index (for 127.0.0.1 at 2011-02-07 08:36:11) [GET]
+  [4;35;1mArticle Load (0.6ms)[0m   [0mSELECT * FROM "articles" [0m
+Rendering template within layouts/articles
+Rendering articles/index
+DEPRECATION WARNING: truncate takes an option hash instead of separate length and omission arguments. (called from _run_erb_app47views47articles47index46html46erb at /Users/aniccola/Dropbox/Spring 2011/webapps/src/project04/app/views/articles/index.html.erb:17)
+DEPRECATION WARNING: truncate takes an option hash instead of separate length and omission arguments. (called from _run_erb_app47views47articles47index46html46erb at /Users/aniccola/Dropbox/Spring 2011/webapps/src/project04/app/views/articles/index.html.erb:17)
+DEPRECATION WARNING: truncate takes an option hash instead of separate length and omission arguments. (called from _run_erb_app47views47articles47index46html46erb at /Users/aniccola/Dropbox/Spring 2011/webapps/src/project04/app/views/articles/index.html.erb:17)
+DEPRECATION WARNING: truncate takes an option hash instead of separate length and omission arguments. (called from _run_erb_app47views47articles47index46html46erb at /Users/aniccola/Dropbox/Spring 2011/webapps/src/project04/app/views/articles/index.html.erb:17)
+DEPRECATION WARNING: truncate takes an option hash instead of separate length and omission arguments. (called from _run_erb_app47views47articles47index46html46erb at /Users/aniccola/Dropbox/Spring 2011/webapps/src/project04/app/views/articles/index.html.erb:17)
+DEPRECATION WARNING: truncate takes an option hash instead of separate length and omission arguments. (called from _run_erb_app47views47articles47index46html46erb at /Users/aniccola/Dropbox/Spring 2011/webapps/src/project04/app/views/articles/index.html.erb:17)
+DEPRECATION WARNING: truncate takes an option hash instead of separate length and omission arguments. (called from _run_erb_app47views47articles47index46html46erb at /Users/aniccola/Dropbox/Spring 2011/webapps/src/project04/app/views/articles/index.html.erb:17)
+Completed in 102ms (View: 97, DB: 1) | 200 OK [http://localhost/articles]
+
+
+Processing ArticlesController#index (for 127.0.0.1 at 2011-02-07 08:36:27) [GET]
+  [4;36;1mArticle Load (0.6ms)[0m   [0;1mSELECT * FROM "articles" [0m
+Rendering template within layouts/articles
+Rendering articles/index
+DEPRECATION WARNING: truncate takes an option hash instead of separate length and omission arguments. (called from _run_erb_app47views47articles47index46html46erb at /Users/aniccola/Dropbox/Spring 2011/webapps/src/project04/app/views/articles/index.html.erb:17)
+DEPRECATION WARNING: truncate takes an option hash instead of separate length and omission arguments. (called from _run_erb_app47views47articles47index46html46erb at /Users/aniccola/Dropbox/Spring 2011/webapps/src/project04/app/views/articles/index.html.erb:17)
+DEPRECATION WARNING: truncate takes an option hash instead of separate length and omission arguments. (called from _run_erb_app47views47articles47index46html46erb at /Users/aniccola/Dropbox/Spring 2011/webapps/src/project04/app/views/articles/index.html.erb:17)
+DEPRECATION WARNING: truncate takes an option hash instead of separate length and omission arguments. (called from _run_erb_app47views47articles47index46html46erb at /Users/aniccola/Dropbox/Spring 2011/webapps/src/project04/app/views/articles/index.html.erb:17)
+DEPRECATION WARNING: truncate takes an option hash instead of separate length and omission arguments. (called from _run_erb_app47views47articles47index46html46erb at /Users/aniccola/Dropbox/Spring 2011/webapps/src/project04/app/views/articles/index.html.erb:17)
+DEPRECATION WARNING: truncate takes an option hash instead of separate length and omission arguments. (called from _run_erb_app47views47articles47index46html46erb at /Users/aniccola/Dropbox/Spring 2011/webapps/src/project04/app/views/articles/index.html.erb:17)
+DEPRECATION WARNING: truncate takes an option hash instead of separate length and omission arguments. (called from _run_erb_app47views47articles47index46html46erb at /Users/aniccola/Dropbox/Spring 2011/webapps/src/project04/app/views/articles/index.html.erb:17)
+Completed in 37ms (View: 32, DB: 1) | 200 OK [http://localhost/articles]
+
+
+Processing ArticlesController#index (for 127.0.0.1 at 2011-02-07 08:36:32) [GET]
+  [4;35;1mArticle Load (0.8ms)[0m   [0mSELECT * FROM "articles" [0m
+Rendering template within layouts/articles
+Rendering articles/index
+DEPRECATION WARNING: truncate takes an option hash instead of separate length and omission arguments. (called from _run_erb_app47views47articles47index46html46erb at /Users/aniccola/Dropbox/Spring 2011/webapps/src/project04/app/views/articles/index.html.erb:17)
+DEPRECATION WARNING: truncate takes an option hash instead of separate length and omission arguments. (called from _run_erb_app47views47articles47index46html46erb at /Users/aniccola/Dropbox/Spring 2011/webapps/src/project04/app/views/articles/index.html.erb:17)
+DEPRECATION WARNING: truncate takes an option hash instead of separate length and omission arguments. (called from _run_erb_app47views47articles47index46html46erb at /Users/aniccola/Dropbox/Spring 2011/webapps/src/project04/app/views/articles/index.html.erb:17)
+DEPRECATION WARNING: truncate takes an option hash instead of separate length and omission arguments. (called from _run_erb_app47views47articles47index46html46erb at /Users/aniccola/Dropbox/Spring 2011/webapps/src/project04/app/views/articles/index.html.erb:17)
+DEPRECATION WARNING: truncate takes an option hash instead of separate length and omission arguments. (called from _run_erb_app47views47articles47index46html46erb at /Users/aniccola/Dropbox/Spring 2011/webapps/src/project04/app/views/articles/index.html.erb:17)
+DEPRECATION WARNING: truncate takes an option hash instead of separate length and omission arguments. (called from _run_erb_app47views47articles47index46html46erb at /Users/aniccola/Dropbox/Spring 2011/webapps/src/project04/app/views/articles/index.html.erb:17)
+DEPRECATION WARNING: truncate takes an option hash instead of separate length and omission arguments. (called from _run_erb_app47views47articles47index46html46erb at /Users/aniccola/Dropbox/Spring 2011/webapps/src/project04/app/views/articles/index.html.erb:17)
+Completed in 35ms (View: 29, DB: 1) | 200 OK [http://localhost/articles]
+
+
+Processing ArticlesController#index (for 127.0.0.1 at 2011-02-07 08:37:07) [GET]
+  [4;36;1mArticle Load (0.5ms)[0m   [0;1mSELECT * FROM "articles" [0m
+Rendering template within layouts/articles
+Rendering articles/index
+DEPRECATION WARNING: truncate takes an option hash instead of separate length and omission arguments. (called from _run_erb_app47views47articles47index46html46erb at /Users/aniccola/Dropbox/Spring 2011/webapps/src/project04/app/views/articles/index.html.erb:17)
+DEPRECATION WARNING: truncate takes an option hash instead of separate length and omission arguments. (called from _run_erb_app47views47articles47index46html46erb at /Users/aniccola/Dropbox/Spring 2011/webapps/src/project04/app/views/articles/index.html.erb:17)
+DEPRECATION WARNING: truncate takes an option hash instead of separate length and omission arguments. (called from _run_erb_app47views47articles47index46html46erb at /Users/aniccola/Dropbox/Spring 2011/webapps/src/project04/app/views/articles/index.html.erb:17)
+DEPRECATION WARNING: truncate takes an option hash instead of separate length and omission arguments. (called from _run_erb_app47views47articles47index46html46erb at /Users/aniccola/Dropbox/Spring 2011/webapps/src/project04/app/views/articles/index.html.erb:17)
+DEPRECATION WARNING: truncate takes an option hash instead of separate length and omission arguments. (called from _run_erb_app47views47articles47index46html46erb at /Users/aniccola/Dropbox/Spring 2011/webapps/src/project04/app/views/articles/index.html.erb:17)
+DEPRECATION WARNING: truncate takes an option hash instead of separate length and omission arguments. (called from _run_erb_app47views47articles47index46html46erb at /Users/aniccola/Dropbox/Spring 2011/webapps/src/project04/app/views/articles/index.html.erb:17)
+DEPRECATION WARNING: truncate takes an option hash instead of separate length and omission arguments. (called from _run_erb_app47views47articles47index46html46erb at /Users/aniccola/Dropbox/Spring 2011/webapps/src/project04/app/views/articles/index.html.erb:17)
+Completed in 30ms (View: 25, DB: 1) | 200 OK [http://localhost/articles]
+
+
+Processing ArticlesController#index (for 127.0.0.1 at 2011-02-07 08:37:14) [GET]
+  [4;35;1mArticle Load (59.6ms)[0m   [0mSELECT * FROM "articles" [0m
+Rendering template within layouts/articles
+Rendering articles/index
+DEPRECATION WARNING: truncate takes an option hash instead of separate length and omission arguments. (called from _run_erb_app47views47articles47index46html46erb at /Users/aniccola/Dropbox/Spring 2011/webapps/src/project04/app/views/articles/index.html.erb:17)
+DEPRECATION WARNING: truncate takes an option hash instead of separate length and omission arguments. (called from _run_erb_app47views47articles47index46html46erb at /Users/aniccola/Dropbox/Spring 2011/webapps/src/project04/app/views/articles/index.html.erb:17)
+DEPRECATION WARNING: truncate takes an option hash instead of separate length and omission arguments. (called from _run_erb_app47views47articles47index46html46erb at /Users/aniccola/Dropbox/Spring 2011/webapps/src/project04/app/views/articles/index.html.erb:17)
+DEPRECATION WARNING: truncate takes an option hash instead of separate length and omission arguments. (called from _run_erb_app47views47articles47index46html46erb at /Users/aniccola/Dropbox/Spring 2011/webapps/src/project04/app/views/articles/index.html.erb:17)
+DEPRECATION WARNING: truncate takes an option hash instead of separate length and omission arguments. (called from _run_erb_app47views47articles47index46html46erb at /Users/aniccola/Dropbox/Spring 2011/webapps/src/project04/app/views/articles/index.html.erb:17)
+DEPRECATION WARNING: truncate takes an option hash instead of separate length and omission arguments. (called from _run_erb_app47views47articles47index46html46erb at /Users/aniccola/Dropbox/Spring 2011/webapps/src/project04/app/views/articles/index.html.erb:17)
+DEPRECATION WARNING: truncate takes an option hash instead of separate length and omission arguments. (called from _run_erb_app47views47articles47index46html46erb at /Users/aniccola/Dropbox/Spring 2011/webapps/src/project04/app/views/articles/index.html.erb:17)
+Completed in 90ms (View: 26, DB: 60) | 200 OK [http://localhost/articles]
+
+
+Processing ArticlesController#index (for 127.0.0.1 at 2011-02-07 08:37:35) [GET]
+  [4;36;1mArticle Load (0.6ms)[0m   [0;1mSELECT * FROM "articles" [0m
+Rendering template within layouts/articles
+Rendering articles/index
+DEPRECATION WARNING: truncate takes an option hash instead of separate length and omission arguments. (called from _run_erb_app47views47articles47index46html46erb at /Users/aniccola/Dropbox/Spring 2011/webapps/src/project04/app/views/articles/index.html.erb:17)
+DEPRECATION WARNING: truncate takes an option hash instead of separate length and omission arguments. (called from _run_erb_app47views47articles47index46html46erb at /Users/aniccola/Dropbox/Spring 2011/webapps/src/project04/app/views/articles/index.html.erb:17)
+DEPRECATION WARNING: truncate takes an option hash instead of separate length and omission arguments. (called from _run_erb_app47views47articles47index46html46erb at /Users/aniccola/Dropbox/Spring 2011/webapps/src/project04/app/views/articles/index.html.erb:17)
+DEPRECATION WARNING: truncate takes an option hash instead of separate length and omission arguments. (called from _run_erb_app47views47articles47index46html46erb at /Users/aniccola/Dropbox/Spring 2011/webapps/src/project04/app/views/articles/index.html.erb:17)
+DEPRECATION WARNING: truncate takes an option hash instead of separate length and omission arguments. (called from _run_erb_app47views47articles47index46html46erb at /Users/aniccola/Dropbox/Spring 2011/webapps/src/project04/app/views/articles/index.html.erb:17)
+DEPRECATION WARNING: truncate takes an option hash instead of separate length and omission arguments. (called from _run_erb_app47views47articles47index46html46erb at /Users/aniccola/Dropbox/Spring 2011/webapps/src/project04/app/views/articles/index.html.erb:17)
+DEPRECATION WARNING: truncate takes an option hash instead of separate length and omission arguments. (called from _run_erb_app47views47articles47index46html46erb at /Users/aniccola/Dropbox/Spring 2011/webapps/src/project04/app/views/articles/index.html.erb:17)
+Completed in 31ms (View: 27, DB: 1) | 200 OK [http://localhost/articles]
+
+
+Processing ArticlesController#index (for 127.0.0.1 at 2011-02-07 08:37:45) [GET]
+  [4;35;1mArticle Load (0.6ms)[0m   [0mSELECT * FROM "articles" [0m
+Rendering template within layouts/articles
+Rendering articles/index
+DEPRECATION WARNING: truncate takes an option hash instead of separate length and omission arguments. (called from _run_erb_app47views47articles47index46html46erb at /Users/aniccola/Dropbox/Spring 2011/webapps/src/project04/app/views/articles/index.html.erb:17)
+DEPRECATION WARNING: truncate takes an option hash instead of separate length and omission arguments. (called from _run_erb_app47views47articles47index46html46erb at /Users/aniccola/Dropbox/Spring 2011/webapps/src/project04/app/views/articles/index.html.erb:17)
+DEPRECATION WARNING: truncate takes an option hash instead of separate length and omission arguments. (called from _run_erb_app47views47articles47index46html46erb at /Users/aniccola/Dropbox/Spring 2011/webapps/src/project04/app/views/articles/index.html.erb:17)
+DEPRECATION WARNING: truncate takes an option hash instead of separate length and omission arguments. (called from _run_erb_app47views47articles47index46html46erb at /Users/aniccola/Dropbox/Spring 2011/webapps/src/project04/app/views/articles/index.html.erb:17)
+DEPRECATION WARNING: truncate takes an option hash instead of separate length and omission arguments. (called from _run_erb_app47views47articles47index46html46erb at /Users/aniccola/Dropbox/Spring 2011/webapps/src/project04/app/views/articles/index.html.erb:17)
+DEPRECATION WARNING: truncate takes an option hash instead of separate length and omission arguments. (called from _run_erb_app47views47articles47index46html46erb at /Users/aniccola/Dropbox/Spring 2011/webapps/src/project04/app/views/articles/index.html.erb:17)
+DEPRECATION WARNING: truncate takes an option hash instead of separate length and omission arguments. (called from _run_erb_app47views47articles47index46html46erb at /Users/aniccola/Dropbox/Spring 2011/webapps/src/project04/app/views/articles/index.html.erb:17)
+Completed in 31ms (View: 27, DB: 1) | 200 OK [http://localhost/articles]
+
+
+Processing ArticlesController#index (for 127.0.0.1 at 2011-02-07 08:37:51) [GET]
+  [4;36;1mArticle Load (0.6ms)[0m   [0;1mSELECT * FROM "articles" [0m
+Rendering template within layouts/articles
+Rendering articles/index
+DEPRECATION WARNING: truncate takes an option hash instead of separate length and omission arguments. (called from _run_erb_app47views47articles47index46html46erb at /Users/aniccola/Dropbox/Spring 2011/webapps/src/project04/app/views/articles/index.html.erb:17)
+DEPRECATION WARNING: truncate takes an option hash instead of separate length and omission arguments. (called from _run_erb_app47views47articles47index46html46erb at /Users/aniccola/Dropbox/Spring 2011/webapps/src/project04/app/views/articles/index.html.erb:17)
+DEPRECATION WARNING: truncate takes an option hash instead of separate length and omission arguments. (called from _run_erb_app47views47articles47index46html46erb at /Users/aniccola/Dropbox/Spring 2011/webapps/src/project04/app/views/articles/index.html.erb:17)
+DEPRECATION WARNING: truncate takes an option hash instead of separate length and omission arguments. (called from _run_erb_app47views47articles47index46html46erb at /Users/aniccola/Dropbox/Spring 2011/webapps/src/project04/app/views/articles/index.html.erb:17)
+DEPRECATION WARNING: truncate takes an option hash instead of separate length and omission arguments. (called from _run_erb_app47views47articles47index46html46erb at /Users/aniccola/Dropbox/Spring 2011/webapps/src/project04/app/views/articles/index.html.erb:17)
+DEPRECATION WARNING: truncate takes an option hash instead of separate length and omission arguments. (called from _run_erb_app47views47articles47index46html46erb at /Users/aniccola/Dropbox/Spring 2011/webapps/src/project04/app/views/articles/index.html.erb:17)
+DEPRECATION WARNING: truncate takes an option hash instead of separate length and omission arguments. (called from _run_erb_app47views47articles47index46html46erb at /Users/aniccola/Dropbox/Spring 2011/webapps/src/project04/app/views/articles/index.html.erb:17)
+Completed in 31ms (View: 26, DB: 1) | 200 OK [http://localhost/articles]
+
+
+Processing ArticlesController#new (for 127.0.0.1 at 2011-02-07 08:38:24) [GET]
+Rendering template within layouts/articles
+Rendering articles/new
+Completed in 70ms (View: 6, DB: 0) | 200 OK [http://localhost/articles/new]
+
+
+Processing ArticlesController#new (for 127.0.0.1 at 2011-02-07 08:39:28) [GET]
+Rendering template within layouts/articles
+Rendering articles/new
+Completed in 16ms (View: 11, DB: 0) | 200 OK [http://localhost/articles/new]
+
+
+Processing ArticlesController#new (for 127.0.0.1 at 2011-02-07 08:39:57) [GET]
+Rendering template within layouts/articles
+Rendering articles/new
+Completed in 16ms (View: 11, DB: 0) | 200 OK [http://localhost/articles/new]
+
+
+Processing ArticlesController#index (for 127.0.0.1 at 2011-02-07 08:40:00) [GET]
+  [4;35;1mArticle Load (0.5ms)[0m   [0mSELECT * FROM "articles" [0m
+Rendering template within layouts/articles
+Rendering articles/index
+DEPRECATION WARNING: truncate takes an option hash instead of separate length and omission arguments. (called from _run_erb_app47views47articles47index46html46erb at /Users/aniccola/Dropbox/Spring 2011/webapps/src/project04/app/views/articles/index.html.erb:17)
+DEPRECATION WARNING: truncate takes an option hash instead of separate length and omission arguments. (called from _run_erb_app47views47articles47index46html46erb at /Users/aniccola/Dropbox/Spring 2011/webapps/src/project04/app/views/articles/index.html.erb:17)
+DEPRECATION WARNING: truncate takes an option hash instead of separate length and omission arguments. (called from _run_erb_app47views47articles47index46html46erb at /Users/aniccola/Dropbox/Spring 2011/webapps/src/project04/app/views/articles/index.html.erb:17)
+DEPRECATION WARNING: truncate takes an option hash instead of separate length and omission arguments. (called from _run_erb_app47views47articles47index46html46erb at /Users/aniccola/Dropbox/Spring 2011/webapps/src/project04/app/views/articles/index.html.erb:17)
+DEPRECATION WARNING: truncate takes an option hash instead of separate length and omission arguments. (called from _run_erb_app47views47articles47index46html46erb at /Users/aniccola/Dropbox/Spring 2011/webapps/src/project04/app/views/articles/index.html.erb:17)
+DEPRECATION WARNING: truncate takes an option hash instead of separate length and omission arguments. (called from _run_erb_app47views47articles47index46html46erb at /Users/aniccola/Dropbox/Spring 2011/webapps/src/project04/app/views/articles/index.html.erb:17)
+DEPRECATION WARNING: truncate takes an option hash instead of separate length and omission arguments. (called from _run_erb_app47views47articles47index46html46erb at /Users/aniccola/Dropbox/Spring 2011/webapps/src/project04/app/views/articles/index.html.erb:17)
+Completed in 29ms (View: 25, DB: 1) | 200 OK [http://localhost/articles]
+
+
+Processing ArticlesController#index (for 127.0.0.1 at 2011-02-07 08:40:35) [GET]
+  [4;36;1mArticle Load (0.5ms)[0m   [0;1mSELECT * FROM "articles" [0m
+Rendering template within layouts/articles
+Rendering articles/index
+DEPRECATION WARNING: truncate takes an option hash instead of separate length and omission arguments. (called from _run_erb_app47views47articles47index46html46erb at /Users/aniccola/Dropbox/Spring 2011/webapps/src/project04/app/views/articles/index.html.erb:18)
+DEPRECATION WARNING: truncate takes an option hash instead of separate length and omission arguments. (called from _run_erb_app47views47articles47index46html46erb at /Users/aniccola/Dropbox/Spring 2011/webapps/src/project04/app/views/articles/index.html.erb:18)
+DEPRECATION WARNING: truncate takes an option hash instead of separate length and omission arguments. (called from _run_erb_app47views47articles47index46html46erb at /Users/aniccola/Dropbox/Spring 2011/webapps/src/project04/app/views/articles/index.html.erb:18)
+DEPRECATION WARNING: truncate takes an option hash instead of separate length and omission arguments. (called from _run_erb_app47views47articles47index46html46erb at /Users/aniccola/Dropbox/Spring 2011/webapps/src/project04/app/views/articles/index.html.erb:18)
+DEPRECATION WARNING: truncate takes an option hash instead of separate length and omission arguments. (called from _run_erb_app47views47articles47index46html46erb at /Users/aniccola/Dropbox/Spring 2011/webapps/src/project04/app/views/articles/index.html.erb:18)
+DEPRECATION WARNING: truncate takes an option hash instead of separate length and omission arguments. (called from _run_erb_app47views47articles47index46html46erb at /Users/aniccola/Dropbox/Spring 2011/webapps/src/project04/app/views/articles/index.html.erb:18)
+DEPRECATION WARNING: truncate takes an option hash instead of separate length and omission arguments. (called from _run_erb_app47views47articles47index46html46erb at /Users/aniccola/Dropbox/Spring 2011/webapps/src/project04/app/views/articles/index.html.erb:18)
+Completed in 36ms (View: 31, DB: 1) | 200 OK [http://localhost/articles]
+
+
+Processing ArticlesController#index (for 127.0.0.1 at 2011-02-07 08:40:57) [GET]
+  [4;35;1mArticle Load (0.6ms)[0m   [0mSELECT * FROM "articles" [0m
+Rendering template within layouts/articles
+Rendering articles/index
+DEPRECATION WARNING: truncate takes an option hash instead of separate length and omission arguments. (called from _run_erb_app47views47articles47index46html46erb at /Users/aniccola/Dropbox/Spring 2011/webapps/src/project04/app/views/articles/index.html.erb:18)
+DEPRECATION WARNING: truncate takes an option hash instead of separate length and omission arguments. (called from _run_erb_app47views47articles47index46html46erb at /Users/aniccola/Dropbox/Spring 2011/webapps/src/project04/app/views/articles/index.html.erb:18)
+DEPRECATION WARNING: truncate takes an option hash instead of separate length and omission arguments. (called from _run_erb_app47views47articles47index46html46erb at /Users/aniccola/Dropbox/Spring 2011/webapps/src/project04/app/views/articles/index.html.erb:18)
+DEPRECATION WARNING: truncate takes an option hash instead of separate length and omission arguments. (called from _run_erb_app47views47articles47index46html46erb at /Users/aniccola/Dropbox/Spring 2011/webapps/src/project04/app/views/articles/index.html.erb:18)
+DEPRECATION WARNING: truncate takes an option hash instead of separate length and omission arguments. (called from _run_erb_app47views47articles47index46html46erb at /Users/aniccola/Dropbox/Spring 2011/webapps/src/project04/app/views/articles/index.html.erb:18)
+DEPRECATION WARNING: truncate takes an option hash instead of separate length and omission arguments. (called from _run_erb_app47views47articles47index46html46erb at /Users/aniccola/Dropbox/Spring 2011/webapps/src/project04/app/views/articles/index.html.erb:18)
+DEPRECATION WARNING: truncate takes an option hash instead of separate length and omission arguments. (called from _run_erb_app47views47articles47index46html46erb at /Users/aniccola/Dropbox/Spring 2011/webapps/src/project04/app/views/articles/index.html.erb:18)
+Completed in 99ms (View: 31, DB: 1) | 200 OK [http://localhost/articles]
+
+
+Processing ArticlesController#edit (for 127.0.0.1 at 2011-02-07 08:41:07) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mArticle Load (0.2ms)[0m   [0;1mSELECT * FROM "articles" WHERE ("articles"."id" = 1) [0m
+Rendering template within layouts/articles
+Rendering articles/edit
+Completed in 16ms (View: 12, DB: 0) | 200 OK [http://localhost/articles/1/edit]
+
+
+Processing ArticlesController#edit (for 127.0.0.1 at 2011-02-07 08:42:31) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mArticle Load (0.2ms)[0m   [0mSELECT * FROM "articles" WHERE ("articles"."id" = 1) [0m
+Rendering template within layouts/articles
+Rendering articles/edit
+Completed in 13ms (View: 8, DB: 0) | 200 OK [http://localhost/articles/1/edit]
+
+
+Processing ArticlesController#show (for 127.0.0.1 at 2011-02-07 08:42:41) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mArticle Load (0.2ms)[0m   [0;1mSELECT * FROM "articles" WHERE ("articles"."id" = 1) [0m
+Rendering template within layouts/articles
+Rendering articles/show
+Completed in 12ms (View: 7, DB: 0) | 200 OK [http://localhost/articles/1]
+
+
+Processing ArticlesController#show (for 127.0.0.1 at 2011-02-07 08:44:00) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mArticle Load (0.2ms)[0m   [0mSELECT * FROM "articles" WHERE ("articles"."id" = 1) [0m
+Rendering template within layouts/articles
+Rendering articles/show
+Completed in 9ms (View: 4, DB: 0) | 200 OK [http://localhost/articles/1]
+
+
+Processing ArticlesController#show (for 127.0.0.1 at 2011-02-07 08:44:47) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mArticle Load (0.2ms)[0m   [0;1mSELECT * FROM "articles" WHERE ("articles"."id" = 1) [0m
+Rendering template within layouts/articles
+Rendering articles/show
+ERROR: compiling _run_erb_app47views47articles47show46html46erb RAISED compile error
+/Users/aniccola/Dropbox/Spring 2011/webapps/src/project04/app/views/articles/show.html.erb:3: syntax error, unexpected tSTRING_BEG, expecting ')'
+..._tag('/icons/arrow_left.png')'list all articles', articles_p...
+                              ^
+/Users/aniccola/Dropbox/Spring 2011/webapps/src/project04/app/views/articles/show.html.erb:3: syntax error, unexpected ',', expecting ')'
+...left.png')'list all articles', articles_path ).to_s); @outpu...
+                              ^
+Function body:           def _run_erb_app47views47articles47show46html46erb(local_assigns)
+            old_output_buffer = output_buffer;;@output_buffer = '';  __in_erb_template=true ; @output_buffer.concat "<ul>\n\t<li>\n"
+
+; @output_buffer.concat(( link_to image_tag('/icons/arrow_left.png')'list all articles', articles_path ).to_s); @output_buffer.concat "\n</li>\n<li>\n"
+
+
+; @output_buffer.concat(( link_to image_tag("/icons/page_white_edit.png")+"edit", edit_article_path(@article) ).to_s); @output_buffer.concat " \n</li>\n<li>\n"
+
+
+; @output_buffer.concat(( mail_to '', image_tag("/icons/email.png")+"email", :subject => @article.title, :body => article_url(@article), :title => 'email article' ).to_s); @output_buffer.concat "\n</li>\n</ul>\n\n<h2>\n  "
+
+
+
+
+; @output_buffer.concat((h @article.title ).to_s); @output_buffer.concat "\n</h2>\n\n<p>\n  By "
+
+
+
+; @output_buffer.concat((h @article.author_name ).to_s); @output_buffer.concat ", "; @output_buffer.concat((h @article.number_of_edits ).to_s); @output_buffer.concat " edits since "; @output_buffer.concat((h @article.created_at.strftime("%b. %e, %Y") ).to_s); @output_buffer.concat ".\n</p>\n\n<p>\n  "
+
+
+
+; @output_buffer.concat(( simple_format(h(@article.body))  ).to_s); @output_buffer.concat "\n</p>\n\n\n"
+
+
+
+; @output_buffer
+          ensure
+            self.output_buffer = old_output_buffer
+          end
+Backtrace: /Users/aniccola/Dropbox/Spring 2011/webapps/src/project04/app/views/articles/show.html.erb:29:in `compile!'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.10/lib/action_view/renderable.rb:61:in `compile'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.10/lib/action_view/renderable.rb:28:in `render'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.10/lib/action_view/template.rb:205:in `render_template'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.10/lib/action_view/base.rb:265:in `render'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.10/lib/action_view/base.rb:348:in `_render_with_layout'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.10/lib/action_view/base.rb:262:in `render'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.10/lib/action_controller/base.rb:1252:in `render_for_file'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.10/lib/action_controller/base.rb:942:in `render_without_benchmark'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.10/lib/action_controller/benchmarking.rb:51:in `render'
+/Library/Ruby/Gems/1.8/gems/activesupport-2.3.10/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/benchmark.rb:308:in `realtime'
+/Library/Ruby/Gems/1.8/gems/activesupport-2.3.10/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.10/lib/action_controller/benchmarking.rb:51:in `render'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.10/lib/action_controller/mime_responds.rb:135:in `send'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.10/lib/action_controller/mime_responds.rb:135:in `custom'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.10/lib/action_controller/mime_responds.rb:179:in `call'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.10/lib/action_controller/mime_responds.rb:179:in `respond'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.10/lib/action_controller/mime_responds.rb:173:in `each'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.10/lib/action_controller/mime_responds.rb:173:in `respond'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.10/lib/action_controller/mime_responds.rb:107:in `respond_to'
+/Users/aniccola/Dropbox/Spring 2011/webapps/src/project04/app/controllers/articles_controller.rb:18:in `show'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.10/lib/action_controller/base.rb:1333:in `send'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.10/lib/action_controller/base.rb:1333:in `perform_action_without_filters'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.10/lib/action_controller/filters.rb:617:in `call_filters'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.10/lib/action_controller/filters.rb:610:in `perform_action_without_benchmark'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.10/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+/Library/Ruby/Gems/1.8/gems/activesupport-2.3.10/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/benchmark.rb:308:in `realtime'
+/Library/Ruby/Gems/1.8/gems/activesupport-2.3.10/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.10/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.10/lib/action_controller/rescue.rb:160:in `perform_action_without_flash'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.10/lib/action_controller/flash.rb:151:in `perform_action'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.10/lib/action_controller/base.rb:532:in `send'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.10/lib/action_controller/base.rb:532:in `process_without_filters'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.10/lib/action_controller/filters.rb:606:in `process'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.10/lib/action_controller/base.rb:391:in `process'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.10/lib/action_controller/base.rb:386:in `call'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.10/lib/action_controller/routing/route_set.rb:438:in `call'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.10/lib/action_controller/dispatcher.rb:87:in `dispatch'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.10/lib/action_controller/dispatcher.rb:121:in `_call'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.10/lib/action_controller/dispatcher.rb:130:in `build_middleware_stack'
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.10/lib/active_record/query_cache.rb:29:in `call'
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.10/lib/active_record/query_cache.rb:29:in `call'
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.10/lib/active_record/connection_adapters/abstract/query_cache.rb:34:in `cache'
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.10/lib/active_record/query_cache.rb:9:in `cache'
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.10/lib/active_record/query_cache.rb:28:in `call'
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.10/lib/active_record/connection_adapters/abstract/connection_pool.rb:361:in `call'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.10/lib/action_controller/string_coercion.rb:25:in `call'
+/Library/Ruby/Gems/1.8/gems/rack-1.1.0/lib/rack/head.rb:9:in `call'
+/Library/Ruby/Gems/1.8/gems/rack-1.1.0/lib/rack/methodoverride.rb:24:in `call'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.10/lib/action_controller/params_parser.rb:15:in `call'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.10/lib/action_controller/session/cookie_store.rb:100:in `call'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.10/lib/action_controller/failsafe.rb:26:in `call'
+/Library/Ruby/Gems/1.8/gems/rack-1.1.0/lib/rack/lock.rb:11:in `call'
+/Library/Ruby/Gems/1.8/gems/rack-1.1.0/lib/rack/lock.rb:11:in `synchronize'
+/Library/Ruby/Gems/1.8/gems/rack-1.1.0/lib/rack/lock.rb:11:in `call'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.10/lib/action_controller/dispatcher.rb:114:in `call'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.10/lib/action_controller/reloader.rb:34:in `run'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.10/lib/action_controller/dispatcher.rb:108:in `call'
+/Library/Ruby/Gems/1.8/gems/rails-2.3.10/lib/rails/rack/static.rb:31:in `call'
+/Library/Ruby/Gems/1.8/gems/rack-1.1.0/lib/rack/urlmap.rb:47:in `call'
+/Library/Ruby/Gems/1.8/gems/rack-1.1.0/lib/rack/urlmap.rb:41:in `each'
+/Library/Ruby/Gems/1.8/gems/rack-1.1.0/lib/rack/urlmap.rb:41:in `call'
+/Library/Ruby/Gems/1.8/gems/rails-2.3.10/lib/rails/rack/log_tailer.rb:17:in `call'
+/Library/Ruby/Gems/1.8/gems/rack-1.1.0/lib/rack/content_length.rb:13:in `call'
+/Library/Ruby/Gems/1.8/gems/rack-1.1.0/lib/rack/chunked.rb:15:in `call'
+/Library/Ruby/Gems/1.8/gems/rack-1.1.0/lib/rack/handler/mongrel.rb:67:in `process'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:159:in `process_client'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:158:in `each'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:158:in `process_client'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `run'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `initialize'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `new'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `run'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `initialize'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `new'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `run'
+/Library/Ruby/Gems/1.8/gems/rack-1.1.0/lib/rack/handler/mongrel.rb:38:in `run'
+/Library/Ruby/Gems/1.8/gems/rails-2.3.10/lib/commands/server.rb:111
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/rubygems/custom_require.rb:31:in `require'
+./script/server:3
+
+ActionView::TemplateError (compile error
+/Users/aniccola/Dropbox/Spring 2011/webapps/src/project04/app/views/articles/show.html.erb:3: syntax error, unexpected tSTRING_BEG, expecting ')'
+..._tag('/icons/arrow_left.png')'list all articles', articles_p...
+                              ^
+/Users/aniccola/Dropbox/Spring 2011/webapps/src/project04/app/views/articles/show.html.erb:3: syntax error, unexpected ',', expecting ')'
+...left.png')'list all articles', articles_path ).to_s); @outpu...
+                              ^) on line #3 of app/views/articles/show.html.erb:
+1: <ul>
+2: 	<li>
+3: <%= link_to image_tag('/icons/arrow_left.png')'list all articles', articles_path %>
+4: </li>
+5: <li>
+6: <%= link_to image_tag("/icons/page_white_edit.png")+"edit", edit_article_path(@article) %> 
+
+    app/views/articles/show.html.erb:29:in `compile!'
+    app/controllers/articles_controller.rb:18:in `show'
+
+Rendered rescues/_trace (41.8ms)
+Rendered rescues/_request_and_response (1.1ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ArticlesController#show (for 127.0.0.1 at 2011-02-07 08:45:02) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mArticle Load (0.2ms)[0m   [0mSELECT * FROM "articles" WHERE ("articles"."id" = 1) [0m
+Rendering template within layouts/articles
+Rendering articles/show
+Completed in 13ms (View: 8, DB: 0) | 200 OK [http://localhost/articles/1]
+
+
+Processing ArticlesController#show (for 127.0.0.1 at 2011-02-07 08:45:28) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mArticle Load (0.2ms)[0m   [0;1mSELECT * FROM "articles" WHERE ("articles"."id" = 1) [0m
+Rendering template within layouts/articles
+Rendering articles/show
+Completed in 9ms (View: 4, DB: 0) | 200 OK [http://localhost/articles/1]
+
+
+Processing ArticlesController#show (for 127.0.0.1 at 2011-02-07 08:46:16) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mArticle Load (0.2ms)[0m   [0mSELECT * FROM "articles" WHERE ("articles"."id" = 1) [0m
+Rendering template within layouts/articles
+Rendering articles/show
+Completed in 9ms (View: 4, DB: 0) | 200 OK [http://localhost/articles/1]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2011-02-07 08:46:16) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/navi_bg.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ArticlesController#show (for 127.0.0.1 at 2011-02-07 08:46:27) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mArticle Load (0.2ms)[0m   [0;1mSELECT * FROM "articles" WHERE ("articles"."id" = 1) [0m
+Rendering template within layouts/articles
+Rendering articles/show
+Completed in 12ms (View: 5, DB: 0) | 200 OK [http://localhost/articles/1]
+
+
+Processing ArticlesController#show (for 127.0.0.1 at 2011-02-07 08:46:45) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mArticle Load (0.2ms)[0m   [0mSELECT * FROM "articles" WHERE ("articles"."id" = 1) [0m
+Rendering template within layouts/articles
+Rendering articles/show
+Completed in 9ms (View: 4, DB: 0) | 200 OK [http://localhost/articles/1]
+
+
+Processing ArticlesController#show (for 127.0.0.1 at 2011-02-07 08:47:07) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mArticle Load (0.2ms)[0m   [0;1mSELECT * FROM "articles" WHERE ("articles"."id" = 1) [0m
+Rendering template within layouts/articles
+Rendering articles/show
+Completed in 13ms (View: 8, DB: 0) | 200 OK [http://localhost/articles/1]
