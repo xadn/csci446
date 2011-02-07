@@ -6,6 +6,22 @@ body, p, ol, ul, td {
   line-height: 18px;
 }
 
+h1 {
+	font-size: 1em;
+}
+
+#masthead {
+	text-align: center;
+}
+
+#masthead > h1 {
+	font-size: 3em;
+}
+
+#masthead > h2 {
+	font-size: 1em;
+}
+
 
 
 #article_table
