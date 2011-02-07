@@ -58,7 +58,7 @@ class ArticlesController < ApplicationController
   def update
     @article = Article.find(params[:id])
     
-    @article.increment_edits
+    #@article.increment_edits
 
     respond_to do |format|
       if @article.update_attributes(params[:article])

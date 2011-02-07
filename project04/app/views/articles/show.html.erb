@@ -1,3 +1,7 @@
+<%= link_to 'list all articles', articles_path %>
+<%= link_to image_tag("/icons/page_white_edit.png")+"edit", edit_article_path(@article) %> 
+<%= mail_to '', image_tag("/icons/email.png")+"email", :subject => @article.title, :body => article_url(@article), :title => 'email article' %>
+
 <h2>
   <%=h @article.title %>
 </h2>
@@ -7,9 +11,7 @@
 </p>
 
 <p>
-  <%=h @article.body %>
+  <%= simple_format(h(@article.body))  %>
 </p>
 
 
-<%= link_to image_tag("/icons/page_white_edit.png")+"Edit", edit_article_path(@article) %> |
-<%= link_to 'Back', articles_path %>
