@@ -4369,3 +4369,130 @@ DEPRECATION WARNING: truncate takes an option hash instead of separate length an
 DEPRECATION WARNING: truncate takes an option hash instead of separate length and omission arguments. (called from _run_erb_app47views47articles47index46html46erb at /Users/aniccola/Dropbox/Spring 2011/webapps/src/project04/app/views/articles/index.html.erb:22)
 DEPRECATION WARNING: truncate takes an option hash instead of separate length and omission arguments. (called from _run_erb_app47views47articles47index46html46erb at /Users/aniccola/Dropbox/Spring 2011/webapps/src/project04/app/views/articles/index.html.erb:22)
 Completed in 30ms (View: 26, DB: 1) | 200 OK [http://localhost/articles]
+
+
+Processing ArticlesController#new (for 127.0.0.1 at 2011-02-07 09:02:14) [GET]
+Rendering template within layouts/articles
+Rendering articles/new
+Completed in 12ms (View: 6, DB: 0) | 200 OK [http://localhost/articles/new]
+
+
+Processing ArticlesController#index (for 127.0.0.1 at 2011-02-07 09:04:15) [GET]
+  [4;36;1mArticle Load (0.6ms)[0m   [0;1mSELECT * FROM "articles" [0m
+Rendering template within layouts/articles
+Rendering articles/index
+DEPRECATION WARNING: truncate takes an option hash instead of separate length and omission arguments. (called from _run_erb_app47views47articles47index46html46erb at /Users/aniccola/Dropbox/Spring 2011/webapps/src/project04/app/views/articles/index.html.erb:22)
+DEPRECATION WARNING: truncate takes an option hash instead of separate length and omission arguments. (called from _run_erb_app47views47articles47index46html46erb at /Users/aniccola/Dropbox/Spring 2011/webapps/src/project04/app/views/articles/index.html.erb:22)
+DEPRECATION WARNING: truncate takes an option hash instead of separate length and omission arguments. (called from _run_erb_app47views47articles47index46html46erb at /Users/aniccola/Dropbox/Spring 2011/webapps/src/project04/app/views/articles/index.html.erb:22)
+DEPRECATION WARNING: truncate takes an option hash instead of separate length and omission arguments. (called from _run_erb_app47views47articles47index46html46erb at /Users/aniccola/Dropbox/Spring 2011/webapps/src/project04/app/views/articles/index.html.erb:22)
+DEPRECATION WARNING: truncate takes an option hash instead of separate length and omission arguments. (called from _run_erb_app47views47articles47index46html46erb at /Users/aniccola/Dropbox/Spring 2011/webapps/src/project04/app/views/articles/index.html.erb:22)
+DEPRECATION WARNING: truncate takes an option hash instead of separate length and omission arguments. (called from _run_erb_app47views47articles47index46html46erb at /Users/aniccola/Dropbox/Spring 2011/webapps/src/project04/app/views/articles/index.html.erb:22)
+DEPRECATION WARNING: truncate takes an option hash instead of separate length and omission arguments. (called from _run_erb_app47views47articles47index46html46erb at /Users/aniccola/Dropbox/Spring 2011/webapps/src/project04/app/views/articles/index.html.erb:22)
+Completed in 97ms (View: 39, DB: 1) | 200 OK [http://localhost/articles]
+
+
+Processing ArticlesController#new (for 127.0.0.1 at 2011-02-07 09:04:26) [GET]
+Rendering template within layouts/articles
+Rendering articles/new
+Completed in 16ms (View: 11, DB: 0) | 200 OK [http://localhost/articles/new]
+
+
+Processing ArticlesController#create (for 127.0.0.1 at 2011-02-07 09:04:36) [POST]
+  Parameters: {"article"=>{"body"=>"asdfjkldsafjkl;asdf kaskasdfkfds", "author_name"=>"Tracy Camp", "title"=>"Alamode"}, "commit"=>"Create", "authenticity_token"=>"C9mNWR028lgHdg4lLFSgsz4e/U9B7BpXqcu5j0GkBVM="}
+  [4;35;1mArticle Create (0.4ms)[0m   [0mINSERT INTO "articles" ("created_at", "title", "author_name", "body", "number_of_edits", "updated_at") VALUES('2011-02-07 16:04:36', 'Alamode', 'Tracy Camp', 'asdfjkldsafjkl;asdf kaskasdfkfds', 0, '2011-02-07 16:04:36')[0m
+Redirected to http://localhost:3000/articles/8
+Completed in 10ms (DB: 0) | 302 Found [http://localhost/articles]
+
+
+Processing ArticlesController#show (for 127.0.0.1 at 2011-02-07 09:04:36) [GET]
+  Parameters: {"id"=>"8"}
+  [4;36;1mArticle Load (0.2ms)[0m   [0;1mSELECT * FROM "articles" WHERE ("articles"."id" = 8) [0m
+Rendering template within layouts/articles
+Rendering articles/show
+Completed in 28ms (View: 19, DB: 0) | 200 OK [http://localhost/articles/8]
+
+
+Processing ArticlesController#edit (for 127.0.0.1 at 2011-02-07 09:04:38) [GET]
+  Parameters: {"id"=>"8"}
+  [4;35;1mArticle Load (0.2ms)[0m   [0mSELECT * FROM "articles" WHERE ("articles"."id" = 8) [0m
+Rendering template within layouts/articles
+Rendering articles/edit
+Completed in 18ms (View: 13, DB: 0) | 200 OK [http://localhost/articles/8/edit]
+
+
+Processing ArticlesController#update (for 127.0.0.1 at 2011-02-07 09:04:40) [PUT]
+  Parameters: {"article"=>{"body"=>"asdfjkldsafjkl;asdf kaskasdfkfds", "author_name"=>"Tracy Camp", "title"=>""}, "commit"=>"Save Changes", "authenticity_token"=>"C9mNWR028lgHdg4lLFSgsz4e/U9B7BpXqcu5j0GkBVM=", "id"=>"8"}
+  [4;36;1mArticle Load (0.2ms)[0m   [0;1mSELECT * FROM "articles" WHERE ("articles"."id" = 8) [0m
+Rendering template within layouts/articles
+Rendering articles/edit
+Completed in 78ms (View: 71, DB: 0) | 200 OK [http://localhost/articles/8]
+
+
+Processing ArticlesController#show (for 127.0.0.1 at 2011-02-07 09:04:44) [GET]
+  Parameters: {"id"=>"8"}
+  [4;35;1mArticle Load (0.2ms)[0m   [0mSELECT * FROM "articles" WHERE ("articles"."id" = 8) [0m
+Rendering template within layouts/articles
+Rendering articles/show
+Completed in 9ms (View: 4, DB: 0) | 200 OK [http://localhost/articles/8]
+
+
+Processing ArticlesController#edit (for 127.0.0.1 at 2011-02-07 09:04:49) [GET]
+  Parameters: {"id"=>"8"}
+  [4;36;1mArticle Load (0.2ms)[0m   [0;1mSELECT * FROM "articles" WHERE ("articles"."id" = 8) [0m
+Rendering template within layouts/articles
+Rendering articles/edit
+Completed in 12ms (View: 8, DB: 0) | 200 OK [http://localhost/articles/8/edit]
+
+
+Processing ArticlesController#update (for 127.0.0.1 at 2011-02-07 09:04:51) [PUT]
+  Parameters: {"article"=>{"body"=>"asdfjkldsafjkl;asdf kaskasdfkfds", "author_name"=>"Tracy Camp", "title"=>"Alamode"}, "commit"=>"Save Changes", "authenticity_token"=>"C9mNWR028lgHdg4lLFSgsz4e/U9B7BpXqcu5j0GkBVM=", "id"=>"8"}
+  [4;35;1mArticle Load (0.2ms)[0m   [0mSELECT * FROM "articles" WHERE ("articles"."id" = 8) [0m
+  [4;36;1mArticle Update (0.3ms)[0m   [0;1mUPDATE "articles" SET "updated_at" = '2011-02-07 16:04:51', "number_of_edits" = 1 WHERE "id" = 8[0m
+Redirected to http://localhost:3000/articles/8
+Completed in 10ms (DB: 0) | 302 Found [http://localhost/articles/8]
+
+
+Processing ArticlesController#show (for 127.0.0.1 at 2011-02-07 09:04:51) [GET]
+  Parameters: {"id"=>"8"}
+  [4;35;1mArticle Load (0.2ms)[0m   [0mSELECT * FROM "articles" WHERE ("articles"."id" = 8) [0m
+Rendering template within layouts/articles
+Rendering articles/show
+Completed in 11ms (View: 5, DB: 0) | 200 OK [http://localhost/articles/8]
+
+
+Processing ArticlesController#index (for 127.0.0.1 at 2011-02-07 09:04:52) [GET]
+  [4;36;1mArticle Load (0.6ms)[0m   [0;1mSELECT * FROM "articles" [0m
+Rendering template within layouts/articles
+Rendering articles/index
+DEPRECATION WARNING: truncate takes an option hash instead of separate length and omission arguments. (called from _run_erb_app47views47articles47index46html46erb at /Users/aniccola/Dropbox/Spring 2011/webapps/src/project04/app/views/articles/index.html.erb:22)
+DEPRECATION WARNING: truncate takes an option hash instead of separate length and omission arguments. (called from _run_erb_app47views47articles47index46html46erb at /Users/aniccola/Dropbox/Spring 2011/webapps/src/project04/app/views/articles/index.html.erb:22)
+DEPRECATION WARNING: truncate takes an option hash instead of separate length and omission arguments. (called from _run_erb_app47views47articles47index46html46erb at /Users/aniccola/Dropbox/Spring 2011/webapps/src/project04/app/views/articles/index.html.erb:22)
+DEPRECATION WARNING: truncate takes an option hash instead of separate length and omission arguments. (called from _run_erb_app47views47articles47index46html46erb at /Users/aniccola/Dropbox/Spring 2011/webapps/src/project04/app/views/articles/index.html.erb:22)
+DEPRECATION WARNING: truncate takes an option hash instead of separate length and omission arguments. (called from _run_erb_app47views47articles47index46html46erb at /Users/aniccola/Dropbox/Spring 2011/webapps/src/project04/app/views/articles/index.html.erb:22)
+DEPRECATION WARNING: truncate takes an option hash instead of separate length and omission arguments. (called from _run_erb_app47views47articles47index46html46erb at /Users/aniccola/Dropbox/Spring 2011/webapps/src/project04/app/views/articles/index.html.erb:22)
+DEPRECATION WARNING: truncate takes an option hash instead of separate length and omission arguments. (called from _run_erb_app47views47articles47index46html46erb at /Users/aniccola/Dropbox/Spring 2011/webapps/src/project04/app/views/articles/index.html.erb:22)
+DEPRECATION WARNING: truncate takes an option hash instead of separate length and omission arguments. (called from _run_erb_app47views47articles47index46html46erb at /Users/aniccola/Dropbox/Spring 2011/webapps/src/project04/app/views/articles/index.html.erb:22)
+Completed in 34ms (View: 29, DB: 1) | 200 OK [http://localhost/articles]
+
+
+Processing ArticlesController#show (for 127.0.0.1 at 2011-02-07 09:08:08) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mArticle Load (0.2ms)[0m   [0mSELECT * FROM "articles" WHERE ("articles"."id" = 1) [0m
+Rendering template within layouts/articles
+Rendering articles/show
+Completed in 13ms (View: 8, DB: 0) | 200 OK [http://localhost/articles/1]
+
+
+Processing ArticlesController#index (for 127.0.0.1 at 2011-02-07 09:08:09) [GET]
+  [4;36;1mArticle Load (0.6ms)[0m   [0;1mSELECT * FROM "articles" [0m
+Rendering template within layouts/articles
+Rendering articles/index
+DEPRECATION WARNING: truncate takes an option hash instead of separate length and omission arguments. (called from _run_erb_app47views47articles47index46html46erb at /Users/aniccola/Dropbox/Spring 2011/webapps/src/project04/app/views/articles/index.html.erb:22)
+DEPRECATION WARNING: truncate takes an option hash instead of separate length and omission arguments. (called from _run_erb_app47views47articles47index46html46erb at /Users/aniccola/Dropbox/Spring 2011/webapps/src/project04/app/views/articles/index.html.erb:22)
+DEPRECATION WARNING: truncate takes an option hash instead of separate length and omission arguments. (called from _run_erb_app47views47articles47index46html46erb at /Users/aniccola/Dropbox/Spring 2011/webapps/src/project04/app/views/articles/index.html.erb:22)
+DEPRECATION WARNING: truncate takes an option hash instead of separate length and omission arguments. (called from _run_erb_app47views47articles47index46html46erb at /Users/aniccola/Dropbox/Spring 2011/webapps/src/project04/app/views/articles/index.html.erb:22)
+DEPRECATION WARNING: truncate takes an option hash instead of separate length and omission arguments. (called from _run_erb_app47views47articles47index46html46erb at /Users/aniccola/Dropbox/Spring 2011/webapps/src/project04/app/views/articles/index.html.erb:22)
+DEPRECATION WARNING: truncate takes an option hash instead of separate length and omission arguments. (called from _run_erb_app47views47articles47index46html46erb at /Users/aniccola/Dropbox/Spring 2011/webapps/src/project04/app/views/articles/index.html.erb:22)
+DEPRECATION WARNING: truncate takes an option hash instead of separate length and omission arguments. (called from _run_erb_app47views47articles47index46html46erb at /Users/aniccola/Dropbox/Spring 2011/webapps/src/project04/app/views/articles/index.html.erb:22)
+DEPRECATION WARNING: truncate takes an option hash instead of separate length and omission arguments. (called from _run_erb_app47views47articles47index46html46erb at /Users/aniccola/Dropbox/Spring 2011/webapps/src/project04/app/views/articles/index.html.erb:22)
+Completed in 98ms (View: 32, DB: 1) | 200 OK [http://localhost/articles]
