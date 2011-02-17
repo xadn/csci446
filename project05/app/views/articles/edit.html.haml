@@ -1,0 +1,22 @@
+- content_for :subtitle do
+  \... my cousin works for Bit.ly
+%h1 Editing article
+- form_for(@article) do |f|
+  = f.error_messages
+  %p
+    = f.label :title
+    %br/
+    = f.text_field :title
+  %p
+    = f.label :author_name
+    %br/
+    = f.text_field :author_name
+  %p
+    = f.label :body
+    %br/
+    = f.text_area :body
+  %p
+    = f.submit 'Save Changes'
+= link_to 'Show', @article
+|
+\#{link_to 'Back', articles_path}
