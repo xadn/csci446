@@ -1,44 +1,23 @@
 class ArticlesController < ApplicationController
-  # GET /articles
-  # GET /articles.xml
+
+   before_filter :set_edit_return_url, :only => [:edit]
+   
   def index
     @articles = Article.all
-
-    respond_to do |format|
-      format.html # index.html.erb
-      format.xml  { render :xml => @articles }
-    end
   end
 
-  # GET /articles/1
-  # GET /articles/1.xml
   def show
     @article = Article.find(params[:id])
-
-    respond_to do |format|
-      format.html # show.html.erb
-      format.xml  { render :xml => @article }
-    end
   end
 
-  # GET /articles/new
-  # GET /articles/new.xml
   def new
     @article = Article.new
-    
-    respond_to do |format|
-      format.html # new.html.erb
-      format.xml  { render :xml => @article }
-    end
   end
 
-  # GET /articles/1/edit
   def edit
     @article = Article.find(params[:id])
   end
 
-  # POST /articles
-  # POST /articles.xml
   def create
     @article = Article.new(params[:article])
 
@@ -53,12 +32,8 @@ class ArticlesController < ApplicationController
     end
   end
 
-  # PUT /articles/1
-  # PUT /articles/1.xml
   def update
     @article = Article.find(params[:id])
-    
-    #@article.increment_edits
 
     respond_to do |format|
       if @article.update_attributes(params[:article])
@@ -71,8 +46,6 @@ class ArticlesController < ApplicationController
     end
   end
 
-  # DELETE /articles/1
-  # DELETE /articles/1.xml
   def destroy
     @article = Article.find(params[:id])
     @article.destroy
@@ -82,4 +55,11 @@ class ArticlesController < ApplicationController
       format.xml  { head :ok }
     end
   end
+  
+private
+  
+  def set_edit_return_url
+     session[:edit_redirect] = request.referer
+  end
+     
 end
