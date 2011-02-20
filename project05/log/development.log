@@ -4496,3 +4496,18 @@ DEPRECATION WARNING: truncate takes an option hash instead of separate length an
 DEPRECATION WARNING: truncate takes an option hash instead of separate length and omission arguments. (called from _run_erb_app47views47articles47index46html46erb at /Users/aniccola/Dropbox/Spring 2011/webapps/src/project04/app/views/articles/index.html.erb:22)
 DEPRECATION WARNING: truncate takes an option hash instead of separate length and omission arguments. (called from _run_erb_app47views47articles47index46html46erb at /Users/aniccola/Dropbox/Spring 2011/webapps/src/project04/app/views/articles/index.html.erb:22)
 Completed in 98ms (View: 32, DB: 1) | 200 OK [http://localhost/articles]
+
+
+Processing ArticlesController#index (for 127.0.0.1 at 2011-02-19 19:41:19) [GET]
+  [4;36;1mArticle Load (0.6ms)[0m   [0;1mSELECT * FROM "articles" [0m
+Rendering template within layouts/articles
+Rendering articles/index
+DEPRECATION WARNING: truncate takes an option hash instead of separate length and omission arguments. (called from _run_erb_app47views47articles47index46html46erb at /Users/aniccola/Dropbox/Spring 2011/webapps/src/project04/app/views/articles/index.html.erb:22)
+DEPRECATION WARNING: truncate takes an option hash instead of separate length and omission arguments. (called from _run_erb_app47views47articles47index46html46erb at /Users/aniccola/Dropbox/Spring 2011/webapps/src/project04/app/views/articles/index.html.erb:22)
+DEPRECATION WARNING: truncate takes an option hash instead of separate length and omission arguments. (called from _run_erb_app47views47articles47index46html46erb at /Users/aniccola/Dropbox/Spring 2011/webapps/src/project04/app/views/articles/index.html.erb:22)
+DEPRECATION WARNING: truncate takes an option hash instead of separate length and omission arguments. (called from _run_erb_app47views47articles47index46html46erb at /Users/aniccola/Dropbox/Spring 2011/webapps/src/project04/app/views/articles/index.html.erb:22)
+DEPRECATION WARNING: truncate takes an option hash instead of separate length and omission arguments. (called from _run_erb_app47views47articles47index46html46erb at /Users/aniccola/Dropbox/Spring 2011/webapps/src/project04/app/views/articles/index.html.erb:22)
+DEPRECATION WARNING: truncate takes an option hash instead of separate length and omission arguments. (called from _run_erb_app47views47articles47index46html46erb at /Users/aniccola/Dropbox/Spring 2011/webapps/src/project04/app/views/articles/index.html.erb:22)
+DEPRECATION WARNING: truncate takes an option hash instead of separate length and omission arguments. (called from _run_erb_app47views47articles47index46html46erb at /Users/aniccola/Dropbox/Spring 2011/webapps/src/project04/app/views/articles/index.html.erb:22)
+DEPRECATION WARNING: truncate takes an option hash instead of separate length and omission arguments. (called from _run_erb_app47views47articles47index46html46erb at /Users/aniccola/Dropbox/Spring 2011/webapps/src/project04/app/views/articles/index.html.erb:22)
+Completed in 51ms (View: 46, DB: 1) | 200 OK [http://localhost/]
