@@ -12,8 +12,9 @@
     <%= f.text_field :title %>
   </p>
   <p>
-    <%= f.label :author_name %><br />
-    <%= f.text_field :author_name %>
+  <%= f.label :author_id %><br />
+  <%= f.select :author_id, @authors.collect {|a| [a.name, a.id]}, :include_blank => true %>
+
   </p>
   <p>
     <%= f.label :body %><br />

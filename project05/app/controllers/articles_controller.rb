@@ -1,9 +1,10 @@
 class ArticlesController < ApplicationController
 
    before_filter :set_edit_return_url, :only => [:edit]
+	before_filter :load_authors, :only => [:new, :edit, :update]
    
   def index
-    @articles = Article.all
+	  @articles = Article.all(:include => :author)
   end
 
   def show
@@ -60,6 +61,10 @@ private
   
   def set_edit_return_url
      session[:edit_redirect] = request.referer
+  end
+  
+  def load_authors
+  	@authors = Author.all.collect
   end
      
 end
