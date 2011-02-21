@@ -9,6 +9,9 @@ class Article < ActiveRecord::Base
   
   before_save :increment_edits  
   
+  cattr_reader :per_page
+    @@per_page = 3
+  
   private
     
     def increment_edits

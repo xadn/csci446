@@ -4,8 +4,6 @@
 
 <h1>All the world's articles</h1>
 
-<%= link_to 'Authors', :controller => :authors, :action => :index %>
-
 <%= link_to image_tag('/icons/add.png')+'Create an article', new_article_path %>
 
 <div id="article_table">
@@ -21,7 +19,7 @@
   <tr>
     <td><%=h article.title %></td>
     <td><%=h article.author %></td>
-    <td><%=h truncate(article.body, 100, "...") %></td>
+    <td><%=h truncate(article.body, 50, "...") %></td>
     <td><%=h article.created_at.strftime("%A, %b. %e %Y") %></td>
     <td><%= link_to image_tag("/icons/magnifier.png"), article %></td>
     <td><%= link_to image_tag("/icons/page_white_edit.png"), edit_article_path(article) %></td>
@@ -32,4 +30,6 @@
 </div>
 <br />
 
-<%= pluralize(@articles.size, "article") %>
+<%= will_paginate @articles %>
+
+<%= pluralize(@article_count, "article") %>

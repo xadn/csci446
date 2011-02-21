@@ -16,6 +16,15 @@
 	<h2><%= yield :subtitle %></h2>
 	
 </div>
+
+<div id="mainmenu">
+	<ul>
+		<li><%= link_to 'Articles', :controller => :articles, :action => :index %></li>
+		<li><%= link_to 'Authors', :controller => :authors, :action => :index %></li>
+	</ul>
+</div>
+<br />
+
 <%= yield %>
 
 </body>

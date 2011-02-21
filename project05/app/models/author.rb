@@ -2,7 +2,8 @@ class Author < ActiveRecord::Base
    
    has_many :articles
 	
-	has_attached_file :photo
+	has_attached_file :photo,
+	                  :url => '/assets/:class/:attachment/:id/:style/:filename' 
 
 	validates_presence_of :name
 	validate :exclude_author_sally
