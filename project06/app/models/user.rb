@@ -3,6 +3,10 @@ class User < ActiveRecord::Base
 	
 	has_many :games
 	
+	def to_s
+		username
+	end
+	
 	def role_symbols
 		if admin?
 			[:admin] 

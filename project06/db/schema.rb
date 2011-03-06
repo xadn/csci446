@@ -12,18 +12,18 @@
 ActiveRecord::Schema.define(:version => 20110304203426) do
 
   create_table "games", :force => true do |t|
-    t.integer  "user_id"
-    t.string   "title"
-    t.integer  "rating"
+    t.integer  "user_id",    :null => false
+    t.string   "title",      :null => false
+    t.integer  "rating",     :null => false
     t.datetime "created_at"
     t.datetime "updated_at"
   end
 
   create_table "users", :force => true do |t|
-    t.string   "username"
-    t.string   "email"
-    t.string   "crypted_password"
-    t.string   "password_salt"
+    t.string   "username",                             :null => false
+    t.string   "email",                                :null => false
+    t.string   "crypted_password",                     :null => false
+    t.string   "password_salt",                        :null => false
     t.string   "persistence_token"
     t.boolean  "admin",             :default => false
     t.datetime "created_at"
