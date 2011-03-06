@@ -16,30 +16,28 @@ class GamesController < ApplicationController
     @game = Game.find(params[:id])
   end
 
-  # POST /games
-  # POST /games.xml
   def create
     @game = Game.new(params[:game])
 
-     if @game.save
-       format.html { redirect_to(@game, :notice => 'Game was successfully created.') }
-       format.xml  { render :xml => @game, :status => :created, :location => @game }
-     else
-       format.html { render :action => "new" }
-       format.xml  { render :xml => @game.errors, :status => :unprocessable_entity }
-     end
+		if @game.save
+			flash[:notice] = "New game added."
+			redirect_to @game
+		else
+			flash[:notice] = "Unable to add game"
+			redirect_to root_url
+		end
   end
 
   def update
     @game = Game.find(params[:id])
 
-     if @game.update_attributes(params[:game])
-       format.html { redirect_to(@game, :notice => 'Game was successfully updated.') }
-       format.xml  { head :ok }
-     else
-       format.html { render :action => "edit" }
-       format.xml  { render :xml => @game.errors, :status => :unprocessable_entity }
-     end
+		if @game.update_attributes(params[:game])
+			flash[:notice] = "Game updated."
+			redirect_to @game
+		else
+			flash[:notice] = "Unable to update game."
+			redirect_to root_url
+		end
   end
 
   def destroy

@@ -1,23 +1,7 @@
 <h1>Editing game</h1>
 
 <% form_for(@game) do |f| %>
-  <%= f.error_messages %>
-
-  <p>
-    <%= f.label :user_id %><br />
-    <%= f.text_field :user_id %>
-  </p>
-  <p>
-    <%= f.label :title %><br />
-    <%= f.text_field :title %>
-  </p>
-  <p>
-    <%= f.label :rating %><br />
-    <%= f.text_field :rating %>
-  </p>
-  <p>
-    <%= f.submit 'Update' %>
-  </p>
+	<%= render :partial => 'form', :locals => {:f => f} %>
 <% end %>
 
 <%= link_to 'Show', @game %> |
