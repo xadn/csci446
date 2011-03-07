@@ -1,7 +1,7 @@
 authorization do
 	
 	role :admin do
-		has_permission_on [:games, :users, :user_sessions], :to => :manage
+		has_permission_on [:games, :admin_users, :user_sessions], :to => :manage
 	end
 	
 	role :member do
