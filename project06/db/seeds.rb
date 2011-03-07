@@ -4,21 +4,21 @@
 
 User.create(
 		:username => "administrator",
-		:email => "aniccola@mines.edu",
+		:email => "admin@games.com",
 		:password => "password",
 		:password_confirmation => "password",
 		:admin => true,
-		:first_name => "Yong",
-		:last_name => "Bakos"
+		:first_name => "fist",
+		:last_name => "last"
 	)
 	
-User.create(
+member = User.create(
 		:username => "member",
-		:email => "ybakos@mines.edu",
+		:email => "member@games.com",
 		:password => "password",
 		:password_confirmation => "password",
-		:first_name => "Yong",
-		:last_name => "Bakos"
+		:first_name => "fist",
+		:last_name => "last"
 	)
 	
 gaminator = User.create(
@@ -26,8 +26,8 @@ gaminator = User.create(
 		:email => "hgaimur@mines.edu",
 		:password => "password",
 		:password_confirmation => "password",
-		:first_name => "Yong",
-		:last_name => "Bakos"
+		:first_name => "fist",
+		:last_name => "last"
 	)
 		
 fuzzy_rhino = User.create(
@@ -35,8 +35,8 @@ fuzzy_rhino = User.create(
 		:email => "frhino@mines.edu",
 		:password => "password",
 		:password_confirmation => "password",
-		:first_name => "Yong",
-		:last_name => "Bakos"
+		:first_name => "fist",
+		:last_name => "last"
 	)
 	
 mbates = User.create(
@@ -44,8 +44,8 @@ mbates = User.create(
 		:email => "mbates@mines.edu",
 		:password => "password",
 		:password_confirmation => "password",
-		:first_name => "Yong",
-		:last_name => "Bakos"
+		:first_name => "fist",
+		:last_name => "last"
 	)
 
 jstalin2 = User.create(
@@ -53,8 +53,8 @@ jstalin2 = User.create(
 		:email => "jstalin@mines.edu",
 		:password => "password",
 		:password_confirmation => "password",
-		:first_name => "Yong",
-		:last_name => "Bakos"
+		:first_name => "fist",
+		:last_name => "last"
 	)
 	
 kji = User.create(
@@ -62,11 +62,11 @@ kji = User.create(
 		:email => "kil@mines.edu",
 		:password => "password",
 		:password_confirmation => "password",
-		:first_name => "Yong",
-		:last_name => "Bakos"
+		:first_name => "fist",
+		:last_name => "last"
 	)
 		
-2.times do
+3.times do
 	Game.create(
 			:user => fuzzy_rhino,
 			:title => "Zompocalypse",
@@ -74,7 +74,7 @@ kji = User.create(
 		)
 	
 	Game.create(
-			:user => fuzzy_rhino,
+			:user => member,
 			:title => "Goldfish Eating Contest",
 			:rating => 2
 		)
@@ -86,7 +86,7 @@ kji = User.create(
 		)
 	
 	Game.create(
-			:user => gaminator,
+			:user => member,
 			:title => "Deathcon Match 4",
 			:rating => 1
 		)
