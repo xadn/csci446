@@ -2,23 +2,19 @@
 
 <table>
   <tr>
-    <th>User</th>
     <th>Title</th>
     <th>Rating</th>
+    <th>Date Added</th>
+    
   </tr>
 
 <% @games.each do |game| %>
   <tr>
-    <td><%=h game.user %></td>
-    <td><%=h game.title %></td>
+    <td><%=h link_to game.title, member_game_path(game) %></td>
     <td><%=h game.rating %></td>
-    <td><%= link_to 'Show', member_game_path(game) %></td>
-    <td><%= link_to 'Edit', edit_member_game_path(game) %></td>
-    <td><%= link_to 'Destroy', member_game_path(game), :confirm => 'Are you sure?', :method => :delete %></td>
+    <td><%=h game.created_at.to_date %>
   </tr>
 <% end %>
 </table>
 
 <br />
-
-<%= link_to 'New game', new_game_path %>

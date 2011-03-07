@@ -1,15 +1,13 @@
-<h1>Listing games</h1>
+<h1>Your games</h1>
 
 <table>
   <tr>
-    <th>User</th>
     <th>Title</th>
     <th>Rating</th>
   </tr>
 
 <% @games.each do |game| %>
   <tr>
-    <td><%=h game.user %></td>
     <td><%=h game.title %></td>
     <td><%=h game.rating %></td>
     <td><%= link_to 'Show', member_game_path(game) %></td>
