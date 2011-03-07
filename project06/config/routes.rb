@@ -13,6 +13,11 @@ map.namespace :admin do |admin|
 	admin.root :controller => 'admin', :action => 'index'
 end
 
+map.namespace :member do |member|
+	member.resources :games
+	member.root :controller => 'member', :action => 'index'
+end 
+
  	map.root :controller => 'games'
 
   map.connect ':controller/:action/:id'

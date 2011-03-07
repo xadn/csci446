@@ -1,4 +1,4 @@
-class GamesController < ApplicationController
+class Member::GamesController < Member::MemberController
 
   def index
     @games = Game.all
