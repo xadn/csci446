@@ -1,11 +1,11 @@
 class Admin::UsersController < Admin::AdminController
-	filter_access_to :all
 	
   def index
     @users = User.all
   end
 
   def show
+	 @user = User.find(params[:id])
   end
 
   def new
@@ -13,7 +13,7 @@ class Admin::UsersController < Admin::AdminController
   end
 
   def edit
-    @user = current_user
+    @user = User.find(params[:id])
   end
 
   def create
@@ -26,7 +26,7 @@ class Admin::UsersController < Admin::AdminController
   end
 
   def update
-		@user = current_user
+		@user = User.find(params[:id])
 		if @user.update_attributes(params[:user])
 			flash[:notice] = "Successfully updated user."
 			redirect_to root_url
@@ -36,6 +36,7 @@ class Admin::UsersController < Admin::AdminController
   end
 
   def destroy
+		@user = User.find(params[:id])
     @user.destroy
   end
 end

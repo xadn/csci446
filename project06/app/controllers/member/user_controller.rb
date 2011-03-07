@@ -13,7 +13,7 @@ class Member::UsersController < Member::MemberController
 		
 		if @user.update_attributes(params[:user])
 			flash[:notice] = "Successfully updated user."
-			redirect_to :controller => :admin, :action => :index
+			redirect_to root_url
 		else
 			render :action => 'edit'
 		end

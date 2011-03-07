@@ -1,7 +1,7 @@
 class Member::GamesController < Member::MemberController
 
   def index
-    @games = Game.all
+    @games = current_user.games
   end
 
   def show
@@ -43,6 +43,7 @@ class Member::GamesController < Member::MemberController
   def destroy
     @game = Game.find(params[:id])
     @game.destroy
+		redirect_to root_url
   end
 
 end

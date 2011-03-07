@@ -8,7 +8,16 @@ class User < ActiveRecord::Base
 	end
 	
 	def role_symbols
-		return :admin if current_user && admin?
-		return :member if current_user
+		if admin?
+			:admin
+		else
+			:member
+		end
 	end
+	
+	def homepage
+		return :controller => '/admin' if role_symbols == :admin
+		return :controller => '/member' if role_symbols == :member
+	end
+	
 end

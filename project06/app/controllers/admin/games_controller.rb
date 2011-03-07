@@ -43,6 +43,7 @@ class Admin::GamesController < Admin::AdminController
   def destroy
     @game = Game.find(params[:id])
     @game.destroy
+		redirect_to root_url
   end
 
 end
