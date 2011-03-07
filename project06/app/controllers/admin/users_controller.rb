@@ -1,7 +1,8 @@
 class Admin::UsersController < Admin::AdminController
 	
   def index
-    @users = User.all
+		@users = User.paginate(:page => params[:page])
+		@user_count = Game.count
   end
 
   def show

@@ -16,8 +16,9 @@
     <td><%= link_to 'Destroy', admin_user_path(user), :confirm => 'Are you sure?', :method => :delete %></td>
   </tr>
 <% end %>
-</table>
+</table><br />
 
-<br />
+<%= will_paginate @users %><br />
+<%= pluralize(@user_count, "game") %>
 
-<%# link_to 'New user', new_user_path %>
+<% link_to 'New user', new_admin_user_path %>

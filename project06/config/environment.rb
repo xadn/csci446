@@ -18,3 +18,6 @@ Rails::Initializer.run do |config|
   config.time_zone = 'UTC'
 
 end
+
+ENV['RECAPTCHA_PUBLIC_KEY'] = '6LcePcISAAAAADOrDdAYXJAJH2Z2ji5PY9dZmLn9'
+ENV['RECAPTCHA_PRIVATE_KEY'] = '6LcePcISAAAAANwvNuLAdXGtrIOcxrQbuF5BCG9O'

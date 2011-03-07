@@ -7,7 +7,7 @@ class UsersController < ApplicationController
   def create
 		@user = User.new(params[:user])
 	
-		if @user.save
+		if verify_recaptcha and @user.save
 			flash[:notice] = "Registration successful."
 			redirect_to @user.homepage
 		else
