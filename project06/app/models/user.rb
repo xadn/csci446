@@ -9,9 +9,15 @@ class User < ActiveRecord::Base
 	
 	def role_symbols
 		if admin?
-			[:admin] 
+			:admin
 		else
-			[:member]
+			:member
 		end
 	end
+	
+	def homepage
+		return :controller => '/admin' if role_symbols == :admin
+		return :controller => '/member' if role_symbols == :member
+	end
+	
 end

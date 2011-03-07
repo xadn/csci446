@@ -13,7 +13,10 @@
 	<div id="container">
 		<div id="user_nav">
 			<% if current_user %>
-				<%# link_to "Edit Profile", edit_user_path(:current) %> |
+				Logged in as
+				<%= link_to current_user, edit_member_user_path(:current) %>,
+				<%= current_user.role_symbols %> |
+				<%= link_to "Homepage", current_user.homepage %> |
 				<%= link_to "Logout", logout_path %>
 			<% else %>
 				<%= link_to "Register", register_path %> |
@@ -24,7 +27,6 @@
 			<h1>Games</h1>
 		</div>
 	</div>
-
 
 <%= yield %>
 
