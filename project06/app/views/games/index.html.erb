@@ -16,5 +16,7 @@
   </tr>
 <% end %>
 </table>
-
 <br />
+
+<%= will_paginate @games %><br />
+<%= pluralize(@game_count, "game") %>

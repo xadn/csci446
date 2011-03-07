@@ -1,7 +1,8 @@
 class Member::GamesController < Member::MemberController
 
   def index
-    @games = current_user.games
+    @games = current_user.games.paginate(:page => params[:page])
+		@game_count = current_user.games.count
   end
 
   def show

@@ -1,5 +1,7 @@
 <h1>Listing games</h1>
 
+<%= link_to 'New game', new_admin_game_path %><br />
+
 <table>
   <tr>
     <th>User</th>
@@ -17,8 +19,8 @@
     <td><%= link_to 'Destroy', admin_game_path(game), :confirm => 'Are you sure?', :method => :delete %></td>
   </tr>
 <% end %>
-</table>
+</table><br />
 
-<br />
+<%= will_paginate @games %><br />
+<%= pluralize(@game_count, "game") %>
 
-<%= link_to 'New game', new_admin_game_path %>

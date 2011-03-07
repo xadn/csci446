@@ -1,5 +1,7 @@
 <h1>Your games</h1>
 
+<%= link_to 'New game', new_member_game_path %><br />
+
 <table>
   <tr>
     <th>Title</th>
@@ -15,8 +17,7 @@
     <td><%= link_to 'Destroy', member_game_path(game), :confirm => 'Are you sure?', :method => :delete %></td>
   </tr>
 <% end %>
-</table>
+</table><br />
 
-<br />
-
-<%= link_to 'New game', new_member_game_path %>
+<%= will_paginate @games %><br />
+<%= pluralize(@game_count, "game") %>
