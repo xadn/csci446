@@ -1,5 +1,5 @@
-class UsersController < ApplicationController
-	filter_resource_access
+class UsersController < ActionController::Base
+	filter_access_to :all
 	
   def index
     @users = User.all
