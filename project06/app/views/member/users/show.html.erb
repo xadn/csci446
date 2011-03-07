@@ -8,11 +8,6 @@
   <%=h @user.email %>
 </p>
 
-<p>
-  <b>Password:</b>
-  <%=h @user.password %>
-</p>
 
-
-<%= link_to 'Edit', edit_member_user_path(@user) %> |
+<%= link_to 'Update account', edit_member_user_path(@user) %> |
 <%= link_to 'Back', member_users_path %>
