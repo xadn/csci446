@@ -48,8 +48,8 @@ mbates = User.create(
 		:last_name => "last"
 	)
 
-jstalin2 = User.create(
-		:username => "jstalin2",
+jstalin = User.create(
+		:username => "jstalin",
 		:email => "jstalin@mines.edu",
 		:password => "password",
 		:password_confirmation => "password",
@@ -110,7 +110,7 @@ kji = User.create(
 		)
 	
 	Game.create(
-			:user => jstalin2,
+			:user => jstalin,
 			:title => "Learn to Draw: Naked People",
 			:rating => 4
 	)
@@ -122,7 +122,7 @@ kji = User.create(
 		)
 	
 	Game.create(
-			:user => jstalin2,
+			:user => jstalin,
 			:title => "Jelly Blocs",
 			:rating => 4
 		)

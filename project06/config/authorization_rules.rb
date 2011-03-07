@@ -5,8 +5,8 @@ authorization do
 	end
 	
 	role :admin do
-		#includes :member
-		has_permission_on [:admin, :admin_games, :admin_users], :to => :manage
+		includes :member
+		has_permission_on [:admin_admin, :admin_games, :admin_users], :to => :manage
 	end
 		
 	role :guest do
