@@ -18,6 +18,7 @@ class Member::GamesController < Member::MemberController
 
   def create
     @game = Game.new(params[:game])
+		@game.user = current_user
 
 		if @game.save
 			flash[:notice] = "New game added."

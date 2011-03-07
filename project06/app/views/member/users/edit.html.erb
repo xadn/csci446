@@ -1,6 +1,6 @@
 <h1>Update account</h1>
 
-<% form_for(@user) do |f| %>
+<% form_for([:member, @user]) do |f| %>
 	<%= render :partial => 'form', :locals => {:f => f, :button_label => "Update"} %>
 <% end %>
 

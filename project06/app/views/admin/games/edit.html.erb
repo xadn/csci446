@@ -1,6 +1,6 @@
 <h1>Editing game</h1>
 
-<% form_for(@game) do |f| %>
+<% form_for([:member, @game]) do |f| %>
 	<%= render :partial => 'form', :locals => {:f => f} %>
 <% end %>
 

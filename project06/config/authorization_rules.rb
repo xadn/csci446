@@ -1,15 +1,17 @@
 authorization do
 	
-	role :admin do
-		has_permission_on [:games, :admin_users, :user_sessions], :to => :manage
+	role :member do
+			has_permission_on [:games, :member_games, :member_users, :user_sessions], :to => :manage
 	end
 	
-	role :member do
-			has_permission_on [:games, :users, :user_sessions], :to => :manage
+	role :admin do
+		#includes :member
+		has_permission_on [:admin, :admin_games, :admin_users], :to => :manage
 	end
 		
 	role :guest do
-			has_permission_on [:games, :users, :user_sessions], :to => :manage
+			has_permission_on [:users, :user_sessions], :to => :manage
+			has_permission_on :games, :to => :read
 	end
 	
 end
