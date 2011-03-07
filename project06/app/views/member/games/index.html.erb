@@ -12,9 +12,9 @@
     <td><%=h game.user %></td>
     <td><%=h game.title %></td>
     <td><%=h game.rating %></td>
-    <td><%= link_to 'Show', game %></td>
-    <td><%= link_to 'Edit', edit_game_path(game) %></td>
-    <td><%= link_to 'Destroy', game, :confirm => 'Are you sure?', :method => :delete %></td>
+    <td><%= link_to 'Show', member_game_path(game) %></td>
+    <td><%= link_to 'Edit', edit_member_game_path(game) %></td>
+    <td><%= link_to 'Destroy', member_game_path(game), :confirm => 'Are you sure?', :method => :delete %></td>
   </tr>
 <% end %>
 </table>
