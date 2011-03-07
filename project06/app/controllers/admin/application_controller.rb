@@ -1,7 +1,7 @@
 # Filters added to this controller apply to all controllers in the application.
 # Likewise, all the methods added will be available for all controllers.
 
-class ApplicationController < ActionController::Base
+class Admin::ApplicationController < Admin::AdminController
 
   helper :all
 	protect_from_forgery
@@ -9,6 +9,8 @@ class ApplicationController < ActionController::Base
 	helper_method :current_user, :current_user_session
   
 	before_filter { |c| Authorization.current_user = c.current_user }
+	
+	public 
 	
 	def current_user
 		return @current_user if defined?(@current_user)

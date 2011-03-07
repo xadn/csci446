@@ -1,0 +1,18 @@
+<p>
+  <b>User:</b>
+  <%=h @game.user_id %>
+</p>
+
+<p>
+  <b>Title:</b>
+  <%=h @game.title %>
+</p>
+
+<p>
+  <b>Rating:</b>
+  <%=h @game.rating %>
+</p>
+
+
+<%= link_to 'Edit', edit_game_path(@game) %> |
+<%= link_to 'Back', games_path %>

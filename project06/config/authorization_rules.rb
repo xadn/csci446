@@ -1,18 +1,22 @@
-authorization do
-	
-	role :member do
-		has_permission_on :games, :to => [:index, :show, :new, :create, :edit, :update, :destroy]
-		has_permission_on :users, :to => [:show, :edit, :update, :create]
-	end
-	
-	role :admin do
-		includes :member
-		has_permission_on [:games, :users], :to => [:index, :show, :new, :create, :edit, :update, :destroy]
-	end
-		
-	role :guest do
-		has_permission_on :games, :to => [:index, :show]
-		has_permission_on :users, :to => [:new, :create]
-	end
-	
-end
+# authorization do
+# 	
+# 	role :guest do
+# 		has_permission_on :user_sessions, :to => :create
+# 	end
+# 	
+# 	role :member do
+# 	end
+# 	
+# 	role :admin do
+# 		has_permission_on [:admin_games, :admin_users, :user_sessions], :to => :manage
+# 	end
+# 	
+# 	privileges do
+# 	  privilege :manage, :includes => [:create, :read, :update, :delete]
+# 	  privilege :read, :includes => [:index, :show]
+# 	  privilege :create, :includes => :new
+# 	  privilege :update, :includes => :edit
+# 	  privilege :delete, :includes => :destroy
+# 	end
+# 	
+# end

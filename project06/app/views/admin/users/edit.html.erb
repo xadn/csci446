@@ -1,0 +1,8 @@
+<h1>Update account</h1>
+
+<% form_for(@user) do |f| %>
+	<%= render :partial => 'form', :locals => {:f => f, :button_label => "Update"} %>
+<% end %>
+
+<%= link_to 'Show', @user %> |
+<%= link_to 'Back', users_path %>
