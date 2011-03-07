@@ -19,10 +19,6 @@ Rails::Initializer.run do |config|
 
 end
 
-# Recaptcha.configure do |config|
-#   config.public_key  = '6LcePcISAAAAADOrDdAYXJAJH2Z2ji5PY9dZmLn9'
-#   config.private_key = '6LcePcISAAAAANwvNuLAdXGtrIOcxrQbuF5BCG9O'
-# end
-
+# recaptcha key configuration
 ENV['RECAPTCHA_PUBLIC_KEY'] = '6LcePcISAAAAADOrDdAYXJAJH2Z2ji5PY9dZmLn9'
 ENV['RECAPTCHA_PRIVATE_KEY'] = '6LcePcISAAAAANwvNuLAdXGtrIOcxrQbuF5BCG9O'

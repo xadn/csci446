@@ -11,6 +11,7 @@ class UsersController < ApplicationController
 			flash[:notice] = "Registration successful."
 			redirect_to @user.homepage
 		else
+			flash[:notice] = "Are you sure you're human?"
 			render :action => 'new'
 		end
   end

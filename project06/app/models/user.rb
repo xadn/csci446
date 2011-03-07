@@ -3,6 +3,8 @@ class User < ActiveRecord::Base
 	
 	has_many :games
 	
+	validates_presence_of :username, :email, :first_name, :last_name, :password_salt, :crypted_password
+	
 	def to_s
 		username
 	end
