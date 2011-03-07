@@ -8,12 +8,12 @@ require File.join(File.dirname(__FILE__), 'boot')
 
 Rails::Initializer.run do |config|
 	
-	config.gem "haml"
 	config.gem "authlogic"
 	config.gem "declarative_authorization"
 	config.gem "will_paginate"
-	config.gem "paperclip"
 	config.gem "recaptcha", :lib => "recaptcha/rails"
+	config.gem "paperclip"
+	config.gem "haml"
 	
   config.time_zone = 'UTC'
 
