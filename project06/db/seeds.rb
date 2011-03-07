@@ -8,6 +8,8 @@ User.create(
 		:password => "password",
 		:password_confirmation => "password",
 		:admin => true
+		:first_name => "Yong"
+		:last_name => "Bakos"
 	)
 	
 User.create(
@@ -15,6 +17,8 @@ User.create(
 		:email => "ybakos@mines.edu",
 		:password => "password",
 		:password_confirmation => "password"
+		:first_name => "Yong"
+		:last_name => "Bakos"
 	)
 	
 gaminator = User.create(
@@ -22,6 +26,8 @@ gaminator = User.create(
 		:email => "hgaimur@mines.edu",
 		:password => "password",
 		:password_confirmation => "password"
+		:first_name => "Yong"
+		:last_name => "Bakos"
 	)
 		
 fuzzy_rhino = User.create(
@@ -29,6 +35,8 @@ fuzzy_rhino = User.create(
 		:email => "frhino@mines.edu",
 		:password => "password",
 		:password_confirmation => "password"
+		:first_name => "Yong"
+		:last_name => "Bakos"
 	)
 	
 mbates = User.create(
@@ -36,6 +44,8 @@ mbates = User.create(
 		:email => "mbates@mines.edu",
 		:password => "password",
 		:password_confirmation => "password"
+		:first_name => "Yong"
+		:last_name => "Bakos"
 	)
 
 jstalin2 = User.create(
@@ -43,6 +53,8 @@ jstalin2 = User.create(
 		:email => "jstalin@mines.edu",
 		:password => "password",
 		:password_confirmation => "password"
+		:first_name => "Yong"
+		:last_name => "Bakos"
 	)
 	
 kji = User.create(
@@ -50,67 +62,69 @@ kji = User.create(
 		:email => "kil@mines.edu",
 		:password => "password",
 		:password_confirmation => "password"
+		:first_name => "Yong"
+		:last_name => "Bakos"
 	)
 		
-Game.create(
-		:user => fuzzy_rhino,
-		:title => "Zompocalypse",
-		:rating => 4
-	)
+	Game.create(
+			:user => fuzzy_rhino,
+			:title => "Zompocalypse",
+			:rating => 4
+		)
 	
-Game.create(
-		:user => fuzzy_rhino,
-		:title => "Goldfish Eating Contest",
-		:rating => 2
-	)
+	Game.create(
+			:user => fuzzy_rhino,
+			:title => "Goldfish Eating Contest",
+			:rating => 2
+		)
 	
-Game.create(
-		:user => fuzzy_rhino,
-		:title => "Sharks with Lasers vs Zombies",
-		:rating => 4
-	)
+	Game.create(
+			:user => fuzzy_rhino,
+			:title => "Sharks with Lasers vs Zombies",
+			:rating => 4
+		)
 	
-Game.create(
+	Game.create(
+			:user => gaminator,
+			:title => "Deathcon Match 4",
+			:rating => 1
+		)
+		
+	Game.create(
 		:user => gaminator,
-		:title => "Deathcon Match 4",
+		:title => "Cooking Mama: Polish Food",
 		:rating => 1
 	)
-		
-Game.create(
-	:user => gaminator,
-	:title => "Cooking Mama: Polish Food",
-	:rating => 1
-)
 
-Game.create(
-		:user => gaminator,
-		:title => "Ben Goes to the Zoo",
-		:rating => 3
-	)
+	Game.create(
+			:user => gaminator,
+			:title => "Ben Goes to the Zoo",
+			:rating => 3
+		)
 	
-Game.create(
-		:user => gaminator,
-		:title => "Ring Toss: Ultimate",
-		:rating => 3
-	)
+	Game.create(
+			:user => gaminator,
+			:title => "Ring Toss: Ultimate",
+			:rating => 3
+		)
 	
-Game.create(
-		:user => jstalin2,
-		:title => "Learn to Draw: Naked People",
-		:rating => 4
-)
+	Game.create(
+			:user => jstalin2,
+			:title => "Learn to Draw: Naked People",
+			:rating => 4
+	)
 
-Game.create(
-		:user => kji,
-		:title => "Civilization IV",
-		:rating => 0
-	)
+	Game.create(
+			:user => kji,
+			:title => "Civilization IV",
+			:rating => 0
+		)
 	
-Game.create(
-		:user => jstalin2,
-		:title => "Jelly Blocs",
-		:rating => 4
-	)
+	Game.create(
+			:user => jstalin2,
+			:title => "Jelly Blocs",
+			:rating => 4
+		)
 	
 
 	

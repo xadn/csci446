@@ -1,7 +1,7 @@
-class Member::GamesController < Member::MemberController
+class Admin::GamesController < Admin::AdminController
 
   def index
-    @games = current_user.games
+    @games = Game.all
   end
 
   def show

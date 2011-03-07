@@ -10,6 +10,7 @@ ActionController::Routing::Routes.draw do |map|
 	map.register "register", :controller => :users, :action => :new
 	
 	map.namespace :admin do |admin|
+		admin.resources :games
 		admin.resources :users
 		admin.root :controller => 'admin', :action => 'index'
 	end
