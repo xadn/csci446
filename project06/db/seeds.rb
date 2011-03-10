@@ -70,7 +70,7 @@ kji = User.create(
 	Game.create(
 			:user => fuzzy_rhino,
 			:title => "Zompocalypse",
-			:rating => 4
+			:rating => 3
 		)
 	
 	Game.create(
@@ -82,7 +82,7 @@ kji = User.create(
 	Game.create(
 			:user => fuzzy_rhino,
 			:title => "Sharks with Lasers vs Zombies",
-			:rating => 4
+			:rating => 3
 		)
 	
 	Game.create(
@@ -100,19 +100,19 @@ kji = User.create(
 	Game.create(
 			:user => gaminator,
 			:title => "Ben Goes to the Zoo",
-			:rating => 3
+			:rating => 2
 		)
 	
 	Game.create(
 			:user => gaminator,
 			:title => "Ring Toss: Ultimate",
-			:rating => 3
+			:rating => 0
 		)
 	
 	Game.create(
 			:user => jstalin,
 			:title => "Learn to Draw: Naked People",
-			:rating => 4
+			:rating => 3
 	)
 
 	Game.create(
@@ -124,7 +124,7 @@ kji = User.create(
 	Game.create(
 			:user => jstalin,
 			:title => "Jelly Blocs",
-			:rating => 4
+			:rating => 3
 		)
 end
 	
