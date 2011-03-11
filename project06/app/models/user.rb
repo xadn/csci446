@@ -1,7 +1,8 @@
 class User < ActiveRecord::Base
 	acts_as_authentic
 	
-	has_many :games
+	has_many :games	
+	has_attached_file :photo, :url => '/assets/:class/:attachment/:id/:style/:filename'
 	
 	validates_presence_of :username, :email, :first_name, :last_name, :password_salt, :crypted_password
 	

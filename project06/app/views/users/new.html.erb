@@ -1,6 +1,8 @@
 <h1>New account</h1>
-
-<% form_for(@user) do |f| %>
+<% form_for :user, :html => { :multipart => true } do |f| %>
+  
+<% end %>
+<% form_for(@user, :html => { :multipart => true }) do |f| %>
 	<%= f.error_messages %>
 
   <p>
@@ -18,6 +20,10 @@
   <p>
     <%= f.label :last_name %><br />
     <%= f.text_field :last_name %>
+  </p>
+  <p>
+    <%= f.label :photo %><br />
+    <%= f.file_field :photo%>
   </p>
   <p>
     <%= f.label :password %><br />

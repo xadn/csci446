@@ -5,8 +5,14 @@
 </p>
 <p>
   <%= f.label :rating %><br />
-  <%= f.text_field :rating %>
+  <%#= f.text_field :rating %>
+  <% @game.ratings_list.each_index do |rating| %>
+    <%#= f.radio_button 'rating', rating %><b><%#= @game.ratings_list[rating] %></b>
+    <%#= radio_button_tag(name, value, checked = false, options = {}) %>
+    <%= radio_button_tag 'rating', rating, @theme == theme %> <br />
+  <% end %>
 </p>
+
 <p>
   <%= f.submit 'Update' %>
 </p>

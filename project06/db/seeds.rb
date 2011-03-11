@@ -1,15 +1,14 @@
 # This file DOES contain all the record creation needed to seed the database with its default values.
 # The data can then be loaded with the rake db:seed (or created alongside the db with db:setup).
 
-
 User.create(
 		:username => "administrator",
 		:email => "admin@games.com",
 		:password => "password",
 		:password_confirmation => "password",
-		:admin => true,
 		:first_name => "fist",
-		:last_name => "last"
+		:last_name => "last",
+		:admin => true
 	)
 	
 member = User.create(
@@ -124,7 +123,7 @@ kji = User.create(
 	Game.create(
 			:user => jstalin,
 			:title => "Jelly Blocs",
-			:rating => 3
+			:rating => 2
 		)
 end
 	

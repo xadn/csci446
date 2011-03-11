@@ -11,7 +11,7 @@
 <% @games.each do |game| %>
   <tr>
     <td><%=h link_to game.title, game_path(game) %></td>
-    <td><%=h game.rating_label %></td>
+    <td><%=h game.rating %></td>
     <td><%=h game.created_at.to_date %>
   </tr>
 <% end %>

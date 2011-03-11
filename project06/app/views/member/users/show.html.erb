@@ -8,5 +8,9 @@
   <%=h @user.email %>
 </p>
 
+<div id="user_photo">
+  <%= image_tag @user.photo %>
+</div>
+
 <%= link_to 'Update account', edit_member_user_path(@user) %> |
 <%= link_to 'Back', member_users_path %>

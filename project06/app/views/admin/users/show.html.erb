@@ -8,10 +8,9 @@
   <%=h @user.email %>
 </p>
 
-<p>
-  <b>Password:</b>
-  <%=h @user.password %>
-</p>
+<div id="user_photo">
+  <%= image_tag @user.photo %>
+</div>
 
 
 <%= link_to 'Edit', edit_admin_user_path(@user) %> |
